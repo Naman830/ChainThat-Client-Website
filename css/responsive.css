@@ -353,15 +353,7 @@
   display: none;
 }
 
-.hero-area {
-  padding: 58px 0 60px 0;
-  width: 55%;
-}
-.hero-mobil img {
-    width: 45%;
-    float: right;
-	margin-top: 0;
-}
+
 
 .hero-item h2 {
   font-size: 4.375rem; /* 70px */
@@ -536,9 +528,6 @@
 	row-gap: 10px;
 }
 
-.swoos2-item {
-	padding: 90px 0;
-}
 
 .ipsum-item h4 {
 	font-size: 2.1875rem; /* 35px */
@@ -1612,9 +1601,7 @@
 	row-gap: 10px;
 }
 
-.swoos2-item {
-	padding: 90px 0;
-}
+
 
 .ipsum-item h4 {
 	font-size: 2.1875rem; /* 35px */
