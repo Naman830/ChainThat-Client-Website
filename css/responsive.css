@@ -145,51 +145,10 @@
 	font-size: 1.0625rem; /* 17px */
 }
 
-.yearbox-wrap {
-	grid-template-columns: repeat(2, 1fr);
-	margin-top: 60px;
-	column-gap: 20px;
-	row-gap: 20px;
-} 
 
-.year-box {
-	border: 1px solid transparent;
-	background: linear-gradient(#fff, #fff) padding-box, linear-gradient(111deg, #00524C 5.42%, #FCB336 46.31%, #EB7923 88.04%) border-box;
-	border-radius: 40px;
-	text-align: center;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	padding: 40px 20px;
-	min-height: 250px;
-}
 
-.year-inner {
-	border-bottom: 0;
-	padding-bottom: 0;
-	padding-top: 0;
-}
 
-.year-box h2 {
-	font-size: 2.8rem; /* 64px */
-	font-weight: 500;
-	background: linear-gradient(252deg, #B85810 1.01%, #E78032 23.38%, #EB7923 68.11%, #B14E04 100.42%);
-	background-clip: text;
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	text-transform: uppercase;
-	line-height: 1.2;
-	margin-bottom: 15px;
-}
 
-.year-box p {
-	line-height: 26px;
-}
-
-.year-area {
-	padding-bottom: 50px;
-}
 
 .service-item {
 	padding: 40px;
@@ -436,52 +395,6 @@
 	font-size: 1.0625rem; /* 17px */
 }
 
-.yearbox-wrap {
-	grid-template-columns: repeat(2, 1fr);
-	margin-top: 50px;
-	column-gap: 20px;
-	row-gap: 20px;
-} 
-
-.year-box {
-	border: 1px solid transparent;
-	background: linear-gradient(#fff, #fff) padding-box, linear-gradient(111deg, #00524C 5.42%, #FCB336 46.31%, #EB7923 88.04%) border-box;
-	border-radius: 35px;
-	text-align: center;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	padding: 35px 18px;
-	min-height: 220px;
-}
-
-.year-inner {
-	border-bottom: 0;
-	padding-bottom: 0;
-	padding-top: 0;
-}
-
-.year-box h2 {
-	font-size: 2.8rem; /* 56px */
-	font-weight: 500;
-	background: linear-gradient(252deg, #B85810 1.01%, #E78032 23.38%, #EB7923 68.11%, #B14E04 100.42%);
-	background-clip: text;
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	text-transform: uppercase;
-	line-height: 1.2;
-	margin-bottom: 12px;
-}
-
-.year-box p {
-	line-height: 24px;
-	font-size: 0.9375rem; /* 15px */
-}
-
-.year-area {
-	padding-bottom: 50px;
-}
 
 .service-item {
 	padding: 40px;
@@ -881,48 +794,6 @@
 	display: block;
 	text-align: center;
 }
-
-.year-box10 {
-  border: 1px solid transparent;
-  background: linear-gradient(#fff, #fff) padding-box, linear-gradient(111deg, #00524C 5.42%, #FCB336 46.31%, #EB7923 88.04%) border-box;
-	  border-radius: 40px;
-	  text-align: center;
-	  display: flex;
-	  flex-direction: column;
-	  justify-content: center;
-	  align-items: center;
-	  padding: 49px 47px;
-
-}
-
-.year-inner10 {
-    border-bottom: 0;
-    padding-bottom: 0;
-    padding-top: 0;
-}
-
-.year-inner10 h2 {
-	font-size: 6.0625rem; /* 97px */
-	background: linear-gradient(252deg, #B85810 1.01%, #E78032 23.38%, #EB7923 68.11%, #B14E04 100.42%);
-    background-clip: border-box;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  margin-bottom: 10px;
-}
-
-.year-inner-title h2 {
-	font-size: 3.125rem; /* 50px */
-}
-
-.yearbox-wrap10 {
-	margin-top: 45px;
-	row-gap: 20px;
-}
-
-.year-inner-title {
-  margin-top: 100px;
-}
-
 
 
 .rating-main ul {
@@ -1509,48 +1380,8 @@
 	font-size: 1.0625rem; /* 17px */
 }
 
-.yearbox-wrap {
-	grid-template-columns: repeat(2, 1fr);
-	margin-top: 40px;
-	column-gap: 15px;
-	row-gap: 15px;
-} 
 
-.year-box {
-	border: 1px solid transparent;
-	background: linear-gradient(#fff, #fff) padding-box, linear-gradient(111deg, #00524C 5.42%, #FCB336 46.31%, #EB7923 88.04%) border-box;
-	border-radius: 30px;
-	text-align: center;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	padding: 30px 15px;
-	min-height: 200px;
-}
 
-.year-inner {
-	border-bottom: 0;
-	padding-bottom: 0;
-	padding-top: 0;
-}
-
-.year-box h2 {
-	font-size: 2.5rem; /* 40px */
-	font-weight: 500;
-	background: linear-gradient(252deg, #B85810 1.01%, #E78032 23.38%, #EB7923 68.11%, #B14E04 100.42%);
-	background-clip: text;
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	text-transform: uppercase;
-	line-height: 1.2;
-	margin-bottom: 10px;
-}
-
-.year-box p {
-	line-height: 22px;
-	font-size: 0.875rem; /* 14px */
-}
 
 .year-area {
 	padding-bottom: 50px;
@@ -1975,27 +1806,8 @@
     padding-top: 0;
 }
 
-.year-inner10 h2 {
-	font-size: 6.0625rem; /* 97px */
-	background: linear-gradient(252deg, #B85810 1.01%, #E78032 23.38%, #EB7923 68.11%, #B14E04 100.42%);
-    background-clip: border-box;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  margin-bottom: 10px;
-}
 
-.year-inner-title h2 {
-	font-size: 3.125rem; /* 50px */
-}
 
-.yearbox-wrap10 {
-	margin-top: 45px;
-	row-gap: 20px;
-}
-
-.year-inner-title {
-  margin-top: 100px;
-}
 
 .header-area2 {
 	background: none;
@@ -2587,53 +2399,12 @@
 }
 
 /* Additional Year Box Responsive Styles for Very Small Screens */
-@media (max-width: 480px) {
-	.yearbox-wrap {
-		grid-template-columns: repeat(2, 1fr);
-		column-gap: 12px;
-		row-gap: 12px;
-		margin-top: 30px;
-	}
-	
-	.year-box {
-		padding: 25px 12px;
-		min-height: 180px;
-		border-radius: 25px;
-	}
-	
-	.year-box h2 {
-		font-size: 2rem; /* 32px */
-		margin-bottom: 8px;
-	}
-	
-	.year-box p {
-		font-size: 0.8125rem; /* 13px */
-		line-height: 20px;
-	}
-}
 
-@media (max-width: 360px) {
-	.yearbox-wrap {
-		column-gap: 10px;
-		row-gap: 10px;
-	}
+
+
+
 	
-	.year-box {
-		padding: 20px 10px;
-		min-height: 160px;
-		border-radius: 20px;
-	}
-	
-	.year-box h2 {
-		font-size: 2rem; /* 28px */
-		margin-bottom: 6px;
-	}
-	
-	.year-box p {
-		font-size: 0.75rem; /* 12px */
-		line-height: 18px;
-	}
-}
+
 
 /* ============================================
    SMOOTH MOBILE MENU NAVIGATION ENHANCEMENTS

@@ -614,11 +614,13 @@ section {
     padding: 0.5em 0.9375em;
   }
 }
-
+/* ============================================================================= */
+/* ============================================================================= */
 /* ===================================== */
 /* Hero Section */
 /* ===================================== */
-
+/* ============================================================================= */
+/* ============================================================================= */
 .hero-area {
   padding: 20rem 0rem 10rem 0px;
   position: relative;
@@ -682,8 +684,6 @@ section {
 .hero-item a:hover {
   background: var(--color-primary);
 }
-
-/*===hero-section===*/
 
 @media (min-width: 64em) {
   .hero-main {
@@ -790,9 +790,11 @@ section {
   border-radius: inherit;
 }
 
-/* ===================================== */
+/* ============================================================================= */
+/* ============================================================================= */
 /* partner */
-/* ===================================== */
+/* ============================================================================= */
+/* ============================================================================= */
 /*==partners-section==*/
 .partners-area {
   background: var(--color-white);
@@ -889,9 +891,11 @@ section {
   background: var(--color-white);
 }
 
-/* ===================================== */
+/* ============================================================================= */
+/* ============================================================================= */
 /* Image */
-/* ===================================== */
+/* ============================================================================= */
+/* ============================================================================= */
 
 .swoos2-item {
   background: var(--color-white);
@@ -901,12 +905,15 @@ section {
   width: 100%;
 }
 
-/* ===================================== */
+
+/* ============================================================================= */
+/* ============================================================================= */
 /* Policy Page */
-/* ===================================== */
+/* ============================================================================= */
+/* ============================================================================= */
 .policy-area {
   background: var(--color-white);
-  padding: 6rem 0 6rem 0;
+  padding: 6rem 0  0 0;
 }
 
 .policy-title {
@@ -944,13 +951,13 @@ section {
 }
 .policy-item {
   position: relative;
-  padding: 4rem 2rem;
+  padding: 2rem 2rem;
   text-align: center;
   border-radius: 2.5rem;
-  border: 1px solid var(--color-secondary);
-  background: rgba(255,255,255,0.12);
+  border: 1px solid #eb79232b;
+  background: rgb(255 255 255 / 0.12);
   backdrop-filter: blur(6px);
-  box-shadow: 10px 10px 24px rgba(0,0,0,0.05);
+  box-shadow: 5px 5px 12px rgb(240 116 0 / 12%);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -962,16 +969,20 @@ section {
 
 /* Soft Glow Aura */
 .policy-item::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    border-radius: inherit;
-    background: radial-gradient(circle at 50% 0%, rgb(240 116 0 / 10%), transparent 70%);
-    opacity: 0;
-    transform: scale(.7);
-    filter: blur(20px);
-    transition: all 0.5s ease;
-    z-index: -1;
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: radial-gradient(
+    circle at 50% 0%,
+    rgb(240 116 0 / 10%),
+    transparent 70%
+  );
+  opacity: 0;
+  transform: scale(0.7);
+  filter: blur(20px);
+  transition: all 0.5s ease;
+  z-index: -1;
 }
 
 /* Glass Shine Sweep */
@@ -985,7 +996,7 @@ section {
   background: linear-gradient(
     75deg,
     transparent 0%,
-    rgba(255,255,255,0.22) 50%,
+    rgba(255, 255, 255, 0.22) 50%,
     transparent 100%
   );
   transform: skewX(-15deg);
@@ -995,17 +1006,180 @@ section {
 
 /* On Hover → Magic Happens */
 .policy-item:hover {
-  transform: translateY(-0.6rem) scale(1.03) rotateX(3deg);
-  border-color: var(--color-primary);
-  box-shadow: 0 22px 35px rgba(0,0,0,0.18);
-  background: rgba(255,255,255,0.15);
+    transform: translateY(-.6rem) scale(1.03) rotateX(3deg);
+    border-color: var(--color-primary);
+    box-shadow: 5px 5px 8px rgb(0 0 0 / 7%);
+    background: rgb(255 255 255 / .15);
 }
-
 /* Glow expands */
 .policy-item:hover::before {
   opacity: 1;
   transform: scale(1);
 }
+
+/* ============================================================================= */
+/* ============================================================================= */
+/* Year Background Carousel - Continuous Sliding Marquee */
+/* ============================================================================= */
+/* ============================================================================= */
+
+/*==year-section==*/
+.year-area {
+    padding-bottom: 8rem;
+    padding-top: 10rem;
+}
+
+.year-main > img:not(.owl-lazy) {
+  width: 100%;
+  object-fit: contain;
+}
+
+.yearbox-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1000px;
+    margin-top: 4rem!important;
+    gap: 2rem;
+    margin: auto;
+    align-items: center;
+}
+.year-box {
+    border: .0625em solid #fff0;
+    background: linear-gradient(var(--color-white),var(--color-white)) padding-box,linear-gradient(111deg,var(--color-primary) 5.42%,var(--color-accent) 46.31%,var(--color-secondary) 88.04%) border-box;
+    border-radius: 3.75em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 3rem 1rem;
+}
+
+.year-box h2 {
+  font-weight: 800;
+  font-size: 5rem;
+  background: linear-gradient(
+    252deg,
+    #b85810 1.01%,
+    #e78032 23.38%,
+    var(--color-secondary) 68.11%,
+    #b14e04 100.42%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-variant-numeric: slashed-zero; /* Distinguish 0 from O */
+}
+
+.year-box p {
+  line-height: 1.1;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.year-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+}
+
+
+.year-main {
+  max-width: 90em;
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+  border-radius: 1.25em;
+  height: 60vh;
+  min-height: 25em;
+}
+
+#owl-csel-year-bg {
+  height: 100%;
+  position: relative;
+}
+
+#owl-csel-year-bg .owl-stage-outer {
+  height: 100%;
+  overflow: hidden;
+}
+
+#owl-csel-year-bg .owl-stage {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  transition-timing-function: linear !important;
+}
+
+#owl-csel-year-bg .owl-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+#owl-csel-year-bg .item {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+#owl-csel-year-bg .item img {
+  width: 100%;
+  object-fit: fill;
+  border-radius: 1.5625em; /* 25px */
+  display: block;
+}
+
+/* Ensure Owl Carousel can control transitions */
+#owl-csel-year-bg .owl-stage {
+  transition-timing-function: linear !important;
+}
+
+/* Remove conflicting transitions */
+#owl-csel-year-bg .owl-item {
+  transition: none !important;
+}
+
+/* Single image fallback */
+.year-main > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 3.75em 0;
+}
+
+
+@media (max-width: 764px) {
+  .yearbox-wrap {
+    display: grid;
+    grid-template-columns: 1fr ;
+    max-width: 100%;
+    
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Shine sweeps across */
 .policy-item:hover::after {
@@ -1026,30 +1200,30 @@ section {
 
 .policy-item h4 {
   font-weight: 300;
-  font-size: 2rem; 
+  font-size: 2rem;
   color: var(--color-primary);
 }
 
 .policy-item p {
-    color: var(--color-black);
-    line-height: 24px;
-    margin-top: 20px;
-    font-size: 16px;
-    margin-bottom: 0;
+  color: var(--color-black);
+  line-height: 24px;
+  margin-top: 20px;
+  font-size: 16px;
+  margin-bottom: 0;
 }
 .policy-item a {
-    font-weight: 500;
-    font-size: 14px;
-    color: var(--color-white);
-    display: inline-block;
-    padding: 0.9rem 1.6rem;
-    border-radius: 2.5rem;
-    text-decoration: none;
-    background: var(--color-secondary);
-    letter-spacing: .024375em;
-    text-transform: uppercase;
-    margin-top: 1.125em;
-    transition: 0.4s all ease;
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--color-white);
+  display: inline-block;
+  padding: 0.9rem 1.6rem;
+  border-radius: 2.5rem;
+  text-decoration: none;
+  background: var(--color-secondary);
+  letter-spacing: 0.024375em;
+  text-transform: uppercase;
+  margin-top: 1.125em;
+  transition: 0.4s all ease;
 }
 .policy-item a:hover {
   background: var(--color-primary);
@@ -1066,19 +1240,17 @@ section {
   .policy-item {
     padding: 2.5em 1.5625em;
   }
-
-
 }
 
 .policy-circle {
-    width: 100%;
-    border-radius: 50%;
-    display: grid;
-    margin: auto;
-    place-items: center;
-    position: relative;
-    margin-top: 20px;
-    margin-bottom: 0px !important;
+  width: 100%;
+  border-radius: 50%;
+  display: grid;
+  margin: auto;
+  place-items: center;
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 0px !important;
 }
 
 .policy-text {
@@ -1915,7 +2087,6 @@ h6 {
 /* Mobile section padding optimization */
 @media (max-width: 47.9375em) {
   .partners-area,
-  .year-area,
   .service-area,
   .working-with-chainthat-area,
   .review-area,
@@ -1985,7 +2156,6 @@ h6 {
 @media (max-width: 30em) {
   /* Even more compact sections */
   .partners-area,
-  .year-area,
   .service-area,
   .working-with-chainthat-area,
   .review-area,
@@ -2134,7 +2304,7 @@ h6 {
     min-height: 26.25em;
   }
 
-  #owl-csel-policy-desktop  {
+  #owl-csel-policy-desktop {
     font-size: 1.75rem; /* 28px */
   }
 }
@@ -2145,7 +2315,7 @@ h6 {
     min-height: 25em;
   }
 
-  #owl-csel-policy-desktop  {
+  #owl-csel-policy-desktop {
     font-size: 1.625rem; /* 26px */
   }
 }
@@ -2156,7 +2326,7 @@ h6 {
     min-height: 23.75em;
   }
 
-  #owl-csel-policy-tablet  {
+  #owl-csel-policy-tablet {
     font-size: 1.5rem; /* 24px */
   }
 }
@@ -2168,7 +2338,7 @@ h6 {
     margin: 0 0.625em;
   }
 
-  #owl-csel-policy-mobile  {
+  #owl-csel-policy-mobile {
     font-size: 1.375rem; /* 22px */
   }
 }
@@ -2179,7 +2349,7 @@ h6 {
     min-height: 20em;
   }
 
-  #owl-csel-policy-mobile  {
+  #owl-csel-policy-mobile {
     font-size: 1.25rem; /* 20px */
   }
 
@@ -2292,79 +2462,6 @@ h6 {
 
 .swoos-mobil img {
   width: 100%;
-}
-
-/*==year-section==*/
-.year-area {
-  background: var(--color-white);
-  padding-bottom: 12.5em;
-}
-
-.year-main > img:not(.owl-lazy) {
-  width: 100%;
-  object-fit: contain;
-}
-
-.yearbox-wrap {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  max-width: 62.5em;
-  margin: auto;
-  column-gap: 1.875em;
-  row-gap: 1.875em;
-  margin-top: 7.5em;
-  align-items: stretch; /* All boxes same height */
-}
-
-.year-box {
-  border: 0.0625em solid transparent;
-  background: linear-gradient(var(--color-white), var(--color-white))
-      padding-box,
-    linear-gradient(
-        111deg,
-        var(--color-primary) 5.42%,
-        var(--color-accent) 46.31%,
-        var(--color-secondary) 88.04%
-      )
-      border-box;
-  border-radius: 3.75em;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start; /* Align content to top */
-  align-items: center;
-  padding: 3.0625em 0.9375em;
-  height: 100%; /* Ensure full height of grid cell */
-}
-
-.year-box h2 {
-  font-weight: 800;
-  font-size: 5rem;
-  background: linear-gradient(
-    252deg,
-    #b85810 1.01%,
-    #e78032 23.38%,
-    var(--color-secondary) 68.11%,
-    #b14e04 100.42%
-  );
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-variant-numeric: slashed-zero; /* Distinguish 0 from O */
-}
-
-.year-box p {
-  line-height: 1.1;
-  font-size: 1.4rem;
-  font-weight: 400;
-}
-
-.year-inner {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  width: 100%;
-  text-align: center;
 }
 
 /*==service-section==*/
@@ -4517,13 +4614,7 @@ h6 {
   text-align: center;
 }
 
-.yearbox-wrap10 {
-  margin-top: 5.625em;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1.875em;
-  align-items: stretch; /* All boxes same height */
-}
+
 
 .year-box10 {
   border: 0.0625em solid transparent;
@@ -6603,76 +6694,6 @@ h6 {
   width: 100%;
 }
 
-/* Year Background Carousel - Continuous Sliding Marquee */
-.year-main {
-  max-width: 90em;
-  position: relative;
-  overflow: hidden;
-  margin: 0 auto;
-  border-radius: 1.25em;
-  height: 60vh;
-  min-height: 25em;
-}
-
-#owl-csel-year-bg {
-  height: 100%;
-  position: relative;
-}
-
-#owl-csel-year-bg .owl-stage-outer {
-  height: 100%;
-  overflow: hidden;
-}
-
-#owl-csel-year-bg .owl-stage {
-  display: flex;
-  align-items: center;
-  height: 100%;
-  transition-timing-function: linear !important;
-}
-
-#owl-csel-year-bg .owl-item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  width: 100%;
-}
-
-#owl-csel-year-bg .item {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
-
-#owl-csel-year-bg .item img {
-  width: 100%;
-  max-height: 25em;
-  object-fit: fill;
-  border-radius: 1.5625em; /* 25px */
-  display: block;
-}
-
-/* Ensure Owl Carousel can control transitions */
-#owl-csel-year-bg .owl-stage {
-  transition-timing-function: linear !important;
-}
-
-/* Remove conflicting transitions */
-#owl-csel-year-bg .owl-item {
-  transition: none !important;
-}
-
-/* Single image fallback */
-.year-main > img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  padding: 3.75em 0;
-}
 
 /* ============================================
    DYNAMIC STAR RATING SYSTEM
@@ -8529,17 +8550,8 @@ a:hover {
     margin-bottom: 1.5625em;
   }
 
-  .year-inner-title h2 {
-    font-size: 4.5rem !important;
-    margin-top: 3.75em !important;
-    margin-bottom: 2.5em !important;
-  }
 
-  .yearbox-wrap10 {
-    grid-template-columns: repeat(2, 1fr) !important;
-    gap: 1.875em !important;
-    margin-top: 2.5em !important;
-  }
+
 }
 
 @media screen and (min-width: 48em) and (max-width: 61.9375em) {
@@ -8616,34 +8628,11 @@ a:hover {
     padding: 0.9375em 2.5em;
   }
 
-  .year-inner-title {
-    text-align: center;
-    margin-top: 3.125em !important;
-  }
 
-  .year-inner-title h2 {
-    font-size: 3.5rem !important;
-    margin-bottom: 1.875em !important;
-  }
 
-  .yearbox-wrap10 {
-    grid-template-columns: repeat(2, 1fr) !important;
-    gap: 1.5625em !important;
-    margin-top: 1.875em !important;
-  }
 
-  .year-box10 {
-    padding: 1.875em 1.25em !important;
-    min-height: 12.5em !important;
-  }
 
-  .year-box10 h2 {
-    font-size: 3.75rem !important; /* Scaled down for tablet */
-  }
 
-  .year-box10 p {
-    font-size: 1rem !important; /* 16px - Updated to match mobile paragraph standard */
-  }
 }
 
 @media screen and (max-width: 47.9375em) {
@@ -8733,44 +8722,10 @@ a:hover {
     overflow: hidden;
   }
 
-  .year-inner-title {
-    text-align: center;
-    margin-top: 2.5em !important;
-    padding: 0 1.25em;
-  }
 
-  .year-inner-title h2 {
-    font-size: 2.5rem !important;
-    margin-bottom: 1.5625em !important;
-    line-height: 1.15;
-  }
 
-  .yearbox-wrap10 {
-    grid-template-columns: 100% !important;
-    gap: 1.25em !important;
-    margin-top: 1.5625em !important;
-    padding: 0 1.25em;
-  }
 
-  .year-box10 {
-    padding: 1.875em 1.5625em !important;
-    min-height: 11.25em !important;
-    border-radius: 1.5625em !important;
-  }
 
-  .year-inner10 {
-    text-align: center;
-  }
-
-  .year-box10 h2 {
-    font-size: 3.25rem !important; /* Scaled down for tablet */
-    margin-bottom: 0.75em !important;
-  }
-
-  .year-box10 p {
-    font-size: 1rem !important; /* 16px - Updated to match mobile paragraph standard */
-    line-height: 1.4 !important;
-  }
 }
 @media screen and (max-width: 30em) {
   .adminis-video-area {
@@ -8826,37 +8781,10 @@ a:hover {
     font-size: 0.85rem;
   }
 
-  .year-inner-title {
-    margin-top: 2.1875em !important;
-    padding: 0 0.9375em;
-  }
 
-  .year-inner-title h2 {
-    font-size: 2rem !important;
-    margin-bottom: 1.25em !important;
-  }
 
-  .yearbox-wrap10 {
-    gap: 1.125em !important;
-    margin-top: 1.25em !important;
-    padding: 0 0.9375em;
-  }
 
-  .year-box10 {
-    padding: 1.5625em 1.25em !important;
-    min-height: 10em !important;
-    border-radius: 1.25em !important;
-  }
 
-  .year-box10 h2 {
-    font-size: 3rem !important; /* Scaled down for mobile */
-    margin-bottom: 0.625em !important;
-  }
-
-  .year-box10 p {
-    font-size: 1rem !important; /* 16px - Updated to match mobile paragraph standard */
-    line-height: 1.35 !important;
-  }
 }
 
 @media screen and (max-width: 22.5em) {
@@ -8872,13 +8800,8 @@ a:hover {
     font-size: 1.5rem !important;
   }
 
-  .year-inner-title h2 {
-    font-size: 1.75rem !important;
-  }
 
-  .year-box10 h2 {
-    font-size: 2.75rem !important; /* Scaled down for small mobile */
-  }
+
 }
 /* ========================================
    FUNCTIONAL CAPABILITIES RESPONSIVE
@@ -13442,7 +13365,6 @@ a:hover {
     font-size: 100%;
   }
 }
-
 
 .blog-title h2,
 .blog-btm h3 {
