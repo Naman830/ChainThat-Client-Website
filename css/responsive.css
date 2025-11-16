@@ -181,15 +181,6 @@
 	padding: 40px;
 }
 
-.working-with-chainthat-card .card-title {
-	font-size: 1.5625rem; /* 25px */
-	line-height: 30px;
-}
-
-.working-with-chainthat-card .card-text {
-	font-size: 1rem; /* 16px */
-	line-height: 24px;
-}
 
 .review-area {
 	padding: 70px 0;
@@ -199,10 +190,6 @@
 	padding: 40px;
 }
 
-.review-card .card-title {
-	font-size: 1.5625rem; /* 25px */
-	line-height: 30px;
-}
 
 .review-card .card-text {
 	font-size: 1rem; /* 16px */
@@ -271,9 +258,7 @@
 /*FOR-TABLATE-START*/
 @media screen and (min-width: 768px) and (max-width: 991px) {
 	
- p {
-	font-size: 1rem !important; /* 16px - Force all paragraphs to 1rem on tablet */
-}
+
 
 .menu-toggle {
   	display: block;
@@ -397,9 +382,6 @@
 
 
 
-.service-title {
-	text-align: left !important;
-}
 
 .service-area {
 	border-radius: 20px;
@@ -1381,9 +1363,6 @@
 }
 
 
-.service-title {
-	text-align: left !important;
-}
 
 .service-area {
 	border-radius: 20px;

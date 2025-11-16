@@ -1370,11 +1370,13 @@ section {
 /* ============================================================================= */
 .working-with-chainthat-area {
   background: var(--color-white);
+  padding: 2.5rem 0 4rem 0 ;
 }
 
 .working-with-chainthat-title {
   max-width: 1200px;
   margin: auto;
+  margin-bottom: 4rem;
 }
 
 .working-with-chainthat-title h2 {
@@ -1385,6 +1387,12 @@ section {
     margin-bottom: 10px !important;
 }
 
+.card-title {
+    font-size: 22px;
+    margin-bottom: 20px;
+    line-height: 27px;
+}
+
 .working-with-chainthat-title p {
   color: var(--color-black);
     margin: auto;
@@ -1393,13 +1401,29 @@ section {
     font-size: 18px !important;
 }
 
-.swoos3-item {
-  background: var(--color-white);
+.card-text{
+font-size: 16px !important;
+    line-height: 27px;
+    font-weight: 400;
+    margin-bottom: 20px;
 }
 
-.working-with-chainthat-area {
+
+  @media(max-width: 1000px){
+    .working-with-chainthat-main {
+    margin: 4rem 10rem !important;
+  }
+  }
+
+   @media(max-width: 650px){
+    .working-with-chainthat-main {
+    margin: 4rem 2rem;
+  }
+  }
+
+
+.swoos3-item {
   background: var(--color-white);
-  padding: 2.5em 0;
 }
 
 /* Last section on page gets extra bottom padding */
@@ -1407,17 +1431,9 @@ section {
   padding: 2.5em 0 5em 0;
 }
 
-.working-with-chainthat-main {
-  margin-top: 6.25em;
-}
 
 /* Add spacing between columns on desktop - use padding approach */
-@media (min-width: 62em) {
-  .working-with-chainthat-main .row>[class*="col-"] {
-    padding-left: 1em;
-    padding-right: 1em;
-  }
-}
+
 
 .working-with-chainthat-img img {
   width: 100%;
@@ -1427,23 +1443,36 @@ section {
 }
 
 /* Mobile: Single column layout */
-@media (max-width: 61.99875em) {
-  .working-with-chainthat-main {
-    display: block;
-    margin-top: 3.125em;
-  }
-}
+  
 
 .working-with-chainthat-cnt {
-  padding-right: 1.875em;
+  padding-right: 2rem;
+  padding-left: 2rem;
 }
 
 .working-with-chainthat-cnt h4 {
-  font-weight: 500;
-  font-size: 1.7rem;
-  color: var(--color-secondary);
-  margin-bottom: 1.25em;
+    font-weight: 500;
+    font-size: 26px !important;
+    color: var(--color-secondary);
+    margin-bottom: 20px;
+    line-height: 34px;
 }
+
+.working-with-chainthat-cnt p {
+    font-weight: 400;
+    color: black;
+    margin-bottom: 20px;
+    font-size: 18px!important;
+    line-height: 27px;
+}
+
+
+.working-with-chainthat-card .card-img-top {
+  height: 22rem;
+  object-fit: cover;
+  border-radius: 0;
+}
+
 
 .working-with-chainthat-item h4 {
   font-weight: 500;
@@ -1480,66 +1509,28 @@ section {
   overflow: hidden;
 }
 
-.working-with-chainthat-card .card-img-top {
-  height: 12.5em;
-  object-fit: cover;
-  border-radius: 0;
-}
+
 
 .working-with-chainthat-card .card-body {
-  padding: 1.875em;
+  padding: 2.5rem;
 }
 
-.working-with-chainthat-card .card-title {
-  font-weight: 300;
-  font-size: 1.75rem;
-  /* 28px */
-  color: var(--color-secondary);
-  margin-bottom: 1.25em;
-}
-
-.working-with-chainthat-card .card-text {
-  color: #666;
-  line-height: 1.6;
-  margin-bottom: 1.25em;
-}
 
 .working-with-chainthat-card .btn-all {
   margin-top: auto;
 }
 
 /* Responsive adjustments */
-@media (max-width: 48em) {
-  .working-with-chainthat-card .card-body {
-    padding: 1.5625em;
-  }
-
-  .working-with-chainthat-card .card-title {
-    font-size: 1.5rem;
-    /* 24px */
-  }
-
-  .working-with-chainthat-card .card-img-top {
-    height: 11.25em;
-  }
-}
-
-@media (max-width: 30em) {
-  .working-with-chainthat-card .card-body {
-    padding: 1.25em;
-  }
-
-  .working-with-chainthat-card .card-title {
-    font-size: 1.375rem;
-    /* 22px */
-  }
-
-  .working-with-chainthat-card .card-img-top {
-    height: 10em;
-  }
-}
 
 
+
+/* ============================================================================= */
+/* ============================================================================= */
+/* ===================================== */
+/* NEWS AND INSIGHT */
+/* ===================================== */
+/* ============================================================================= */
+/* ============================================================================= */
 
 
 
@@ -2614,9 +2605,6 @@ h6 {
 /* Mobile section padding optimization */
 @media (max-width: 47.9375em) {
 
-  .partners-area,
-  .service-area,
-  .working-with-chainthat-area,
   .review-area,
   .blog-area,
   .footer-area {
@@ -2689,9 +2677,6 @@ h6 {
 @media (max-width: 30em) {
 
   /* Even more compact sections */
-  .partners-area,
-  .service-area,
-  .working-with-chainthat-area,
   .review-area,
   .blog-area,
   .footer-area {
@@ -9825,35 +9810,8 @@ a:hover {
     line-height: 1.5;
   }
 
-  .working-with-chainthat-area {
-    padding: 2.1875em 0 !important;
-  }
 
-  .working-with-chainthat-area:last-of-type {
-    padding: 2.1875em 0 3.75em 0 !important;
-  }
 
-  .working-with-chainthat-title {
-    text-align: center;
-    padding: 0 1.875em;
-    max-width: 90%;
-    margin: 0 auto 3.75em auto !important;
-  }
-
-  .working-with-chainthat-title h2 {
-    font-size: 4rem !important;
-    line-height: 1.15 !important;
-    margin-bottom: 1.5625em !important;
-  }
-
-  .working-with-chainthat-title p {
-    font-size: 1rem !important;
-    line-height: 1.6 !important;
-  }
-
-  .working-with-chainthat-main {
-    margin-top: 3.125em;
-  }
 
   .working-with-chainthat-img img {
     border-radius: 0.75em;
@@ -9865,23 +9823,7 @@ a:hover {
     border-radius: 0.9375em;
   }
 
-  .working-with-chainthat-cnt h4 {
-    font-size: 1.75rem !important;
-    line-height: 1.3;
-    margin-bottom: 1.25em;
-    color: var(--color-secondary);
-  }
 
-  .working-with-chainthat-cnt p {
-    font-size: 1rem !important;
-    /* 16px - Updated to match mobile paragraph standard */
-    line-height: 1.6;
-    margin-bottom: 1.5625em;
-  }
-
-  .working-with-chainthat-btn a {
-    padding: 0.875em 2.1875em;
-  }
 
   .tndus-btm {
     margin-top: 3.75em !important;
@@ -9954,33 +9896,7 @@ a:hover {
     line-height: 1.5 !important;
   }
 
-  .working-with-chainthat-area {
-    padding: 5em 0 3.75em 0 !important;
-  }
 
-  .working-with-chainthat-title {
-    text-align: center !important;
-    padding: 0 1.875em;
-    max-width: 95%;
-    margin: 0 auto 3.125em auto !important;
-  }
-
-  .working-with-chainthat-title h2 {
-    font-size: 3.5rem !important;
-    line-height: 1.15 !important;
-    margin-bottom: 1.25em !important;
-    letter-spacing: -0.09375em;
-  }
-
-  .working-with-chainthat-title p {
-    font-size: 1rem !important;
-    /* 16px - Updated to match mobile paragraph standard */
-    line-height: 1.5 !important;
-  }
-
-  .working-with-chainthat-main {
-    margin-top: 2.5em;
-  }
 
   .working-with-chainthat-img img {
     border-radius: 0.75em;
@@ -9995,29 +9911,6 @@ a:hover {
   .working-with-chainthat-cnt {
     text-align: center;
     padding: 1.25em;
-  }
-
-  .working-with-chainthat-cnt h4 {
-    font-size: 1.875rem !important;
-    line-height: 1.3;
-    margin-bottom: 1.125em;
-    color: var(--color-secondary);
-  }
-
-  .working-with-chainthat-cnt p {
-    font-size: 1rem !important;
-    /* 16px - Updated to match mobile paragraph standard */
-    line-height: 1.5 !important;
-    margin-bottom: 1.25em;
-  }
-
-  .working-with-chainthat-btn {
-    text-align: center;
-  }
-
-  .working-with-chainthat-btn a {
-    display: inline-block;
-    padding: 0.875em 2.5em;
   }
 
   .tndus-btm {
@@ -10121,32 +10014,6 @@ a:hover {
     display: none;
   }
 
-  .working-with-chainthat-area {
-    padding: 3.75em 0 3.125em 0 !important;
-  }
-
-  .working-with-chainthat-title {
-    text-align: center !important;
-    padding: 0 1.25em;
-    max-width: 100%;
-    margin: 0 auto 2.5em auto !important;
-  }
-
-  .working-with-chainthat-title h2 {
-    font-size: 2.5rem !important;
-    line-height: 1.15 !important;
-    margin-bottom: 1.125em !important;
-    letter-spacing: -0.075em;
-  }
-
-  .working-with-chainthat-title p {
-    font-size: 0.875rem !important;
-    line-height: 1.5 !important;
-  }
-
-  .working-with-chainthat-main {
-    margin-top: 2.1875em;
-  }
 
   .working-with-chainthat-img img {
     border-radius: 0.625em;
@@ -10163,31 +10030,7 @@ a:hover {
     padding: 0.9375em 0.625em;
   }
 
-  .working-with-chainthat-cnt h4 {
-    font-size: 1.5rem !important;
-    line-height: 1.3;
-    margin-bottom: 0.9375em;
-    color: var(--color-secondary);
-  }
-
-  .working-with-chainthat-cnt p {
-    font-size: 0.875rem !important;
-    line-height: 1.5 !important;
-    margin-bottom: 1.25em;
-  }
-
-  .working-with-chainthat-btn {
-    text-align: center;
-    margin-top: 1.25em;
-  }
-
-  .working-with-chainthat-btn a {
-    display: block;
-    width: 100%;
-    text-align: center;
-    padding: 0.875em 1.875em;
-    font-size: 0.9rem;
-  }
+ 
 
   .tndus-btm.d-none.d-lg-block {
     display: none !important;
@@ -10247,66 +10090,22 @@ a:hover {
     /* 16px - Updated to match mobile paragraph standard */
   }
 
-  .working-with-chainthat-area {
-    padding: 3.125em 0 2.5em 0 !important;
-  }
 
-  .working-with-chainthat-title {
-    padding: 0 0.9375em;
-    margin-bottom: 2.1875em !important;
-  }
 
-  .working-with-chainthat-title h2 {
-    font-size: 2rem !important;
-    line-height: 1.15 !important;
-    margin-bottom: 0.9375em !important;
-    letter-spacing: -0.0625em;
-  }
-
-  .working-with-chainthat-title p {
-    font-size: 0.8125rem !important;
-    line-height: 1.45 !important;
-  }
-
-  .working-with-chainthat-main {
-    row-gap: 1.5625em !important;
-    margin-top: 1.875em;
-    padding: 0 0.9375em;
-  }
 
   .working-with-chainthat-cnt {
     padding: 0.625em 0.3125em;
   }
 
-  .working-with-chainthat-cnt h4 {
-    font-size: 1.375rem !important;
-    margin-bottom: 0.75em;
-    color: var(--color-secondary);
-  }
 
-  .working-with-chainthat-cnt p {
-    font-size: 0.8125rem !important;
-    line-height: 1.45 !important;
-    margin-bottom: 1.125em;
-  }
-
-  .working-with-chainthat-btn a {
-    padding: 0.75em 1.5625em;
-    font-size: 0.85rem;
-  }
 }
 
 @media screen and (max-width: 22.5em) {
 
-  .timeline-title h2,
-  .working-with-chainthat-title h2 {
+  .timeline-title h2, {
     font-size: 1.75rem !important;
   }
 
-  .working-with-chainthat-cnt h4 {
-    font-size: 1.25rem !important;
-    color: var(--color-secondary);
-  }
 }
 
 @media (max-width: 61.9375em) {
@@ -13946,17 +13745,9 @@ button.service-toggle-btn {
   padding-bottom: 4em;
 }
 
-.working-with-chainthat-title h2 {
-  margin-bottom: 0.8em;
-}
 
-.working-with-chainthat-title p {
-  font-size: unset;
-}
 
-.working-with-chainthat-main {
-  margin-top: 5em;
-}
+
 
 
 /* platform */
@@ -14046,21 +13837,8 @@ button.service-toggle-btn {
   margin-top: 50%;
 }
 
-.working-with-chainthat-title h2 {
-  margin-bottom: 0.5em;
-}
 
-.working-with-chainthat-title p {
-  font-size: 1.5rem;
-}
 
-.working-with-chainthat-main {
-  margin-top: 4em;
-}
-
-.working-with-chainthat-cnt h4 {
-  font-size: 2rem;
-}
 
 /* Solutions */
 .key-benefits-area .all-title h2 {
