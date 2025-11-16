@@ -1,0 +1,307 @@
+{
+    "key": "group_block_content_accordion",
+    "title": "Accordion Block Settings",
+    "fields": [
+        {
+            "key": "field_accordion_data_source",
+            "label": "Data Source",
+            "name": "data_source",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "Choose where to get the data from.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "page_fields": "Use Page Fields (Default)",
+                "custom": "Custom Configuration"
+            },
+            "default_value": "page_fields",
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_custom_section_subtitle",
+            "label": "Section Subtitle",
+            "name": "custom_section_subtitle",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Small text above the main title",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_accordion_data_source",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "Our Framework",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_custom_section_title",
+            "label": "Section Title",
+            "name": "custom_section_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Main heading for the accordion section",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_accordion_data_source",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Our Approach",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_custom_section_description",
+            "label": "Section Description",
+            "name": "custom_section_description",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "Optional description below the section title",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_accordion_data_source",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "rows": 3,
+            "placeholder": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_custom_allow_multiple",
+            "label": "Allow Multiple Items Open",
+            "name": "custom_allow_multiple",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "Allow multiple accordion items to be expanded at the same time",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_accordion_data_source",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "ui": 1
+        },
+        {
+            "key": "field_custom_first_open",
+            "label": "First Item Open By Default",
+            "name": "custom_first_open",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "Automatically expand the first accordion item",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_accordion_data_source",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "ui": 1
+        },
+        {
+            "key": "field_custom_accordion_items",
+            "label": "Accordion Items",
+            "name": "custom_accordion_items",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "Add accordion items with icon, title, and description.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_accordion_data_source",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "pagination": 0,
+            "min": 1,
+            "max": 0,
+            "collapsed": "field_accordion_item_title",
+            "button_label": "Add Accordion Item",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_accordion_item_icon",
+                    "label": "Icon",
+                    "name": "accordion_icon",
+                    "aria-label": "",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "20",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "url",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "svg,png,jpg",
+                    "preview_size": "thumbnail"
+                },
+                {
+                    "key": "field_accordion_item_title",
+                    "label": "Title",
+                    "name": "accordion_title",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "80",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "Accordion item title",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_accordion_item_description",
+                    "label": "Description",
+                    "name": "accordion_description",
+                    "aria-label": "",
+                    "type": "wysiwyg",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "tabs": "all",
+                    "toolbar": "basic",
+                    "media_upload": 0,
+                    "delay": 0
+                }
+            ]
+        },
+        {
+            "key": "field_accordion_display_info",
+            "label": "Display Information",
+            "name": "",
+            "aria-label": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "<strong>Usage:<\/strong> Perfect for 5Ps sections, FAQs, expandable content sections.<br><br><strong>Features:<\/strong><ul><li>Smooth expand\/collapse animation<\/li><li>Optional icon display<\/li><li>Single or multiple items open<\/li><li>First item can auto-expand<\/li><li>WYSIWYG content support<\/li><li>Fully responsive<\/li><\/ul><strong>Best Practices:<\/strong><ul><li>Keep titles concise (1-5 words)<\/li><li>Use icons for visual interest<\/li><li>3-7 items work best<\/li><li>Description supports basic HTML<\/li><\/ul>",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/content-accordion"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "Display expandable accordion content for FAQs and structured information",
+    "show_in_rest": 0
+}
+
+

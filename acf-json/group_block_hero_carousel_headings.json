@@ -1,0 +1,411 @@
+{
+    "key": "group_block_hero_carousel_headings",
+    "title": "Hero Carousel with Headings Block Settings",
+    "fields": [
+        {
+            "key": "field_hero_standard_data_source",
+            "label": "Data Source",
+            "name": "data_source",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "Choose where to get the data from. 'Use Page Fields' reads from existing page data (recommended). 'Custom Configuration' lets you configure this block independently.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "page_fields": "Use Page Fields (Default)",
+                "custom": "Custom Configuration"
+            },
+            "default_value": "page_fields",
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_custom_title",
+            "label": "Hero Title",
+            "name": "custom_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Main heading for the hero section",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_hero_standard_data_source",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "Enter hero title",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_custom_subtitle",
+            "label": "Subtitle",
+            "name": "custom_subtitle",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Optional subtitle (span text)",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_hero_standard_data_source",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_custom_heading",
+            "label": "Secondary Heading",
+            "name": "custom_heading",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Optional secondary heading (appears below subtitle)",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_hero_standard_data_source",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_custom_description",
+            "label": "Description",
+            "name": "custom_description",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "Hero section description text",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_hero_standard_data_source",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "rows": 4,
+            "placeholder": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_custom_background_type",
+            "label": "Background Type",
+            "name": "custom_background_type",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "Choose background type for hero section",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_hero_standard_data_source",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "image": "Background Image",
+                "video": "Background Video"
+            },
+            "default_value": "image",
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_custom_background_image",
+            "label": "Background Image",
+            "name": "custom_background_image",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "Background image for the hero section",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_hero_standard_data_source",
+                        "operator": "==",
+                        "value": "custom"
+                    },
+                    {
+                        "field": "field_custom_background_type",
+                        "operator": "==",
+                        "value": "image"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_custom_background_video",
+            "label": "Background Video",
+            "name": "custom_background_video",
+            "aria-label": "",
+            "type": "file",
+            "instructions": "MP4 video file for background (autoplay, muted, loop)",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_hero_standard_data_source",
+                        "operator": "==",
+                        "value": "custom"
+                    },
+                    {
+                        "field": "field_custom_background_type",
+                        "operator": "==",
+                        "value": "video"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "library": "all",
+            "min_size": "",
+            "max_size": "",
+            "mime_types": "mp4"
+        },
+        {
+            "key": "field_custom_hero_images",
+            "label": "Hero Image Carousel",
+            "name": "custom_hero_images",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "Add images for the hero carousel (optional - used in About and Careers pages)",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_hero_standard_data_source",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "table",
+            "pagination": 0,
+            "min": 0,
+            "max": 0,
+            "collapsed": "",
+            "button_label": "Add Image",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_carousel_image",
+                    "label": "Image",
+                    "name": "image",
+                    "aria-label": "",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "preview_size": "thumbnail"
+                }
+            ]
+        },
+        {
+            "key": "field_custom_mobile_image",
+            "label": "Mobile Decorative Image",
+            "name": "custom_mobile_image",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "Optional decorative image shown on mobile devices",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_hero_standard_data_source",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_custom_button_text",
+            "label": "Button Text",
+            "name": "custom_button_text",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Optional call-to-action button text",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_hero_standard_data_source",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_custom_button_link",
+            "label": "Button Link",
+            "name": "custom_button_link",
+            "aria-label": "",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_hero_standard_data_source",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "https://"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/hero-carousel-headings"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "Configure hero carousel with headings for About, Careers, and similar pages",
+    "show_in_rest": 0
+}
+

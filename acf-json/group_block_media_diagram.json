@@ -1,0 +1,185 @@
+{
+    "key": "group_block_media_diagram",
+    "title": "Diagram Block Settings",
+    "fields": [
+        {
+            "key": "field_diagram_data_source",
+            "label": "Data Source",
+            "name": "data_source",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "Choose where to get the data from.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "page_fields": "Use Page Fields (Default)",
+                "custom": "Custom Configuration"
+            },
+            "default_value": "page_fields",
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_custom_diagram_image",
+            "label": "Diagram Image",
+            "name": "custom_diagram_image",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "Upload the diagram or infographic image",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_diagram_data_source",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "jpg,jpeg,png,svg",
+            "preview_size": "large"
+        },
+        {
+            "key": "field_custom_diagram_text",
+            "label": "Diagram Text",
+            "name": "custom_diagram_text",
+            "aria-label": "",
+            "type": "wysiwyg",
+            "instructions": "Optional descriptive text for the diagram",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_diagram_data_source",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "basic",
+            "media_upload": 0,
+            "delay": 0
+        },
+        {
+            "key": "field_custom_show_text_overlay",
+            "label": "Show Text as Overlay",
+            "name": "custom_show_text_overlay",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "Display text over the diagram image (centered). If disabled, text appears below the diagram.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_diagram_data_source",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "ui": 1
+        },
+        {
+            "key": "field_custom_background_color",
+            "label": "Background Color",
+            "name": "custom_background_color",
+            "aria-label": "",
+            "type": "color_picker",
+            "instructions": "Section background color",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_diagram_data_source",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#f8f9fa",
+            "enable_opacity": 0,
+            "return_format": "string"
+        },
+        {
+            "key": "field_diagram_display_info",
+            "label": "Display Information",
+            "name": "",
+            "aria-label": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "<strong>Usage:<\/strong> Perfect for displaying process diagrams, flowcharts, infographics, and architectural diagrams.<br><br><strong>Display Options:<\/strong><ul><li><strong>Text Below:<\/strong> Text appears centered below the diagram (default)<\/li><li><strong>Text Overlay:<\/strong> Text appears in a floating box over the center of the diagram<\/li><\/ul><strong>Responsive Behavior:<\/strong><ul><li><strong>Desktop:<\/strong> Diagram at full width with optional overlay text<\/li><li><strong>Mobile:<\/strong> Overlay text automatically moves below diagram for readability<\/li><\/ul><strong>Best Practices:<\/strong><ul><li>Use SVG format for crisp scaling (recommended)<\/li><li>PNG with transparent background works great<\/li><li>Recommended width: 1200-1600px<\/li><li>Keep file size under 500KB<\/li><li>Ensure text is readable on diagram background<\/li><li>Test on mobile devices<\/li><\/ul><strong>Used In:<\/strong> Solution pages, Platform pages, Process explanations",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/media-diagram"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "Display diagrams and infographics with optional text overlay",
+    "show_in_rest": 0
+}
+
+

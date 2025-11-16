@@ -1,0 +1,286 @@
+{
+    "key": "group_job_settings",
+    "title": "Job Settings",
+    "fields": [
+        {
+            "key": "field_job_settings_application_section",
+            "label": "Application Form Section",
+            "name": "job_application_section",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "Configure the job application form settings for all job posts",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_job_application_cf7_form",
+                    "label": "Job Application Form (CF7)",
+                    "name": "application_cf7_form",
+                    "aria-label": "",
+                    "type": "post_object",
+                    "instructions": "Select a Contact Form 7 form for job applications (applies to all job posts). Leave empty to use default file upload form.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "post_type": [
+                        "wpcf7_contact_form"
+                    ],
+                    "taxonomy": "",
+                    "filters": [
+                        "search"
+                    ],
+                    "return_format": "id",
+                    "allow_null": 1,
+                    "multiple": 0,
+                    "ui": 1,
+                    "bidirectional": 0,
+                    "bidirectional_target": []
+                },
+                {
+                    "key": "field_job_application_title",
+                    "label": "Application Section Title",
+                    "name": "application_title",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "Title for the application section",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "Apply for this Position",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                }
+            ]
+        },
+        {
+            "key": "field_job_settings_contact_section",
+            "label": "Contact Form Section",
+            "name": "job_contact_section",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "Configure the 'Get in Touch' contact form for all job posts",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_job_contact_cf7_form",
+                    "label": "Contact Form (CF7)",
+                    "name": "contact_cf7_form",
+                    "aria-label": "",
+                    "type": "post_object",
+                    "instructions": "Select a Contact Form 7 form for the 'Get in Touch' section (applies to all job posts). Leave empty to use default contact form.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "post_type": [
+                        "wpcf7_contact_form"
+                    ],
+                    "taxonomy": "",
+                    "filters": [
+                        "search"
+                    ],
+                    "return_format": "id",
+                    "allow_null": 1,
+                    "multiple": 0,
+                    "ui": 1,
+                    "bidirectional": 0,
+                    "bidirectional_target": []
+                },
+                {
+                    "key": "field_job_contact_title",
+                    "label": "Contact Section Title",
+                    "name": "contact_title",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "Title for the contact section",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "Get in touch",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                }
+            ]
+        },
+        {
+            "key": "field_job_settings_archive_section",
+            "label": "Job Archive Settings",
+            "name": "job_archive_section",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "Settings for the jobs archive page",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_job_archive_title",
+                    "label": "Archive Page Title",
+                    "name": "archive_title",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "Main title for the jobs archive page",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "Careers",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_job_archive_description",
+                    "label": "Archive Page Description",
+                    "name": "archive_description",
+                    "aria-label": "",
+                    "type": "textarea",
+                    "instructions": "Description text for the jobs archive page",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "Join ChainThat to disrupt the insurance industry with advanced technology",
+                    "placeholder": "",
+                    "maxlength": "",
+                    "rows": 3,
+                    "new_lines": ""
+                },
+                {
+                    "key": "field_job_posts_per_page",
+                    "label": "Jobs Per Page",
+                    "name": "posts_per_page",
+                    "aria-label": "",
+                    "type": "number",
+                    "instructions": "Number of jobs to show per page in the archive",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "33.33",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": 12,
+                    "min": 1,
+                    "max": 50,
+                    "step": 1,
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_job_show_location_filter",
+                    "label": "Show Location Filter",
+                    "name": "show_location_filter",
+                    "aria-label": "",
+                    "type": "true_false",
+                    "instructions": "Show location-based filtering tabs on archive page",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "33.33",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "",
+                    "default_value": 1,
+                    "ui": 1,
+                    "ui_on_text": "Yes",
+                    "ui_off_text": "No"
+                },
+                {
+                    "key": "field_job_show_cta_section",
+                    "label": "Show CTA Section",
+                    "name": "show_cta_section",
+                    "aria-label": "",
+                    "type": "true_false",
+                    "instructions": "Show 'Can't find what you're looking for?' CTA section",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "33.33",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "",
+                    "default_value": 1,
+                    "ui": 1,
+                    "ui_on_text": "Yes",
+                    "ui_off_text": "No"
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "job-settings"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "Global settings for job posts and job-related forms",
+    "show_in_rest": 0,
+    "acfe_display_title": "",
+    "acfe_autosync": [
+        "json"
+    ],
+    "acfe_permissions": "",
+    "acfe_form": 1,
+    "acfe_meta": "",
+    "acfe_note": "",
+    "modified": 1730854800
+}
+

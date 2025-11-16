@@ -1,0 +1,53 @@
+{
+    "key": "group_privacy_policy_fields",
+    "title": "Privacy Policy Settings",
+    "fields": [
+        {
+            "key": "field_privacy_contact_email",
+            "label": "Contact Email",
+            "name": "privacy_contact_email",
+            "type": "email",
+            "instructions": "Email address for privacy-related inquiries",
+            "required": 0,
+            "default_value": "privacy@chainthat.com",
+            "placeholder": "privacy@chainthat.com"
+        },
+        {
+            "key": "field_privacy_contact_phone",
+            "label": "Contact Phone",
+            "name": "privacy_contact_phone",
+            "type": "text",
+            "instructions": "Phone number for privacy-related inquiries (optional)",
+            "required": 0,
+            "placeholder": "+44 (0) 20 1234 5678"
+        },
+        {
+            "key": "field_privacy_contact_address",
+            "label": "Contact Address",
+            "name": "privacy_contact_address",
+            "type": "textarea",
+            "instructions": "Physical address for privacy-related inquiries (optional)",
+            "required": 0,
+            "rows": 4,
+            "placeholder": "ChainThat Limited\n123 Street Name\nCity, Postcode\nCountry"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-templates/privacy-policy.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "Optional contact information fields for the Privacy Policy page"
+}
+

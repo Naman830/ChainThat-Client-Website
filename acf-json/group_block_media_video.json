@@ -1,0 +1,393 @@
+{
+    "key": "group_block_media_video",
+    "title": "Video Embed Block Settings",
+    "fields": [
+        {
+            "key": "field_video_data_source",
+            "label": "Data Source",
+            "name": "data_source",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "Choose where to get the data from.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "page_fields": "Use Page Fields (Default)",
+                "custom": "Custom Configuration"
+            },
+            "default_value": "page_fields",
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_custom_video_type",
+            "label": "Video Type",
+            "name": "custom_video_type",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "Select the type of video",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_video_data_source",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "youtube": "YouTube",
+                "vimeo": "Vimeo",
+                "self-hosted": "Self-Hosted"
+            },
+            "default_value": "youtube",
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_custom_video_url",
+            "label": "Video URL",
+            "name": "custom_video_url",
+            "aria-label": "",
+            "type": "url",
+            "instructions": "Full URL of the video (YouTube, Vimeo, or self-hosted video file)",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_video_data_source",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "67",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "https://www.youtube.com/watch?v=..."
+        },
+        {
+            "key": "field_custom_video_id",
+            "label": "Video ID (Optional)",
+            "name": "custom_video_id",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Video ID will be auto-extracted from URL. Only fill this if auto-detection fails.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_video_data_source",
+                        "operator": "==",
+                        "value": "custom"
+                    },
+                    {
+                        "field": "field_custom_video_type",
+                        "operator": "!=",
+                        "value": "self-hosted"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_custom_cover_image_desktop",
+            "label": "Cover Image (Desktop)",
+            "name": "custom_cover_image_desktop",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "Image displayed before video plays (desktop)",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_video_data_source",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_custom_cover_image_mobile",
+            "label": "Cover Image (Mobile)",
+            "name": "custom_cover_image_mobile",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "Optional mobile-specific cover image (falls back to desktop if not set)",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_video_data_source",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_custom_layout",
+            "label": "Layout",
+            "name": "custom_layout",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "Choose video display layout",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_video_data_source",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "full-width": "Full Width",
+                "split-left": "Split (Video Left)",
+                "split-right": "Split (Video Right)"
+            },
+            "default_value": "full-width",
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_custom_video_title",
+            "label": "Video Title",
+            "name": "custom_video_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Title displayed next to video (for split layouts)",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_video_data_source",
+                        "operator": "==",
+                        "value": "custom"
+                    },
+                    {
+                        "field": "field_custom_layout",
+                        "operator": "!=",
+                        "value": "full-width"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_custom_video_description",
+            "label": "Video Description",
+            "name": "custom_video_description",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "Description displayed next to video (for split layouts)",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_video_data_source",
+                        "operator": "==",
+                        "value": "custom"
+                    },
+                    {
+                        "field": "field_custom_layout",
+                        "operator": "!=",
+                        "value": "full-width"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "rows": 4,
+            "placeholder": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_custom_button_text",
+            "label": "Button Text",
+            "name": "custom_button_text",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Optional CTA button text",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_video_data_source",
+                        "operator": "==",
+                        "value": "custom"
+                    },
+                    {
+                        "field": "field_custom_layout",
+                        "operator": "!=",
+                        "value": "full-width"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "Learn More",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_custom_button_link",
+            "label": "Button Link",
+            "name": "custom_button_link",
+            "aria-label": "",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_video_data_source",
+                        "operator": "==",
+                        "value": "custom"
+                    },
+                    {
+                        "field": "field_custom_layout",
+                        "operator": "!=",
+                        "value": "full-width"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "https://"
+        },
+        {
+            "key": "field_video_display_info",
+            "label": "Display Information",
+            "name": "",
+            "aria-label": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "<strong>Supported Video Types:<\/strong><ul><li><strong>YouTube:<\/strong> Paste full YouTube URL (e.g., https:\/\/www.youtube.com\/watch?v=xxxxx)<\/li><li><strong>Vimeo:<\/strong> Paste full Vimeo URL (e.g., https:\/\/vimeo.com\/xxxxx)<\/li><li><strong>Self-Hosted:<\/strong> Upload video to Media Library and paste file URL<\/li><\/ul><strong>Features:<\/strong><ul><li>Custom cover image with play button overlay<\/li><li>Responsive 16:9 aspect ratio<\/li><li>Auto-play on cover click<\/li><li>Multiple layout options (full-width or split)<\/li><li>Mobile-optimized controls<\/li><\/ul><strong>Best Practices:<\/strong><ul><li>Cover images: 1920x1080px (16:9 ratio)<\/li><li>Use high-quality thumbnails<\/li><li>Test video playback before publishing<\/li><li>Consider mobile data usage for self-hosted videos<\/li><\/ul>",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/media-video"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "Embed YouTube, Vimeo, or self-hosted videos with cover images and play controls",
+    "show_in_rest": 0
+}
+
+

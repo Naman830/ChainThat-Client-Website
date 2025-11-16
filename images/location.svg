@@ -1,0 +1,38 @@
+<svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="24" height="25" fill="#F4F4F4"/>
+<g id="Contact Us">
+<g clip-path="url(#clip0_1131_2562)">
+<rect x="-535" y="-1568" width="1728" height="2421" rx="40" fill="white"/>
+<rect id="Rectangle 34624203" x="-535" y="-471" width="1728" height="765" rx="90" fill="url(#paint0_linear_1131_2562)"/>
+<g id="Group 3723">
+<g id="Rectangle 34624228">
+<rect x="-340" y="-185" width="659" height="255" rx="20" fill="white"/>
+<rect x="-339.5" y="-184.5" width="658" height="254" rx="19.5" stroke="#00524C" stroke-opacity="0.3"/>
+</g>
+<g id="Frame 14694">
+<g id="Group 3722">
+<g id="maps-and-flags 1" clip-path="url(#clip1_1131_2562)">
+<g id="Group">
+<g id="Group_2">
+<path id="Vector" d="M12.0005 0.131348C7.20775 0.131348 3.30859 4.0305 3.30859 8.82319C3.30859 14.7711 11.087 23.5029 11.4182 23.8717C11.7292 24.2182 12.2723 24.2176 12.5828 23.8717C12.914 23.5029 20.6924 14.7711 20.6924 8.82319C20.6923 4.0305 16.7932 0.131348 12.0005 0.131348ZM12.0005 13.1963C9.58914 13.1963 7.62742 11.2345 7.62742 8.82319C7.62742 6.41185 9.58919 4.45013 12.0005 4.45013C14.4118 4.45013 16.3735 6.41189 16.3735 8.82324C16.3735 11.2346 14.4118 13.1963 12.0005 13.1963Z" fill="#EB7923"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_1131_2562" x1="329" y1="-471" x2="329" y2="294" gradientUnits="userSpaceOnUse">
+<stop stop-color="#F6F6F6"/>
+<stop offset="1" stop-color="white"/>
+</linearGradient>
+<clipPath id="clip0_1131_2562">
+<rect x="-535" y="-1568" width="1728" height="2421" rx="40" fill="white"/>
+</clipPath>
+<clipPath id="clip1_1131_2562">
+<rect width="24" height="24" fill="white" transform="translate(0 0.131348)"/>
+</clipPath>
+</defs>
+</svg>

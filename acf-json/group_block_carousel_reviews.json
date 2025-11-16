@@ -1,0 +1,183 @@
+{
+    "key": "group_block_carousel_reviews",
+    "title": "Reviews Carousel Block Settings",
+    "fields": [
+        {
+            "key": "field_reviews_carousel_data_source",
+            "label": "Data Source",
+            "name": "data_source",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "Choose where to get the data from. Reviews are managed in the Review post type.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "page_fields": "Use Page Fields (Default - Auto Query)",
+                "custom": "Custom Configuration"
+            },
+            "default_value": "page_fields",
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_custom_display_mode",
+            "label": "Display Mode",
+            "name": "custom_display_mode",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "Choose how to select reviews to display",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_reviews_carousel_data_source",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "auto": "Automatic (Latest Reviews)",
+                "manual": "Manual Selection"
+            },
+            "default_value": "auto",
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_custom_max_items",
+            "label": "Maximum Items",
+            "name": "custom_max_items",
+            "aria-label": "",
+            "type": "number",
+            "instructions": "Maximum number of reviews to display (for automatic mode)",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_reviews_carousel_data_source",
+                        "operator": "==",
+                        "value": "custom"
+                    },
+                    {
+                        "field": "field_custom_display_mode",
+                        "operator": "==",
+                        "value": "auto"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 3,
+            "min": 1,
+            "max": 10,
+            "step": 1,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_custom_selected_reviews",
+            "label": "Selected Reviews",
+            "name": "custom_selected_reviews",
+            "aria-label": "",
+            "type": "relationship",
+            "instructions": "Select specific reviews to display in the carousel",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_reviews_carousel_data_source",
+                        "operator": "==",
+                        "value": "custom"
+                    },
+                    {
+                        "field": "field_custom_display_mode",
+                        "operator": "==",
+                        "value": "manual"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "review"
+            ],
+            "post_status": [
+                "publish"
+            ],
+            "taxonomy": "",
+            "filters": [
+                "search"
+            ],
+            "return_format": "object",
+            "min": 1,
+            "max": 10,
+            "elements": "",
+            "bidirectional": 0,
+            "bidirectional_target": []
+        },
+        {
+            "key": "field_review_display_info",
+            "label": "Review Display Information",
+            "name": "",
+            "aria-label": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "<strong>Note:</strong> Reviews are managed in the <a href=\"\/wp-admin\/edit.php?post_type=review\" target=\"_blank\">Reviews section<\/a>.<br><br><strong>Review Fields Used:<\/strong><ul><li>Review Content (post content) - truncated to 30 words<\/li><li>Author Image<\/li><li>Star Rating (1-5, supports half stars)<\/li><li>Company Logo<\/li><li>Author Name<\/li><li>Author Title\/Position<\/li><li>Success Story Link<\/li><li>Success Story Button Text<\/li><\/ul><strong>Responsive Behavior:<\/strong><ul><li><strong>Desktop:<\/strong> 3 reviews visible<\/li><li><strong>Tablet:<\/strong> 2 reviews visible<\/li><li><strong>Mobile:<\/strong> 1 review visible<\/li><\/ul>",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/carousel-reviews"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "Display testimonials and reviews with star ratings in a carousel",
+    "show_in_rest": 0
+}
+
+

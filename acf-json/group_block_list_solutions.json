@@ -1,0 +1,222 @@
+{
+    "key": "group_block_list_solutions",
+    "title": "Solutions Grid Block Settings",
+    "fields": [
+        {
+            "key": "field_solutions_data_source",
+            "label": "Data Source",
+            "name": "data_source",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "Choose where to get the data from.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "page_fields": "Use Page Fields (Default)",
+                "custom": "Custom Configuration"
+            },
+            "default_value": "page_fields",
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_custom_archive_title",
+            "label": "Archive Title",
+            "name": "custom_archive_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Main heading for the solutions archive",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_solutions_data_source",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "Solutions",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_custom_archive_description",
+            "label": "Archive Description",
+            "name": "custom_archive_description",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "Description below the archive title",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_solutions_data_source",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "rows": 3,
+            "placeholder": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_custom_hero_image",
+            "label": "Hero Background Image",
+            "name": "custom_hero_image",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "Optional hero background image (if not set, uses standard header)",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_solutions_data_source",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "preview_size": "large"
+        },
+        {
+            "key": "field_custom_columns",
+            "label": "Columns",
+            "name": "custom_columns",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "Number of columns on desktop",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_solutions_data_source",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "2": "2 Columns",
+                "3": "3 Columns",
+                "4": "4 Columns"
+            },
+            "default_value": "3",
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_custom_show_excerpt",
+            "label": "Show Excerpt",
+            "name": "custom_show_excerpt",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "Display solution excerpt\/description",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_solutions_data_source",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "ui": 1
+        },
+        {
+            "key": "field_solutions_display_info",
+            "label": "Display Information",
+            "name": "",
+            "aria-label": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "<strong>Note:<\/strong> This block automatically queries all published <a href=\"\/wp-admin\/edit.php?post_type=solution\" target=\"_blank\">Solution posts<\/a>.<br><br><strong>Features:<\/strong><ul><li>Automatic solution querying (ordered by menu_order)<\/li><li>Optional hero section with background image<\/li><li>Clickable solution cards with hover effects<\/li><li>\"View Solution\" overlay on hover<\/li><\/ul><strong>Responsive Behavior:<\/strong><ul><li><strong>Desktop:<\/strong> 2-4 columns (configurable)<\/li><li><strong>Tablet:<\/strong> 2 columns<\/li><li><strong>Mobile:<\/strong> 1 column<\/li><\/ul><strong>Solution Information Displayed:<\/strong><ul><li>Featured image with hover overlay<\/li><li>Solution icon (if available)<\/li><li>Solution title<\/li><li>Excerpt\/description (optional, truncated to 15 words)<\/li><li>\"Learn More\" link<\/li><\/ul><strong>Hero Section:<\/strong> If hero image is set, displays as full-width background with overlay. Otherwise shows standard header.",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/list-solutions"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "Display solutions archive with optional hero background and flexible grid layout",
+    "show_in_rest": 0
+}
+
+

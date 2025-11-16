@@ -1,0 +1,258 @@
+{
+    "key": "group_block_carousel_services",
+    "title": "Services Carousel Block Settings",
+    "fields": [
+        {
+            "key": "field_services_carousel_data_source",
+            "label": "Data Source",
+            "name": "data_source",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "Choose where to get the data from. 'Use Page Fields' reads from existing page data. 'Custom Configuration' lets you configure service cards independently.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "page_fields": "Use Page Fields (Default)",
+                "custom": "Custom Configuration"
+            },
+            "default_value": "page_fields",
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_custom_section_title",
+            "label": "Section Title",
+            "name": "custom_section_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Main heading for the services section",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_services_carousel_data_source",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Why ChainThat?",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_custom_section_description",
+            "label": "Section Description",
+            "name": "custom_section_description",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "Optional description below the section title",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_services_carousel_data_source",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "rows": 3,
+            "placeholder": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_custom_service_cards",
+            "label": "Service Cards",
+            "name": "custom_service_cards",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "Add service cards with icon, title, and description. Descriptions longer than 25 words will automatically show 'read more' button.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_services_carousel_data_source",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "pagination": 0,
+            "min": 1,
+            "max": 0,
+            "collapsed": "field_service_card_title",
+            "button_label": "Add Service Card",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_service_card_icon",
+                    "label": "Icon",
+                    "name": "service_icon",
+                    "aria-label": "",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "30",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "url",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "svg,png,jpg",
+                    "preview_size": "thumbnail"
+                },
+                {
+                    "key": "field_service_card_title",
+                    "label": "Title",
+                    "name": "service_title",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "70",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "Service title",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_service_card_description",
+                    "label": "Description",
+                    "name": "service_description",
+                    "aria-label": "",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "rows": 4,
+                    "placeholder": "Service description",
+                    "new_lines": ""
+                }
+            ]
+        },
+        {
+            "key": "field_custom_button_text",
+            "label": "Button Text",
+            "name": "custom_button_text",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Optional button text below carousel",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_services_carousel_data_source",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "Find out more",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_custom_button_link",
+            "label": "Button Link",
+            "name": "custom_button_link",
+            "aria-label": "",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_services_carousel_data_source",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "https://"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/carousel-services"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "Display service cards with icons in a carousel",
+    "show_in_rest": 0
+}
+
+

@@ -1,0 +1,304 @@
+{
+    "key": "group_block_form_contact",
+    "title": "Contact Form Block Settings",
+    "fields": [
+        {
+            "key": "field_contact_data_source",
+            "label": "Data Source",
+            "name": "data_source",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "Choose where to get the data from.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "page_fields": "Use Page Fields (Default)",
+                "custom": "Custom Configuration"
+            },
+            "default_value": "page_fields",
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_custom_form_title",
+            "label": "Form Title",
+            "name": "custom_form_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Main heading above the form",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_contact_data_source",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Get in Touch",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_custom_form_subtitle",
+            "label": "Form Subtitle",
+            "name": "custom_form_subtitle",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "Optional description below the title",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_contact_data_source",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "rows": 3,
+            "placeholder": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_custom_cf7_form",
+            "label": "Contact Form 7",
+            "name": "custom_cf7_form",
+            "aria-label": "",
+            "type": "post_object",
+            "instructions": "Select a Contact Form 7 form to display",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_contact_data_source",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "wpcf7_contact_form"
+            ],
+            "post_status": [
+                "publish"
+            ],
+            "taxonomy": "",
+            "return_format": "id",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 1
+        },
+        {
+            "key": "field_custom_show_company",
+            "label": "Show Company Field",
+            "name": "custom_show_company",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "Display company field in fallback form",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_contact_data_source",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "ui": 1
+        },
+        {
+            "key": "field_custom_show_phone",
+            "label": "Show Phone Field",
+            "name": "custom_show_phone",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "Display phone field in fallback form",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_contact_data_source",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "ui": 1
+        },
+        {
+            "key": "field_custom_show_terms",
+            "label": "Show Terms Checkbox",
+            "name": "custom_show_terms",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "Display terms and privacy policy checkbox",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_contact_data_source",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "34",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "ui": 1
+        },
+        {
+            "key": "field_custom_terms_link",
+            "label": "Terms & Conditions Link",
+            "name": "custom_terms_link",
+            "aria-label": "",
+            "type": "url",
+            "instructions": "Link to terms and conditions page",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_contact_data_source",
+                        "operator": "==",
+                        "value": "custom"
+                    },
+                    {
+                        "field": "field_custom_show_terms",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "https://"
+        },
+        {
+            "key": "field_custom_privacy_link",
+            "label": "Privacy Policy Link",
+            "name": "custom_privacy_link",
+            "aria-label": "",
+            "type": "url",
+            "instructions": "Link to privacy policy page",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_contact_data_source",
+                        "operator": "==",
+                        "value": "custom"
+                    },
+                    {
+                        "field": "field_custom_show_terms",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "https://"
+        },
+        {
+            "key": "field_contact_display_info",
+            "label": "Display Information",
+            "name": "",
+            "aria-label": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "<strong>Contact Form 7 Integration:<\/strong><br>This block integrates with Contact Form 7 plugin. Create and manage forms in <a href=\"\/wp-admin\/admin.php?page=wpcf7\" target=\"_blank\">Contact → Contact Forms<\/a>.<br><br><strong>Features:<\/strong><ul><li>Full CF7 integration with all features<\/li><li>Fallback HTML form if CF7 is not active<\/li><li>Customizable form fields<\/li><li>Optional terms & privacy policy checkbox<\/li><li>Responsive design<\/li><li>Styled to match theme<\/li><\/ul><strong>Recommended CF7 Form Fields:<\/strong><ul><li>First Name (required)<\/li><li>Last Name (required)<\/li><li>Email (required)<\/li><li>Phone (optional)<\/li><li>Company (optional)<\/li><li>Message (required, textarea)<\/li><li>Acceptance checkbox for terms<\/li><\/ul><strong>Note:<\/strong> The fallback form is for display purposes. For actual form submission, Contact Form 7 plugin is required.",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/form-contact"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "Display contact form with Contact Form 7 integration",
+    "show_in_rest": 0
+}
+
+

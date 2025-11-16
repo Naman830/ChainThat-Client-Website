@@ -1,0 +1,753 @@
+{
+    "key": "group_theme_options_complete",
+    "title": "Theme Options - Complete Fields",
+    "fields": [
+        {
+            "key": "field_theme_logos_section",
+            "label": "Theme Logos Section",
+            "name": "theme_logos_section",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "Configure all theme logos",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "acfe_seamless_style": 0,
+            "acfe_group_modal": 0,
+            "acfe_group_modal_close": 0,
+            "acfe_group_modal_button": "",
+            "acfe_group_modal_size": "large",
+            "sub_fields": [
+                {
+                    "key": "field_theme_main_logo",
+                    "label": "Main Logo",
+                    "name": "theme_main_logo",
+                    "aria-label": "",
+                    "type": "image",
+                    "instructions": "Main logo for desktop view",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "url",
+                    "preview_size": "medium",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "uploader": "",
+                    "acfe_thumbnail": 0
+                },
+                {
+                    "key": "field_theme_mobile_logo",
+                    "label": "Mobile Logo",
+                    "name": "theme_mobile_logo",
+                    "aria-label": "",
+                    "type": "image",
+                    "instructions": "Logo for mobile view",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "url",
+                    "preview_size": "medium",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "uploader": "",
+                    "acfe_thumbnail": 0
+                },
+                {
+                    "key": "field_theme_footer_logo",
+                    "label": "Footer Logo",
+                    "name": "theme_footer_logo",
+                    "aria-label": "",
+                    "type": "image",
+                    "instructions": "Logo for footer section",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "url",
+                    "preview_size": "medium",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "uploader": "",
+                    "acfe_thumbnail": 0
+                },
+                {
+                    "key": "field_theme_favicon",
+                    "label": "Favicon",
+                    "name": "theme_favicon",
+                    "aria-label": "",
+                    "type": "image",
+                    "instructions": "Favicon for the website",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "url",
+                    "preview_size": "thumbnail",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "uploader": "",
+                    "acfe_thumbnail": 0
+                }
+            ]
+        },
+        {
+            "key": "field_theme_navigation_menu",
+            "label": "Navigation Menu",
+            "name": "theme_navigation_menu",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "Select a WordPress menu for the main navigation",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "13": "Footer Links",
+                "2": "Main Menu"
+            },
+            "default_value": false,
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 1,
+            "ui": 1,
+            "ajax": 0,
+            "placeholder": "Select a menu",
+            "allow_custom": 0,
+            "search_placeholder": ""
+        },
+        {
+            "key": "field_theme_contact_section",
+            "label": "Theme Contact Section",
+            "name": "theme_contact_section",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "Configure global contact information",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "acfe_seamless_style": 0,
+            "acfe_group_modal": 0,
+            "acfe_group_modal_close": 0,
+            "acfe_group_modal_button": "",
+            "acfe_group_modal_size": "large",
+            "sub_fields": [
+                {
+                    "key": "field_theme_contact_phone",
+                    "label": "Contact Phone",
+                    "name": "theme_contact_phone",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "Main contact phone number",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "33",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "Enter contact phone",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_theme_contact_email",
+                    "label": "Contact Email",
+                    "name": "theme_contact_email",
+                    "aria-label": "",
+                    "type": "email",
+                    "instructions": "Main contact email address",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "33",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "Enter contact email",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_theme_contact_website",
+                    "label": "Contact Website",
+                    "name": "theme_contact_website",
+                    "aria-label": "",
+                    "type": "url",
+                    "instructions": "Main website URL",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "34",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "Enter website URL"
+                },
+                {
+                    "key": "field_theme_contact_address",
+                    "label": "Contact Address",
+                    "name": "theme_contact_address",
+                    "aria-label": "",
+                    "type": "textarea",
+                    "instructions": "Main contact address",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "100",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "Enter contact address",
+                    "maxlength": "",
+                    "rows": 3,
+                    "new_lines": "",
+                    "acfe_textarea_code": 0
+                }
+            ]
+        },
+        {
+            "key": "field_theme_social_section",
+            "label": "Theme Social Section",
+            "name": "theme_social_section",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "Configure social media links",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "acfe_seamless_style": 0,
+            "acfe_group_modal": 0,
+            "acfe_group_modal_close": 0,
+            "acfe_group_modal_button": "",
+            "acfe_group_modal_size": "large",
+            "sub_fields": [
+                {
+                    "key": "field_theme_social_links",
+                    "label": "Social Media Links",
+                    "name": "theme_social_links",
+                    "aria-label": "",
+                    "type": "repeater",
+                    "instructions": "Add social media links",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "collapsed": "field_social_platform",
+                    "min": 0,
+                    "max": 0,
+                    "layout": "table",
+                    "button_label": "Add Social Link",
+                    "rows_per_page": 20,
+                    "acfe_repeater_stylised_button": 0,
+                    "sub_fields": [
+                        {
+                            "key": "field_social_platform",
+                            "label": "Platform",
+                            "name": "social_platform",
+                            "aria-label": "",
+                            "type": "select",
+                            "instructions": "Social media platform",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "25",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "facebook": "Facebook",
+                                "twitter": "Twitter",
+                                "linkedin": "LinkedIn",
+                                "instagram": "Instagram",
+                                "youtube": "YouTube",
+                                "github": "GitHub",
+                                "other": "Other"
+                            },
+                            "default_value": "facebook",
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "ui": 0,
+                            "return_format": "value",
+                            "ajax": 0,
+                            "placeholder": "",
+                            "allow_custom": 0,
+                            "search_placeholder": "",
+                            "parent_repeater": "field_theme_social_links"
+                        },
+                        {
+                            "key": "field_social_url",
+                            "label": "URL",
+                            "name": "social_url",
+                            "aria-label": "",
+                            "type": "url",
+                            "instructions": "Social media profile URL",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "Enter social media URL",
+                            "parent_repeater": "field_theme_social_links"
+                        },
+                        {
+                            "key": "field_social_icon",
+                            "label": "Icon",
+                            "name": "social_icon",
+                            "aria-label": "",
+                            "type": "image",
+                            "instructions": "Custom icon for this social media platform",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "25",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "url",
+                            "preview_size": "thumbnail",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": "",
+                            "uploader": "",
+                            "acfe_thumbnail": 0,
+                            "parent_repeater": "field_theme_social_links"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "key": "field_theme_footer_section",
+            "label": "Theme Footer Section",
+            "name": "theme_footer_section",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "Configure footer content",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "row",
+            "acfe_seamless_style": 0,
+            "acfe_group_modal": 0,
+            "sub_fields": [
+                {
+                    "key": "field_theme_footer_copyright",
+                    "label": "Footer Copyright",
+                    "name": "theme_footer_copyright",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "Copyright text for the footer",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "© ChainThat 2024. Registered Company 09841465 ChainThat Limited",
+                    "placeholder": "Enter copyright text",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_theme_footer_company_info",
+                    "label": "Footer Company Info",
+                    "name": "theme_footer_company_info",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "Company information for the footer",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "Registered Company 09841465 ChainThat Limited",
+                    "placeholder": "Enter company info",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_theme_footer_links_menu",
+                    "label": "Footer Links Menu",
+                    "name": "theme_footer_links_menu",
+                    "aria-label": "",
+                    "type": "select",
+                    "instructions": "Select a WordPress menu for footer links",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "13": "Footer Links",
+                        "2": "Main Menu"
+                    },
+                    "default_value": false,
+                    "return_format": "value",
+                    "multiple": 0,
+                    "allow_null": 1,
+                    "ui": 1,
+                    "ajax": 0,
+                    "placeholder": "Select a menu",
+                    "allow_custom": 0,
+                    "search_placeholder": ""
+                },
+                {
+                    "key": "field_theme_footer_awards",
+                    "label": "Footer Awards",
+                    "name": "theme_footer_awards",
+                    "aria-label": "",
+                    "type": "repeater",
+                    "instructions": "Add footer awards and certifications",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "collapsed": "field_footer_award_image",
+                    "min": 0,
+                    "max": 0,
+                    "layout": "table",
+                    "button_label": "Add Award",
+                    "rows_per_page": 20,
+                    "acfe_repeater_stylised_button": 0,
+                    "sub_fields": [
+                        {
+                            "key": "field_footer_award_image",
+                            "label": "Award Image",
+                            "name": "footer_award_image",
+                            "aria-label": "",
+                            "type": "image",
+                            "instructions": "Image of the award or certification",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "url",
+                            "preview_size": "thumbnail",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": "",
+                            "uploader": "",
+                            "acfe_thumbnail": 0,
+                            "parent_repeater": "field_theme_footer_awards"
+                        },
+                        {
+                            "key": "field_footer_award_alt",
+                            "label": "Award Alt Text",
+                            "name": "footer_award_alt",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "Alt text for the award image",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "Enter award alt text",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": "",
+                            "parent_repeater": "field_theme_footer_awards"
+                        }
+                    ]
+                },
+                {
+                    "key": "field_theme_footer_agility_logo",
+                    "label": "Footer Agility Logo",
+                    "name": "theme_footer_agility_logo",
+                    "aria-label": "",
+                    "type": "image",
+                    "instructions": "Optional logo to display next to copyright (e.g., Agility logo, certification badge)",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "preview_size": "thumbnail",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "uploader": "",
+                    "acfe_thumbnail": 0
+                }
+            ],
+            "acfe_group_modal_close": 0,
+            "acfe_group_modal_button": "",
+            "acfe_group_modal_size": "large"
+        },
+        {
+            "key": "field_theme_header_section",
+            "label": "Theme Header Section",
+            "name": "theme_header_section",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "Configure header button and CTA",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "acfe_seamless_style": 0,
+            "acfe_group_modal": 0,
+            "acfe_group_modal_close": 0,
+            "acfe_group_modal_button": "",
+            "acfe_group_modal_size": "large",
+            "sub_fields": [
+                {
+                    "key": "field_theme_header_button_text",
+                    "label": "Header Button Text",
+                    "name": "theme_header_button_text",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "Text for the header CTA button",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "Book a demo",
+                    "placeholder": "Enter button text",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_theme_header_button_url",
+                    "label": "Header Button URL",
+                    "name": "theme_header_button_url",
+                    "aria-label": "",
+                    "type": "link",
+                    "instructions": "Select a page, post, or enter external URL for the header button",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "100",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array"
+                }
+            ]
+        },
+        {
+            "key": "field_theme_seo_section",
+            "label": "Theme SEO Section",
+            "name": "theme_seo_section",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "Configure SEO settings",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "acfe_seamless_style": 0,
+            "acfe_group_modal": 0,
+            "acfe_group_modal_close": 0,
+            "acfe_group_modal_button": "",
+            "acfe_group_modal_size": "large",
+            "sub_fields": [
+                {
+                    "key": "field_theme_meta_title",
+                    "label": "Meta Title",
+                    "name": "theme_meta_title",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "Default meta title for the website",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "Enter meta title",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_theme_meta_description",
+                    "label": "Meta Description",
+                    "name": "theme_meta_description",
+                    "aria-label": "",
+                    "type": "textarea",
+                    "instructions": "Default meta description for the website",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "Enter meta description",
+                    "maxlength": "",
+                    "rows": 3,
+                    "new_lines": "",
+                    "acfe_textarea_code": 0
+                },
+                {
+                    "key": "field_theme_meta_keywords",
+                    "label": "Meta Keywords",
+                    "name": "theme_meta_keywords",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "Default meta keywords for the website",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "100",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "Enter meta keywords (comma separated)",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "theme-options"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "Complete ACF fields for theme options with all text, images, and links editable from the backend.",
+    "show_in_rest": 0,
+    "acfe_display_title": "",
+    "acfe_autosync": [
+        "json"
+    ],
+    "acfe_form": 0,
+    "acfe_meta": "",
+    "acfe_note": "",
+    "modified": 1758874879
+}

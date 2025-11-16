@@ -1,0 +1,176 @@
+{
+    "key": "group_review_fields",
+    "title": "Review Fields",
+    "fields": [
+        {
+            "key": "field_review_author_image",
+            "label": "Author Image",
+            "name": "review_author_image",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "Author's profile image for the review",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "uploader": "",
+            "acfe_thumbnail": 0
+        },
+        {
+            "key": "field_review_star_rating",
+            "label": "Star Rating",
+            "name": "review_star_rating",
+            "aria-label": "",
+            "type": "number",
+            "instructions": "Star rating from 1 to 5 (supports 0.5 increments, e.g., 3.5)",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 5,
+            "placeholder": "Enter rating (1-5)",
+            "prepend": "",
+            "append": "stars",
+            "min": 1,
+            "max": 5,
+            "step": 0.5
+        },
+        {
+            "key": "field_review_company_logo",
+            "label": "Company Logo",
+            "name": "review_company_logo",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "Company logo for the review",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "uploader": "",
+            "acfe_thumbnail": 0
+        },
+        {
+            "key": "field_review_author_name",
+            "label": "Author Name",
+            "name": "review_author_name",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Name of the review author (default: post title)",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "Enter author name",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_review_author_title",
+            "label": "Author Title",
+            "name": "review_author_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Job title or position of the review author",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "Enter author title/position",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_review_success_story_link",
+            "label": "Success Story Link",
+            "name": "review_success_story_link",
+            "aria-label": "",
+            "type": "link",
+            "instructions": "Select a page, post, or custom post type for the success story link (leave empty to use review permalink)",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array"
+        },
+        {
+            "key": "field_review_success_story_text",
+            "label": "Success Story Button Text",
+            "name": "review_success_story_text",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Text for the success story button (default: 'Read Success Story')",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Read Success Story",
+            "placeholder": "Enter button text",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "review"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "ACF fields for review post type",
+    "show_in_rest": 0
+}

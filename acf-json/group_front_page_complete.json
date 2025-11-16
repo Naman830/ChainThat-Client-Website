@@ -1,0 +1,1624 @@
+{
+    "key": "group_front_page_complete",
+    "title": "Front Page",
+    "fields": [
+        {
+            "key": "field_hero_section",
+            "label": "Hero Section",
+            "name": "hero_section",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "Hero section content and settings",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "row",
+            "acfe_seamless_style": 1,
+            "acfe_group_modal": 0,
+            "acfe_group_modal_close": 0,
+            "acfe_group_modal_button": "",
+            "acfe_group_modal_size": "large",
+            "sub_fields": [
+                {
+                    "key": "field_hero_mobile_image",
+                    "label": "Hero Mobile Image",
+                    "name": "hero_mobile_image",
+                    "aria-label": "",
+                    "type": "image",
+                    "instructions": "Hero image for mobile devices",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "url",
+                    "preview_size": "medium",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "uploader": "",
+                    "acfe_thumbnail": 0
+                },
+                {
+                    "key": "field_hero_swoos_image",
+                    "label": "Hero Swoos Image",
+                    "name": "hero_swoos_image",
+                    "aria-label": "",
+                    "type": "image",
+                    "instructions": "Swoos image in hero section",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "url",
+                    "preview_size": "medium",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "uploader": "",
+                    "acfe_thumbnail": 0
+                },
+                {
+                    "key": "field_hero_slider",
+                    "label": "Hero Slider",
+                    "name": "hero_slider",
+                    "aria-label": "",
+                    "type": "repeater",
+                    "instructions": "Add hero slider items",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "acfe_repeater_stylised_button": 0,
+                    "layout": "row",
+                    "pagination": 0,
+                    "min": 1,
+                    "max": 0,
+                    "collapsed": "field_hero_slide_title",
+                    "button_label": "Add Slide",
+                    "rows_per_page": 20,
+                    "sub_fields": [
+                        {
+                            "key": "field_hero_slide_title",
+                            "label": "Slide Title",
+                            "name": "hero_slide_title",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "Title for the hero slide",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "Enter slide title",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": "",
+                            "parent_repeater": "field_hero_slider"
+                        },
+                        {
+                            "key": "field_hero_slide_description",
+                            "label": "Slide Description",
+                            "name": "hero_slide_description",
+                            "aria-label": "",
+                            "type": "textarea",
+                            "instructions": "Description for the hero slide",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "Enter slide description",
+                            "maxlength": "",
+                            "rows": 3,
+                            "new_lines": "",
+                            "acfe_textarea_code": 0,
+                            "parent_repeater": "field_hero_slider"
+                        },
+                        {
+                            "key": "field_hero_slide_button_text",
+                            "label": "Button Text",
+                            "name": "hero_slide_button_text",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "Text for the slide button",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "Get a demo",
+                            "placeholder": "Enter button text",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": "",
+                            "parent_repeater": "field_hero_slider"
+                        },
+                        {
+                            "key": "field_hero_slide_button_link",
+                            "label": "Button Link",
+                            "name": "hero_slide_button_link",
+                            "aria-label": "",
+                            "type": "url",
+                            "instructions": "Link for the slide button",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "#",
+                            "placeholder": "Enter button URL",
+                            "parent_repeater": "field_hero_slider"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "key": "field_partners_section",
+            "label": "Partners Section",
+            "name": "partners_section",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "Partners section content",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "row",
+            "acfe_seamless_style": 0,
+            "acfe_group_modal": 0,
+            "acfe_group_modal_close": 0,
+            "acfe_group_modal_button": "",
+            "acfe_group_modal_size": "large",
+            "sub_fields": [
+                {
+                    "key": "field_partners_title",
+                    "label": "Partners Title",
+                    "name": "partners_title",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "Title for the partners section",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "100",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "Trusted by",
+                    "placeholder": "Enter partners title",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_partners_featured",
+                    "label": "Select Featured Partners",
+                    "name": "partners_featured",
+                    "aria-label": "",
+                    "type": "relationship",
+                    "instructions": "Select specific partners to display. Leave empty to automatically show all partners.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "100",
+                        "class": "",
+                        "id": ""
+                    },
+                    "post_type": [
+                        "partners"
+                    ],
+                    "post_status": [
+                        "publish"
+                    ],
+                    "taxonomy": "",
+                    "filters": [
+                        "search"
+                    ],
+                    "return_format": "object",
+                    "min": "",
+                    "max": "",
+                    "elements": "",
+                    "bidirectional": 0,
+                    "bidirectional_target": []
+                },
+                {
+                    "key": "field_partners_items_per_page",
+                    "label": "Items Per Page",
+                    "name": "partners_items_per_page",
+                    "aria-label": "",
+                    "type": "number",
+                    "instructions": "Number of partners to display (only applies if no featured partners are selected)",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "33",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": 10,
+                    "min": 1,
+                    "max": 50,
+                    "step": 1,
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_partners_carousel_autoplay",
+                    "label": "Carousel Autoplay",
+                    "name": "partners_carousel_autoplay",
+                    "aria-label": "",
+                    "type": "true_false",
+                    "instructions": "Auto-rotate carousel items",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "33",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "Enable autoplay",
+                    "default_value": 1,
+                    "ui": 1,
+                    "ui_on_text": "Yes",
+                    "ui_off_text": "No"
+                },
+                {
+                    "key": "field_partners_carousel_speed",
+                    "label": "Carousel Speed (ms)",
+                    "name": "partners_carousel_speed",
+                    "aria-label": "",
+                    "type": "number",
+                    "instructions": "Autoplay speed in milliseconds",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_partners_carousel_autoplay",
+                                "operator": "==",
+                                "value": "1"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "34",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": 3000,
+                    "min": 1000,
+                    "max": 10000,
+                    "step": 500,
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "ms"
+                }
+            ]
+        },
+        {
+            "key": "field_policy_section",
+            "label": "Policy Section",
+            "name": "policy_section",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "Policy section content",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "row",
+            "acfe_seamless_style": 1,
+            "acfe_group_modal": 0,
+            "acfe_group_modal_close": 0,
+            "acfe_group_modal_button": "",
+            "acfe_group_modal_size": "large",
+            "sub_fields": [
+                {
+                    "key": "field_policy_span_text",
+                    "label": "Policy Span Text",
+                    "name": "policy_span_text",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "Small text above the policy title",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "Product Portfolio",
+                    "placeholder": "Enter span text",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_policy_title",
+                    "label": "Policy Title",
+                    "name": "policy_title",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "Title for the policy section",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "Platform Solutions by ChainThat",
+                    "placeholder": "Enter policy title",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_policy_description",
+                    "label": "Policy Description",
+                    "name": "policy_description",
+                    "aria-label": "",
+                    "type": "textarea",
+                    "instructions": "Description text for the policy section",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "100",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "ChainThat's enterprise-grade, highly configurable insurance technology platforms – Beyond Policy Administration (BPA) and Beyond Multi-National Programs (BMNP) – activate agility and innovation in processes and operations, empowering your business to thrive in competitive spaces.",
+                    "placeholder": "Enter policy description",
+                    "maxlength": "",
+                    "rows": 4,
+                    "new_lines": ""
+                }
+            ]
+        },
+        {
+            "key": "field_year_background_images",
+            "label": "Year Background Images",
+            "name": "year_background_images",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "Add background images for the year section carousel",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "acfe_repeater_stylised_button": 0,
+            "layout": "row",
+            "pagination": 0,
+            "min": 0,
+            "max": 0,
+            "collapsed": "field_year_bg_desktop_image",
+            "button_label": "Add Background Image",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_year_bg_desktop_image",
+                    "label": "Desktop Image",
+                    "name": "desktop_image",
+                    "aria-label": "",
+                    "type": "image",
+                    "instructions": "Desktop background image",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "url",
+                    "preview_size": "medium",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "uploader": "",
+                    "acfe_thumbnail": 0,
+                    "parent_repeater": "field_year_background_images"
+                },
+                {
+                    "key": "field_year_bg_mobile_image",
+                    "label": "Mobile Image",
+                    "name": "mobile_image",
+                    "aria-label": "",
+                    "type": "image",
+                    "instructions": "Mobile background image",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "url",
+                    "preview_size": "medium",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "uploader": "",
+                    "acfe_thumbnail": 0,
+                    "parent_repeater": "field_year_background_images"
+                },
+                {
+                    "key": "field_year_bg_alt_text",
+                    "label": "Alt Text",
+                    "name": "image_alt",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "Alt text for accessibility",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "100",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "Enter alt text",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "parent_repeater": "field_year_background_images"
+                }
+            ]
+        },
+        {
+            "key": "field_year_statistics",
+            "label": "Year Statistics",
+            "name": "year_statistics",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "Add statistics for the year section",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "acfe_repeater_stylised_button": 0,
+            "layout": "row",
+            "pagination": 0,
+            "min": 0,
+            "max": 0,
+            "collapsed": "field_year_stat_number",
+            "button_label": "Add Statistic",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_year_stat_number",
+                    "label": "Statistic Number",
+                    "name": "year_stat_number",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "The number or value for the statistic",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "e.g., 2015, 3, 100%",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "parent_repeater": "field_year_statistics"
+                },
+                {
+                    "key": "field_year_stat_description",
+                    "label": "Statistic Description",
+                    "name": "year_stat_description",
+                    "aria-label": "",
+                    "type": "textarea",
+                    "instructions": "Description for the statistic",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "Enter statistic description",
+                    "maxlength": "",
+                    "rows": 3,
+                    "new_lines": "",
+                    "acfe_textarea_code": 0,
+                    "parent_repeater": "field_year_statistics"
+                }
+            ]
+        },
+        {
+            "key": "field_service_section",
+            "label": "Service Section",
+            "name": "service_section",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "Service section content",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "acfe_seamless_style": 0,
+            "acfe_group_modal": 0,
+            "acfe_group_modal_close": 0,
+            "acfe_group_modal_button": "",
+            "acfe_group_modal_size": "large",
+            "sub_fields": [
+                {
+                    "key": "field_service_title",
+                    "label": "Service Title",
+                    "name": "service_title",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "Title for the service section",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "Service and Deployment",
+                    "placeholder": "Enter service title",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_service_description",
+                    "label": "Service Description",
+                    "name": "service_description",
+                    "aria-label": "",
+                    "type": "textarea",
+                    "instructions": "Description for the service section",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "Enter service description",
+                    "maxlength": "",
+                    "rows": 4,
+                    "new_lines": "",
+                    "acfe_textarea_code": 0
+                },
+                {
+                    "key": "field_service_cards",
+                    "label": "Service Cards",
+                    "name": "service_cards",
+                    "aria-label": "",
+                    "type": "repeater",
+                    "instructions": "Add service cards for the 4-grid layout",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "collapsed": "field_service_card_title",
+                    "min": 0,
+                    "max": 4,
+                    "layout": "table",
+                    "button_label": "Add Service Card",
+                    "rows_per_page": 20,
+                    "acfe_repeater_stylised_button": 0,
+                    "sub_fields": [
+                        {
+                            "key": "field_service_card_title",
+                            "label": "Service Card Title",
+                            "name": "service_title",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "Title for the service card",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "Enter service card title",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": "",
+                            "parent_repeater": "field_service_cards"
+                        },
+                        {
+                            "key": "field_service_card_description",
+                            "label": "Service Card Description",
+                            "name": "service_description",
+                            "aria-label": "",
+                            "type": "textarea",
+                            "instructions": "Description for the service card",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "Enter service card description",
+                            "maxlength": "",
+                            "rows": 3,
+                            "new_lines": "",
+                            "acfe_textarea_code": 0,
+                            "parent_repeater": "field_service_cards"
+                        },
+                        {
+                            "key": "field_service_card_icon",
+                            "label": "Service Card Icon",
+                            "name": "service_icon",
+                            "aria-label": "",
+                            "type": "image",
+                            "instructions": "Icon for the service card",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "100",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "url",
+                            "preview_size": "medium",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": "",
+                            "uploader": "",
+                            "acfe_thumbnail": 0,
+                            "parent_repeater": "field_service_cards"
+                        }
+                    ]
+                },
+                {
+                    "key": "field_service_button_text",
+                    "label": "Service Button Text",
+                    "name": "service_button_text",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "Text for the service section button",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "Find out more",
+                    "placeholder": "Enter button text",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_service_button_link",
+                    "label": "Service Button Link",
+                    "name": "service_button_link",
+                    "aria-label": "",
+                    "type": "url",
+                    "instructions": "Link for the service section button",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "#",
+                    "placeholder": "Enter button URL"
+                }
+            ]
+        },
+        {
+            "key": "field_mobile_swoos_image",
+            "label": "Mobile Swoos Image",
+            "name": "mobile_swoos_image",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "Mobile version of the swoos image",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "uploader": "",
+            "acfe_thumbnail": 0
+        },
+        {
+            "key": "field_swoos_section",
+            "label": "Swoos Section",
+            "name": "swoos_section",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "Swoos2 images between partners and policy sections",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "acfe_seemless_style": 0,
+            "acfe_group_modal": 0,
+            "acfe_group_modal_close": 0,
+            "acfe_group_modal_button": "",
+            "acfe_group_modal_size": "large",
+            "sub_fields": [
+                {
+                    "key": "field_swoos2_desktop_image",
+                    "label": "Swoos2 Desktop Image",
+                    "name": "swoos2_desktop_image",
+                    "aria-label": "",
+                    "type": "image",
+                    "instructions": "Desktop version of the swoos2 image",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "url",
+                    "preview_size": "medium",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "uploader": "",
+                    "acfe_thumbnail": 0
+                },
+                {
+                    "key": "field_swoos2_mobile_image",
+                    "label": "Swoos2 Mobile Image",
+                    "name": "swoos2_mobile_image",
+                    "aria-label": "",
+                    "type": "image",
+                    "instructions": "Mobile version of the swoos2 image",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "url",
+                    "preview_size": "medium",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "uploader": "",
+                    "acfe_thumbnail": 0
+                }
+            ]
+        },
+        {
+            "key": "field_swoos3_desktop_image",
+            "label": "Swoos3 Desktop Image",
+            "name": "swoos3_desktop_image",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "Desktop version of the swoos3 image (after service section)",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "uploader": "",
+            "acfe_thumbnail": 0
+        },
+        {
+            "key": "field_swoos3_mobile_image",
+            "label": "Swoos3 Mobile Image",
+            "name": "swoos3_mobile_image",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "Mobile version of the swoos3 image (after service section)",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "uploader": "",
+            "acfe_thumbnail": 0
+        },
+        {
+            "key": "field_working_section",
+            "label": "Working with ChainThat Section",
+            "name": "working_section",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "Working with ChainThat section content",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "row",
+            "acfe_seamless_style": 0,
+            "acfe_group_modal": 0,
+            "acfe_group_modal_close": 0,
+            "acfe_group_modal_button": "",
+            "acfe_group_modal_size": "large",
+            "sub_fields": [
+                {
+                    "key": "field_working_title",
+                    "label": "Working Title",
+                    "name": "working_title",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "Title for the working with ChainThat section",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "Working with ChainThat",
+                    "placeholder": "Enter working title",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_working_description",
+                    "label": "Working Description",
+                    "name": "working_description",
+                    "aria-label": "",
+                    "type": "textarea",
+                    "instructions": "Description for the working with ChainThat section",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "ChainThat's a cloud-native platform that improves market speed, customer satisfaction, and efficiency. Many insurers globally are benefiting, operationally and strategically, from such a platform. Let's hear it from our clients & partners.",
+                    "placeholder": "Enter working description",
+                    "maxlength": "",
+                    "rows": 4,
+                    "new_lines": "",
+                    "acfe_textarea_code": 0
+                },
+                {
+                    "key": "field_working_items",
+                    "label": "Select Case Studies",
+                    "name": "working_items",
+                    "aria-label": "",
+                    "type": "relationship",
+                    "instructions": "Select case studies to display (will alternate image\/content layout)",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "post_type": [
+                        "case-study",
+                        "news-and-insight"
+                    ],
+                    "taxonomy": [],
+                    "filters": [
+                        "search",
+                        "post_type"
+                    ],
+                    "return_format": "object",
+                    "min": 0,
+                    "max": 0,
+                    "elements": ""
+                }
+            ]
+        },
+        {
+            "key": "field_review_section",
+            "label": "Review Section",
+            "name": "review_section",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "Review section settings",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "row",
+            "acfe_seamless_style": 0,
+            "acfe_group_modal": 0,
+            "acfe_group_modal_close": 0,
+            "acfe_group_modal_button": "",
+            "acfe_group_modal_size": "large",
+            "sub_fields": [
+                {
+                    "key": "field_select_reviews",
+                    "label": "Select Reviews",
+                    "name": "select_reviews",
+                    "aria-label": "",
+                    "type": "relationship",
+                    "instructions": "Select which reviews to display (leave empty to show all reviews)",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "100",
+                        "class": "",
+                        "id": ""
+                    },
+                    "post_type": [
+                        "review"
+                    ],
+                    "post_status": [
+                        "publish"
+                    ],
+                    "taxonomy": [],
+                    "filters": [
+                        "search"
+                    ],
+                    "return_format": "id",
+                    "min": 0,
+                    "max": 0,
+                    "elements": ""
+                },
+                {
+                    "key": "field_review_button_text",
+                    "label": "Review Button Text",
+                    "name": "review_button_text",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "Text for the review section button",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "Read Success Story",
+                    "placeholder": "Enter button text",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_review_button_link",
+                    "label": "Review Button Link",
+                    "name": "review_button_link",
+                    "aria-label": "",
+                    "type": "url",
+                    "instructions": "Link for the review section button",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "#",
+                    "placeholder": "Enter button URL"
+                }
+            ]
+        },
+        {
+            "key": "field_blog_section",
+            "label": "Blog Section",
+            "name": "blog_section",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "Blog\/News section content",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "row",
+            "acfe_seamless_style": 0,
+            "acfe_group_modal": 0,
+            "acfe_group_modal_close": 0,
+            "acfe_group_modal_button": "",
+            "acfe_group_modal_size": "large",
+            "sub_fields": [
+                {
+                    "key": "field_blog_title",
+                    "label": "Blog Title",
+                    "name": "blog_title",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "Title for the blog section",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "100",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "News & Insights",
+                    "placeholder": "Enter blog title",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_blog_bottom_title",
+                    "label": "Blog Bottom Title",
+                    "name": "blog_bottom_title",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "Title for the bottom section of blog area",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "100",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "Let's Talk",
+                    "placeholder": "Enter bottom title",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_blog_bottom_demo_text",
+                    "label": "Demo Button Text",
+                    "name": "blog_bottom_demo_text",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "Text for the demo button",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "Book a demo",
+                    "placeholder": "Enter demo button text",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_blog_bottom_demo_link",
+                    "label": "Demo Button Link",
+                    "name": "blog_bottom_demo_link",
+                    "aria-label": "",
+                    "type": "url",
+                    "instructions": "Link for the demo button",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "#",
+                    "placeholder": "Enter demo button URL"
+                },
+                {
+                    "key": "field_blog_bottom_contact_text",
+                    "label": "Contact Button Text",
+                    "name": "blog_bottom_contact_text",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "Text for the contact link",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "Get in touch",
+                    "placeholder": "Enter contact text",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_blog_bottom_contact_link",
+                    "label": "Contact Button Link",
+                    "name": "blog_bottom_contact_link",
+                    "aria-label": "",
+                    "type": "url",
+                    "instructions": "Link for the contact button",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "#",
+                    "placeholder": "Enter contact URL"
+                },
+                {
+                    "key": "field_blog_featured_posts",
+                    "label": "Select Featured Posts",
+                    "name": "blog_featured_posts",
+                    "aria-label": "",
+                    "type": "relationship",
+                    "instructions": "Select specific news posts to display. Leave empty to automatically show the latest posts.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "100",
+                        "class": "",
+                        "id": ""
+                    },
+                    "post_type": [
+                        "news-and-insight"
+                    ],
+                    "post_status": [
+                        "publish"
+                    ],
+                    "taxonomy": "",
+                    "filters": [
+                        "search"
+                    ],
+                    "return_format": "object",
+                    "min": "",
+                    "max": "",
+                    "elements": "",
+                    "bidirectional": 0,
+                    "bidirectional_target": []
+                },
+                {
+                    "key": "field_blog_items_per_page",
+                    "label": "Items Per Page",
+                    "name": "blog_items_per_page",
+                    "aria-label": "",
+                    "type": "number",
+                    "instructions": "Number of news items to display (only applies if no featured posts are selected)",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "33",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": 6,
+                    "min": 1,
+                    "max": 12,
+                    "step": 1,
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_blog_enable_carousel",
+                    "label": "Enable Carousel",
+                    "name": "blog_enable_carousel",
+                    "aria-label": "",
+                    "type": "true_false",
+                    "instructions": "Enable carousel for more than 3 items on desktop",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "33",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "Enable carousel on desktop",
+                    "default_value": 1,
+                    "ui": 1,
+                    "ui_on_text": "Yes",
+                    "ui_off_text": "No"
+                },
+                {
+                    "key": "field_blog_carousel_autoplay",
+                    "label": "Carousel Autoplay",
+                    "name": "blog_carousel_autoplay",
+                    "aria-label": "",
+                    "type": "true_false",
+                    "instructions": "Auto-rotate carousel items",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_blog_enable_carousel",
+                                "operator": "==",
+                                "value": "1"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "34",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "Enable autoplay",
+                    "default_value": 1,
+                    "ui": 1,
+                    "ui_on_text": "Yes",
+                    "ui_off_text": "No"
+                }
+            ]
+        },
+        {
+            "key": "field_front_page_section_controls",
+            "label": "Section Controls",
+            "name": "front_page_section_controls",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "Control which sections to show or hide on the Front page",
+            "required": false,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_hero_section_toggle",
+                    "label": "Hero Section",
+                    "name": "hero_section_toggle",
+                    "aria-label": "",
+                    "type": "radio",
+                    "instructions": "",
+                    "required": false,
+                    "conditional_logic": false,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "show": "Show",
+                        "hide": "Hide"
+                    },
+                    "default_value": "show",
+                    "return_format": "value",
+                    "allow_null": 0,
+                    "other_choice": 0,
+                    "save_other_choice": 0,
+                    "layout": "horizontal"
+                },
+                {
+                    "key": "field_partners_section_toggle",
+                    "label": "Partners Section",
+                    "name": "partners_section_toggle",
+                    "aria-label": "",
+                    "type": "radio",
+                    "instructions": "",
+                    "required": false,
+                    "conditional_logic": false,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "show": "Show",
+                        "hide": "Hide"
+                    },
+                    "default_value": "show",
+                    "return_format": "value",
+                    "allow_null": 0,
+                    "other_choice": 0,
+                    "save_other_choice": 0,
+                    "layout": "horizontal"
+                },
+                {
+                    "key": "field_policy_section_toggle",
+                    "label": "Policy Section",
+                    "name": "policy_section_toggle",
+                    "aria-label": "",
+                    "type": "radio",
+                    "instructions": "",
+                    "required": false,
+                    "conditional_logic": false,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "show": "Show",
+                        "hide": "Hide"
+                    },
+                    "default_value": "show",
+                    "return_format": "value",
+                    "allow_null": 0,
+                    "other_choice": 0,
+                    "save_other_choice": 0,
+                    "layout": "horizontal"
+                },
+                {
+                    "key": "field_year_section_toggle",
+                    "label": "Year Statistics Section",
+                    "name": "year_section_toggle",
+                    "aria-label": "",
+                    "type": "radio",
+                    "instructions": "",
+                    "required": false,
+                    "conditional_logic": false,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "show": "Show",
+                        "hide": "Hide"
+                    },
+                    "default_value": "show",
+                    "return_format": "value",
+                    "allow_null": 0,
+                    "other_choice": 0,
+                    "save_other_choice": 0,
+                    "layout": "horizontal"
+                },
+                {
+                    "key": "field_service_section_toggle",
+                    "label": "Service Section",
+                    "name": "service_section_toggle",
+                    "aria-label": "",
+                    "type": "radio",
+                    "instructions": "",
+                    "required": false,
+                    "conditional_logic": false,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "show": "Show",
+                        "hide": "Hide"
+                    },
+                    "default_value": "show",
+                    "return_format": "value",
+                    "allow_null": 0,
+                    "other_choice": 0,
+                    "save_other_choice": 0,
+                    "layout": "horizontal"
+                },
+                {
+                    "key": "field_swoos_section_toggle",
+                    "label": "Swoos Images",
+                    "name": "swoos_section_toggle",
+                    "aria-label": "",
+                    "type": "radio",
+                    "instructions": "",
+                    "required": false,
+                    "conditional_logic": false,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "show": "Show",
+                        "hide": "Hide"
+                    },
+                    "default_value": "show",
+                    "return_format": "value",
+                    "allow_null": 0,
+                    "other_choice": 0,
+                    "save_other_choice": 0,
+                    "layout": "horizontal"
+                },
+                {
+                    "key": "field_working_section_toggle",
+                    "label": "Working with ChainThat Section",
+                    "name": "working_section_toggle",
+                    "aria-label": "",
+                    "type": "radio",
+                    "instructions": "",
+                    "required": false,
+                    "conditional_logic": false,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "show": "Show",
+                        "hide": "Hide"
+                    },
+                    "default_value": "show",
+                    "return_format": "value",
+                    "allow_null": 0,
+                    "other_choice": 0,
+                    "save_other_choice": 0,
+                    "layout": "horizontal"
+                },
+                {
+                    "key": "field_review_section_toggle",
+                    "label": "Review Section",
+                    "name": "review_section_toggle",
+                    "aria-label": "",
+                    "type": "radio",
+                    "instructions": "",
+                    "required": false,
+                    "conditional_logic": false,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "show": "Show",
+                        "hide": "Hide"
+                    },
+                    "default_value": "show",
+                    "return_format": "value",
+                    "allow_null": 0,
+                    "other_choice": 0,
+                    "save_other_choice": 0,
+                    "layout": "horizontal"
+                },
+                {
+                    "key": "field_blog_section_toggle",
+                    "label": "Blog Section",
+                    "name": "blog_section_toggle",
+                    "aria-label": "",
+                    "type": "radio",
+                    "instructions": "",
+                    "required": false,
+                    "conditional_logic": false,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "show": "Show",
+                        "hide": "Hide"
+                    },
+                    "default_value": "show",
+                    "return_format": "value",
+                    "allow_null": 0,
+                    "other_choice": 0,
+                    "save_other_choice": 0,
+                    "layout": "horizontal"
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_type",
+                "operator": "==",
+                "value": "front_page"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "Complete ACF fields for the Front Page template",
+    "show_in_rest": 0,
+    "modified": 1759412619
+}

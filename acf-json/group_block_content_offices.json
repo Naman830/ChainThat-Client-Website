@@ -1,0 +1,274 @@
+{
+    "key": "group_block_content_offices",
+    "title": "Office Locations Block Settings",
+    "fields": [
+        {
+            "key": "field_offices_data_source",
+            "label": "Data Source",
+            "name": "data_source",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "Choose where to get the data from.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "page_fields": "Use Page Fields (Default)",
+                "custom": "Custom Configuration"
+            },
+            "default_value": "page_fields",
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_custom_section_title",
+            "label": "Section Title",
+            "name": "custom_section_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Heading for the offices section",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_offices_data_source",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Our Offices",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_custom_section_description",
+            "label": "Section Description",
+            "name": "custom_section_description",
+            "aria-label": "",
+            "type": "wysiwyg",
+            "instructions": "Optional description below the section title",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_offices_data_source",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "basic",
+            "media_upload": 0,
+            "delay": 0
+        },
+        {
+            "key": "field_custom_offices",
+            "label": "Offices",
+            "name": "custom_offices",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "Add office locations with contact details",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_offices_data_source",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "pagination": 0,
+            "min": 1,
+            "max": 0,
+            "collapsed": "field_office_city",
+            "button_label": "Add Office",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_office_country",
+                    "label": "Country",
+                    "name": "office_country",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "United States",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_office_city",
+                    "label": "City",
+                    "name": "office_city",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "New York",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_office_address",
+                    "label": "Address",
+                    "name": "office_address",
+                    "aria-label": "",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "rows": 3,
+                    "placeholder": "123 Main Street\nSuite 100\nNew York, NY 10001",
+                    "new_lines": ""
+                },
+                {
+                    "key": "field_office_email",
+                    "label": "Email",
+                    "name": "office_email",
+                    "aria-label": "",
+                    "type": "email",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "office@example.com",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_office_phone",
+                    "label": "Phone",
+                    "name": "office_phone",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "+1 (555) 123-4567",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_office_map_link",
+                    "label": "Location Link",
+                    "name": "office_map_link",
+                    "aria-label": "",
+                    "type": "url",
+                    "instructions": "Google Maps or other map service link",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "https://maps.google.com/?q=..."
+                }
+            ]
+        },
+        {
+            "key": "field_offices_display_info",
+            "label": "Display Information",
+            "name": "",
+            "aria-label": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "<strong>Usage:<\/strong> Perfect for contact pages, footer sections, and about pages.<br><br><strong>Features:<\/strong><ul><li>Multiple office locations with repeater<\/li><li>Country and city headings<\/li><li>Full address display<\/li><li>Clickable email and phone links<\/li><li>\"View on Map\" link to Google Maps or other service<\/li><li>Icon-based layout<\/li><li>Hover effects on cards<\/li><\/ul><strong>Responsive Behavior:<\/strong><ul><li><strong>Desktop:<\/strong> 3 columns<\/li><li><strong>Tablet:<\/strong> 2 columns<\/li><li><strong>Mobile:<\/strong> 1 column (stacked)<\/li><\/ul><strong>Office Information:<\/strong><ul><li><strong>Required:<\/strong> Country, City<\/li><li><strong>Optional:<\/strong> Address, Email, Phone, Map Link<\/li><\/ul><strong>Best Practices:<\/strong><ul><li>Keep addresses concise and formatted consistently<\/li><li>Use international phone format with country code<\/li><li>Test map links to ensure they work<\/li><li>Use professional email addresses<\/li><\/ul>",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/content-offices"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "Display office locations with contact information in card layout",
+    "show_in_rest": 0
+}
+
+

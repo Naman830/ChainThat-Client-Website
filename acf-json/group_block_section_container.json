@@ -1,0 +1,325 @@
+{
+    "key": "group_block_section_container",
+    "title": "Section Container Block Settings",
+    "fields": [
+        {
+            "key": "field_section_id",
+            "label": "Section ID",
+            "name": "section_id",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Custom HTML ID for this section (optional, auto-generated if empty)",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "my-section",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_section_class",
+            "label": "Section Class",
+            "name": "section_class",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Additional CSS classes for this section (space-separated)",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "my-custom-class",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_show_section",
+            "label": "Show Section",
+            "name": "show_section",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "Toggle to show\/hide this entire section",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "ui": 1
+        },
+        {
+            "key": "field_background_type",
+            "label": "Background Type",
+            "name": "background_type",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "Choose background type for this section",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "none": "None",
+                "color": "Color",
+                "image": "Image",
+                "video": "Video"
+            },
+            "default_value": "none",
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_background_color",
+            "label": "Background Color",
+            "name": "background_color",
+            "aria-label": "",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_background_type",
+                        "operator": "==",
+                        "value": "color"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#f8f9fa",
+            "enable_opacity": 0,
+            "return_format": "string"
+        },
+        {
+            "key": "field_background_image",
+            "label": "Background Image",
+            "name": "background_image",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_background_type",
+                        "operator": "==",
+                        "value": "image"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "preview_size": "large"
+        },
+        {
+            "key": "field_background_video",
+            "label": "Background Video",
+            "name": "background_video",
+            "aria-label": "",
+            "type": "file",
+            "instructions": "Upload MP4 video for background (recommended: 1920x1080, under 5MB)",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_background_type",
+                        "operator": "==",
+                        "value": "video"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "library": "all",
+            "min_size": "",
+            "max_size": "",
+            "mime_types": "mp4,webm"
+        },
+        {
+            "key": "field_background_overlay",
+            "label": "Background Overlay",
+            "name": "background_overlay",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "Add dark overlay over background image\/video",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_background_type",
+                        "operator": "==",
+                        "value": "image"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_background_type",
+                        "operator": "==",
+                        "value": "video"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "ui": 1
+        },
+        {
+            "key": "field_background_overlay_opacity",
+            "label": "Overlay Opacity",
+            "name": "background_overlay_opacity",
+            "aria-label": "",
+            "type": "range",
+            "instructions": "Overlay darkness (0-100%)",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_background_overlay",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 50,
+            "min": 0,
+            "max": 100,
+            "step": 5,
+            "prepend": "",
+            "append": "%"
+        },
+        {
+            "key": "field_padding_top",
+            "label": "Padding Top",
+            "name": "padding_top",
+            "aria-label": "",
+            "type": "range",
+            "instructions": "Top padding in pixels",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 80,
+            "min": 0,
+            "max": 200,
+            "step": 10,
+            "prepend": "",
+            "append": "px"
+        },
+        {
+            "key": "field_padding_bottom",
+            "label": "Padding Bottom",
+            "name": "padding_bottom",
+            "aria-label": "",
+            "type": "range",
+            "instructions": "Bottom padding in pixels",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 80,
+            "min": 0,
+            "max": 200,
+            "step": 10,
+            "prepend": "",
+            "append": "px"
+        },
+        {
+            "key": "field_section_container_info",
+            "label": "Usage Information",
+            "name": "",
+            "aria-label": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "<strong>Section Container Block<\/strong><br>This is a wrapper block that provides section-level controls for any content.<br><br><strong>Features:<\/strong><ul><li>Background options (none, color, image, video)<\/li><li>Padding controls (top\/bottom)<\/li><li>Show\/hide toggle<\/li><li>Custom ID and classes<\/li><li>Optional overlay for image\/video backgrounds<\/li><\/ul><strong>Usage:<\/strong><ul><li>Use as a wrapper around other blocks<\/li><li>Perfect for creating full-width sections<\/li><li>Add background images\/videos for visual impact<\/li><li>Control spacing with padding sliders<\/li><\/ul><strong>Best Practices:<\/strong><ul><li>Keep video backgrounds under 5MB<\/li><li>Use overlay for better text readability<\/li><li>Adjust padding for mobile (auto-responsive)<\/li><li>Use custom IDs for anchor links<\/li><\/ul>",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/section-container"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "Wrapper block with section controls - background options, padding, and visibility",
+    "show_in_rest": 0
+}
+
+

@@ -1,0 +1,213 @@
+{
+    "key": "group_job_fields",
+    "title": "Job Fields",
+    "fields": [
+        {
+            "key": "field_job_posted_date",
+            "label": "Posted Date",
+            "name": "job_posted_date",
+            "aria-label": "",
+            "type": "date_picker",
+            "instructions": "Date when the job was posted (leave empty to use publish date)",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "display_format": "d/m/Y",
+            "return_format": "d/m/Y",
+            "first_day": 1
+        },
+        {
+            "key": "field_job_location",
+            "label": "Location",
+            "name": "job_location",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Job location (e.g., \"India\", \"UK\", \"Remote\")",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "e.g., India, UK, Remote",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_job_description",
+            "label": "Job Description",
+            "name": "job_description",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "Short description for the job hero section",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "rows": 3,
+            "placeholder": "Enter job description...",
+            "new_lines": ""
+        },
+        {
+            "key": "field_job_sections",
+            "label": "Job Content Sections",
+            "name": "job_sections",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "Add content sections (e.g., Strategic Foundation, Automation Excellence, etc.)",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "pagination": 0,
+            "min": 0,
+            "max": 0,
+            "collapsed": "field_job_section_title",
+            "button_label": "Add Section",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_job_section_title",
+                    "label": "Section Title",
+                    "name": "section_title",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "e.g., Strategic Foundation",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "parent_repeater": "field_job_sections"
+                },
+                {
+                    "key": "field_job_section_description",
+                    "label": "Section Description",
+                    "name": "section_description",
+                    "aria-label": "",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "rows": 4,
+                    "placeholder": "Section description...",
+                    "new_lines": "",
+                    "parent_repeater": "field_job_sections"
+                },
+                {
+                    "key": "field_job_section_items",
+                    "label": "Bullet Point Items",
+                    "name": "section_items",
+                    "aria-label": "",
+                    "type": "repeater",
+                    "instructions": "Add bullet points for this section",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "layout": "table",
+                    "pagination": 0,
+                    "min": 0,
+                    "max": 0,
+                    "collapsed": "",
+                    "button_label": "Add Item",
+                    "rows_per_page": 20,
+                    "parent_repeater": "field_job_sections",
+                    "sub_fields": [
+                        {
+                            "key": "field_job_item_text",
+                            "label": "Item Text",
+                            "name": "item_text",
+                            "aria-label": "",
+                            "type": "textarea",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "rows": 2,
+                            "placeholder": "Bullet point text...",
+                            "new_lines": "",
+                            "parent_repeater": "field_job_section_items"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "key": "field_job_linkedin_url",
+            "label": "LinkedIn Apply URL",
+            "name": "job_linkedin_url",
+            "aria-label": "",
+            "type": "url",
+            "instructions": "LinkedIn job posting URL for external applications (optional)",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "https://www.linkedin.com/jobs/view/..."
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "job"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "ACF fields for job post type",
+    "show_in_rest": 0,
+    "modified": 1758648000
+}
+

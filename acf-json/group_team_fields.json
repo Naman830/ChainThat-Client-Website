@@ -1,0 +1,160 @@
+{
+    "key": "group_team_fields",
+    "title": "Team Fields",
+    "fields": [
+        {
+            "key": "field_team_position",
+            "label": "Position/Title",
+            "name": "team_position",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Job title or position of the team member",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "e.g., CEO, CTO, Developer",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_team_department",
+            "label": "Department",
+            "name": "team_department",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Department or team the member belongs to",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "e.g., Engineering, Marketing, Sales",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_team_linkedin",
+            "label": "LinkedIn Profile",
+            "name": "team_linkedin",
+            "aria-label": "",
+            "type": "url",
+            "instructions": "LinkedIn profile URL (optional)",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "https://linkedin.com/in/username"
+        },
+        {
+            "key": "field_team_email",
+            "label": "Email Address",
+            "name": "team_email",
+            "aria-label": "",
+            "type": "email",
+            "instructions": "Email address (optional)",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "name@company.com"
+        },
+        {
+            "key": "field_team_bio",
+            "label": "Bio",
+            "name": "team_bio",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "Short bio or description of the team member",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "Brief description of the team member's background, experience, and role...",
+            "maxlength": "",
+            "rows": 4,
+            "new_lines": "br"
+        },
+        {
+            "key": "field_team_experience",
+            "label": "Experience",
+            "name": "team_experience",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Years of experience or key experience highlights",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "e.g., 10+ years experience",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_team_location",
+            "label": "Location",
+            "name": "team_location",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "City, Country or office location",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "e.g., London, UK",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "team"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "ACF fields for team member post type",
+    "show_in_rest": 0
+}
+
+

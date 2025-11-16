@@ -1,0 +1,100 @@
+{
+    "key": "group_news_post_fields",
+    "title": "News & Insight Post Fields",
+    "fields": [
+        {
+            "key": "field_news_card_title",
+            "label": "Card Title (Override)",
+            "name": "news_card_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Custom title to display in card views (homepage, platform, solutions). Leave empty to use post title.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "Enter custom card title (optional)",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_news_card_excerpt",
+            "label": "Card Excerpt (Override)",
+            "name": "news_card_excerpt",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "Custom excerpt to display in card views. Leave empty to use auto-generated excerpt.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "Enter custom card excerpt (optional)",
+            "maxlength": "",
+            "rows": 3,
+            "new_lines": "",
+            "acfe_textarea_code": 0
+        },
+        {
+            "key": "field_news_card_image",
+            "label": "Card Image",
+            "name": "news_card_image",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "Image to display in card views (homepage, platform, solutions). Recommended size: 800x600px. Falls back to featured image if empty.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "news-and-insight"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "side",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "Additional fields for News & Insight posts to customize card display across the site",
+    "show_in_rest": 1,
+    "acfe_display_title": "",
+    "acfe_autosync": [
+        "json"
+    ],
+    "acfe_permissions": "",
+    "acfe_form": 1,
+    "acfe_meta": "",
+    "acfe_note": "",
+    "modified": 1730926000
+}
+

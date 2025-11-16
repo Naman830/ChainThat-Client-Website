@@ -1,0 +1,219 @@
+{
+    "key": "group_solutions_archive_fields",
+    "title": "Solutions Archive Page Fields",
+    "fields": [
+        {
+            "key": "field_solutions_archive_title",
+            "label": "Archive Page Title",
+            "name": "solutions_archive_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Main title for solutions archive page (defaults to page title if empty)",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Solutions",
+            "placeholder": "Enter page title",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_solutions_archive_description",
+            "label": "Archive Page Description",
+            "name": "solutions_archive_description",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "Description text below hero (defaults to page excerpt if empty)",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "Enter page description",
+            "maxlength": "",
+            "rows": 4,
+            "new_lines": ""
+        },
+        {
+            "key": "field_solutions_archive_hero_image",
+            "label": "Hero Background Image",
+            "name": "solutions_archive_hero_image",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "Hero section background image",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_solutions_archive_show_cta",
+            "label": "Show CTA Section",
+            "name": "solutions_archive_show_cta",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "Display call-to-action section at the bottom",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "Yes",
+            "ui_off_text": "No"
+        },
+        {
+            "key": "field_solutions_archive_cta_title",
+            "label": "CTA Title",
+            "name": "solutions_archive_cta_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Title for the CTA section",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_solutions_archive_show_cta",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Ready to Transform Your Insurance Operations?",
+            "placeholder": "Enter CTA title",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_solutions_archive_cta_description",
+            "label": "CTA Description",
+            "name": "solutions_archive_cta_description",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "Description for the CTA section",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_solutions_archive_show_cta",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Discover how ChainThat's solutions can help your business thrive.",
+            "placeholder": "Enter CTA description",
+            "maxlength": "",
+            "rows": 3,
+            "new_lines": ""
+        },
+        {
+            "key": "field_solutions_archive_cta_button_text",
+            "label": "CTA Button Text",
+            "name": "solutions_archive_cta_button_text",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Button text for CTA section",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_solutions_archive_show_cta",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Get Started",
+            "placeholder": "Enter button text",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_solutions_archive_cta_button_url",
+            "label": "CTA Button URL",
+            "name": "solutions_archive_cta_button_url",
+            "aria-label": "",
+            "type": "url",
+            "instructions": "Button URL for CTA section",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_solutions_archive_show_cta",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#",
+            "placeholder": "Enter button URL"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-templates/solution.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "ACF fields for Solutions Archive page template",
+    "modified": 1729000002
+}
+

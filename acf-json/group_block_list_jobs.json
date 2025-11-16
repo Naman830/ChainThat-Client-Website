@@ -1,0 +1,328 @@
+{
+    "key": "group_block_list_jobs",
+    "title": "Jobs Grid Block Settings",
+    "fields": [
+        {
+            "key": "field_jobs_data_source",
+            "label": "Data Source",
+            "name": "data_source",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "Choose where to get the data from.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "page_fields": "Use Page Fields (Default)",
+                "custom": "Custom Configuration"
+            },
+            "default_value": "page_fields",
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_custom_section_title",
+            "label": "Section Title",
+            "name": "custom_section_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Heading for the jobs section",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_jobs_data_source",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Current Openings",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_custom_display_mode",
+            "label": "Display Mode",
+            "name": "custom_display_mode",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "Choose how to manage job listings",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_jobs_data_source",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "auto": "Automatic (Query Job CPT)",
+                "manual": "Manual Entry"
+            },
+            "default_value": "auto",
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_custom_items_per_page",
+            "label": "Items Per Page",
+            "name": "custom_items_per_page",
+            "aria-label": "",
+            "type": "number",
+            "instructions": "Number of jobs to show per page",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_jobs_data_source",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 6,
+            "min": 3,
+            "max": 12,
+            "step": 3,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_custom_max_items",
+            "label": "Maximum Items",
+            "name": "custom_max_items",
+            "aria-label": "",
+            "type": "number",
+            "instructions": "Maximum total jobs to display (for auto mode)",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_jobs_data_source",
+                        "operator": "==",
+                        "value": "custom"
+                    },
+                    {
+                        "field": "field_custom_display_mode",
+                        "operator": "==",
+                        "value": "auto"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 12,
+            "min": 3,
+            "max": 50,
+            "step": 1,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_custom_manual_jobs",
+            "label": "Manual Jobs",
+            "name": "custom_manual_jobs",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "Manually add job listings",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_jobs_data_source",
+                        "operator": "==",
+                        "value": "custom"
+                    },
+                    {
+                        "field": "field_custom_display_mode",
+                        "operator": "==",
+                        "value": "manual"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "pagination": 0,
+            "min": 1,
+            "max": 0,
+            "collapsed": "field_job_title",
+            "button_label": "Add Job",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_job_date_posted",
+                    "label": "Date Posted",
+                    "name": "date_posted",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "30",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "February 15, 2024",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_job_title",
+                    "label": "Job Title",
+                    "name": "job_title",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "70",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "Senior Software Engineer",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_job_description",
+                    "label": "Description",
+                    "name": "job_description",
+                    "aria-label": "",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "rows": 3,
+                    "placeholder": "Job description",
+                    "new_lines": ""
+                },
+                {
+                    "key": "field_job_details_link",
+                    "label": "Details Link",
+                    "name": "details_link",
+                    "aria-label": "",
+                    "type": "url",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "https://"
+                },
+                {
+                    "key": "field_job_apply_link",
+                    "label": "Apply Link",
+                    "name": "apply_link",
+                    "aria-label": "",
+                    "type": "url",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "https://"
+                }
+            ]
+        },
+        {
+            "key": "field_jobs_display_info",
+            "label": "Display Information",
+            "name": "",
+            "aria-label": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "<strong>Display Modes:<\/strong><ul><li><strong>Automatic:<\/strong> Queries Job custom post type automatically<\/li><li><strong>Manual:<\/strong> Add job listings directly in the block (useful for external job boards)<\/li><\/ul><strong>Features:<\/strong><ul><li>Pagination (shows N jobs per page)<\/li><li>Job cards with hover effects<\/li><li>\"View Details\" and \"Apply Now\" buttons<\/li><li>Responsive grid layout<\/li><\/ul><strong>Responsive Behavior:<\/strong><ul><li><strong>Desktop:<\/strong> 3 columns<\/li><li><strong>Tablet:<\/strong> 2 columns<\/li><li><strong>Mobile:<\/strong> 1 column (list view)<\/li><\/ul><strong>Job Information Displayed:<\/strong><ul><li>Date posted<\/li><li>Job title<\/li><li>Job description (truncated)<\/li><li>Details link<\/li><li>Apply link<\/li><\/ul><strong>Pagination:<\/strong> Automatic pagination with numbered pages and prev\/next buttons. Smooth scroll to top on page change.",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/list-jobs"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "Display job listings with pagination in responsive grid",
+    "show_in_rest": 0
+}
+
+

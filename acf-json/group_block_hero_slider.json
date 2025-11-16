@@ -1,0 +1,227 @@
+{
+    "key": "group_block_hero_slider",
+    "title": "Hero Slider Block Settings",
+    "fields": [
+        {
+            "key": "field_hero_slider_data_source",
+            "label": "Data Source",
+            "name": "data_source",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "Choose where to get the data from. 'Use Page Fields' reads from existing page data (no setup needed). 'Custom Configuration' lets you configure this block independently.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "page_fields": "Use Page Fields (Default)",
+                "custom": "Custom Configuration"
+            },
+            "default_value": "page_fields",
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_custom_hero_slides",
+            "label": "Hero Slides",
+            "name": "custom_hero_slides",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "Add hero slider items. Each slide displays title, description, and call-to-action button.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_hero_slider_data_source",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "pagination": 0,
+            "min": 1,
+            "max": 0,
+            "collapsed": "",
+            "button_label": "Add Slide",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_slide_title",
+                    "label": "Slide Title",
+                    "name": "slide_title",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "Enter slide title",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_slide_description",
+                    "label": "Slide Description",
+                    "name": "slide_description",
+                    "aria-label": "",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "rows": 3,
+                    "placeholder": "Enter slide description",
+                    "new_lines": ""
+                },
+                {
+                    "key": "field_slide_button_text",
+                    "label": "Button Text",
+                    "name": "button_text",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "Book a demo",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_slide_button_link",
+                    "label": "Button Link",
+                    "name": "button_link",
+                    "aria-label": "",
+                    "type": "url",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "https://"
+                }
+            ]
+        },
+        {
+            "key": "field_custom_swoos_image",
+            "label": "Swoos Decorative Image",
+            "name": "custom_swoos_image",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "Decorative swoosh element that appears on the hero section",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_hero_slider_data_source",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_custom_mobile_image",
+            "label": "Mobile Hero Image",
+            "name": "custom_mobile_image",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "Hero image displayed on mobile devices (appears above the slider)",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_hero_slider_data_source",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "preview_size": "medium"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/hero-slider"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "Configure hero slider block with multiple slides",
+    "show_in_rest": 0
+}
+
+

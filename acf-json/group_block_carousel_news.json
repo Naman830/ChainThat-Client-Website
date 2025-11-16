@@ -1,0 +1,271 @@
+{
+    "key": "group_block_carousel_news",
+    "title": "News Carousel Block Settings",
+    "fields": [
+        {
+            "key": "field_news_carousel_data_source",
+            "label": "Data Source",
+            "name": "data_source",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "Choose where to get the data from. 'Use Page Fields' reads from existing page data.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "page_fields": "Use Page Fields (Default)",
+                "custom": "Custom Configuration"
+            },
+            "default_value": "page_fields",
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_custom_section_title",
+            "label": "Section Title",
+            "name": "custom_section_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Heading for the news section",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_news_carousel_data_source",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "News & Insights",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_custom_display_mode",
+            "label": "Display Mode",
+            "name": "custom_display_mode",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "Choose how to select posts to display",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_news_carousel_data_source",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "latest": "Latest Posts",
+                "featured": "Featured Posts (Manual Selection)"
+            },
+            "default_value": "latest",
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_custom_max_posts",
+            "label": "Maximum Posts",
+            "name": "custom_max_posts",
+            "aria-label": "",
+            "type": "number",
+            "instructions": "Maximum number of posts to display (for latest posts mode)",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_news_carousel_data_source",
+                        "operator": "==",
+                        "value": "custom"
+                    },
+                    {
+                        "field": "field_custom_display_mode",
+                        "operator": "==",
+                        "value": "latest"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 6,
+            "min": 1,
+            "max": 12,
+            "step": 1,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_custom_featured_posts",
+            "label": "Featured Posts",
+            "name": "custom_featured_posts",
+            "aria-label": "",
+            "type": "relationship",
+            "instructions": "Select specific news posts to display",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_news_carousel_data_source",
+                        "operator": "==",
+                        "value": "custom"
+                    },
+                    {
+                        "field": "field_custom_display_mode",
+                        "operator": "==",
+                        "value": "featured"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "news-and-insight"
+            ],
+            "post_status": [
+                "publish"
+            ],
+            "taxonomy": "",
+            "filters": [
+                "search",
+                "post_type",
+                "taxonomy"
+            ],
+            "return_format": "object",
+            "min": 1,
+            "max": 12,
+            "elements": "",
+            "bidirectional": 0,
+            "bidirectional_target": []
+        },
+        {
+            "key": "field_custom_show_view_all",
+            "label": "Show 'View All' Button",
+            "name": "custom_show_view_all",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "Display a 'View All' button below the carousel",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_news_carousel_data_source",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "ui": 1
+        },
+        {
+            "key": "field_custom_view_all_link",
+            "label": "View All Link",
+            "name": "custom_view_all_link",
+            "aria-label": "",
+            "type": "url",
+            "instructions": "URL for the 'View All' button (defaults to news archive)",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_news_carousel_data_source",
+                        "operator": "==",
+                        "value": "custom"
+                    },
+                    {
+                        "field": "field_custom_show_view_all",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "https://"
+        },
+        {
+            "key": "field_news_display_info",
+            "label": "News Display Information",
+            "name": "",
+            "aria-label": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "<strong>Note:</strong> News posts are managed in the <a href=\"\/wp-admin\/edit.php?post_type=news-and-insight\" target=\"_blank\">News & Insights section<\/a>.<br><br><strong>Display Modes:<\/strong><ul><li><strong>Latest Posts:<\/strong> Automatically displays the most recent published posts<\/li><li><strong>Featured Posts:<\/strong> Manually select specific posts to feature<\/li><\/ul><strong>Responsive Behavior:<\/strong><ul><li><strong>Desktop:<\/strong> Static 3-column grid (if 3 or fewer posts) or carousel (if more than 3)<\/li><li><strong>Tablet:<\/strong> 2-column carousel<\/li><li><strong>Mobile:<\/strong> 1-column carousel<\/li><\/ul><strong>Post Information Displayed:<\/strong><ul><li>Featured Image<\/li><li>Publication Date<\/li><li>Category<\/li><li>Post Title (linked)<\/li><li>'Read More' button<\/li><\/ul>",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/carousel-news"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "Display news and blog posts in responsive grid or carousel layout",
+    "show_in_rest": 0
+}
+
+

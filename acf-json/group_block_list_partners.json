@@ -1,0 +1,192 @@
+{
+    "key": "group_block_list_partners",
+    "title": "Partners Grid Block Settings",
+    "fields": [
+        {
+            "key": "field_partners_data_source",
+            "label": "Data Source",
+            "name": "data_source",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "Choose where to get the data from.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "page_fields": "Use Page Fields (Default)",
+                "custom": "Custom Configuration"
+            },
+            "default_value": "page_fields",
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_custom_page_title",
+            "label": "Page Title",
+            "name": "custom_page_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Main heading for the partners page",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_partners_data_source",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "Our Partners",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_custom_page_description",
+            "label": "Page Description",
+            "name": "custom_page_description",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "Description below the page title",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_partners_data_source",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "rows": 3,
+            "placeholder": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_custom_show_category_tabs",
+            "label": "Show Category Filter Tabs",
+            "name": "custom_show_category_tabs",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "Display category filter tabs above the grid",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_partners_data_source",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "ui": 1
+        },
+        {
+            "key": "field_custom_default_view",
+            "label": "Default View",
+            "name": "custom_default_view",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "Which category to show by default",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_partners_data_source",
+                        "operator": "==",
+                        "value": "custom"
+                    },
+                    {
+                        "field": "field_custom_show_category_tabs",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "all": "All Partners"
+            },
+            "default_value": "all",
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_partners_display_info",
+            "label": "Display Information",
+            "name": "",
+            "aria-label": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "<strong>Note:<\/strong> Partners are managed in the <a href=\"\/wp-admin\/edit.php?post_type=partners\" target=\"_blank\">Partners section<\/a>.<br><br><strong>Features:<\/strong><ul><li>Automatically queries all published partners<\/li><li>Category filtering with tabs (uses partner_category taxonomy)<\/li><li>Special 2-3-2-3 grid pattern for visual interest<\/li><li>Hover effects and smooth transitions<\/li><\/ul><strong>Responsive Behavior:<\/strong><ul><li><strong>Desktop:<\/strong> Alternating 2\/3 column pattern<\/li><li><strong>Tablet:<\/strong> 2 columns<\/li><li><strong>Mobile:<\/strong> 1 column<\/li><\/ul><strong>Partner Information Displayed:<\/strong><ul><li>Logo (featured image)<\/li><li>Company name (post title)<\/li><li>Description (excerpt or custom field)<\/li><li>Website link (external link)<\/li><li>Category tags (for filtering)<\/li><\/ul><strong>Category Filtering:<\/strong><ul><li>Tabs auto-generate from partner_category taxonomy<\/li><li>Smooth fade in\/out animation<\/li><li>\"All Partners\" shows everything<\/li><li>Click category tab to filter<\/li><\/ul>",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/list-partners"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "Display partners grid with category filtering tabs and special layout pattern",
+    "show_in_rest": 0
+}
+
+

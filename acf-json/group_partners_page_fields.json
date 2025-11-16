@@ -1,0 +1,177 @@
+{
+    "key": "group_partners_page_fields",
+    "title": "Partners Page Fields",
+    "fields": [
+        {
+            "key": "field_partners_page_title",
+            "label": "Page Title",
+            "name": "partners_page_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Main title for the partners page",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Our Partners",
+            "placeholder": "Our Partners",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_partners_page_description",
+            "label": "Page Description",
+            "name": "partners_page_description",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "Description text below the title",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "placeholder": "Enter page description",
+            "maxlength": "",
+            "rows": 4,
+            "new_lines": "",
+            "acfe_textarea_code": 0
+        },
+        {
+            "key": "field_partners_mobile_decoration",
+            "label": "Mobile Decoration Image",
+            "name": "partners_mobile_decoration",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "Decorative image shown only on mobile (optional)",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_partners_show_contact_form",
+            "label": "Show Contact Form",
+            "name": "partners_show_contact_form",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "Display the 'Get in touch' contact form section",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1,
+            "ui": 1,
+            "ui_on_text": "Show",
+            "ui_off_text": "Hide"
+        },
+        {
+            "key": "field_partners_form_title",
+            "label": "Contact Form Title",
+            "name": "partners_form_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Title for the contact form section",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_partners_show_contact_form",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Get in touch",
+            "placeholder": "Get in touch",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_partners_form_shortcode",
+            "label": "Form Shortcode (Optional)",
+            "name": "partners_form_shortcode",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "If you want to use a plugin form (Contact Form 7, Gravity Forms, etc.), enter the shortcode here. Leave empty to use the default HTML form.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_partners_show_contact_form",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "[contact-form-7 id=\"123\"]",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-templates/partners.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "ACF fields for Partners page template",
+    "show_in_rest": 1,
+    "acfe_display_title": "",
+    "acfe_autosync": [
+        "json"
+    ],
+    "acfe_permissions": "",
+    "acfe_form": 1,
+    "acfe_meta": "",
+    "acfe_note": "",
+    "modified": 1733702400
+}
+
+

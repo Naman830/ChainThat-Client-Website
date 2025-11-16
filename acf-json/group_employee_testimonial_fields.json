@@ -1,0 +1,110 @@
+{
+    "key": "group_employee_testimonial_fields",
+    "title": "Employee Testimonial Fields",
+    "fields": [
+        {
+            "key": "field_employee_testimonial",
+            "label": "Testimonial Quote",
+            "name": "employee_testimonial_quote",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "Enter the employee's testimonial quote",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "Enter testimonial text",
+            "maxlength": "",
+            "rows": 5,
+            "new_lines": ""
+        },
+        {
+            "key": "field_employee_name",
+            "label": "Employee Name",
+            "name": "employee_name",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Employee's full name",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "e.g., Steve Morgan",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_employee_position",
+            "label": "Job Title",
+            "name": "employee_position",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Employee's job title and location",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "e.g., Head of Business Analysis, UK",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_employee_photo",
+            "label": "Employee Photo",
+            "name": "employee_photo",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "Upload employee's photo (recommended: 150x150px square)",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "employee_testimonial"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "ACF fields for employee testimonial custom post type",
+    "modified": 1730930000
+}
+

@@ -1,0 +1,154 @@
+{
+    "key": "group_block_carousel_platforms",
+    "title": "Platforms Carousel Block Settings",
+    "fields": [
+        {
+            "key": "field_platforms_carousel_data_source",
+            "label": "Data Source",
+            "name": "data_source",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "Choose where to get the data from. 'Use Page Fields' reads from existing page data. This block automatically queries all Platform posts.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "page_fields": "Use Page Fields (Default)",
+                "custom": "Custom Configuration"
+            },
+            "default_value": "page_fields",
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_custom_span_text",
+            "label": "Span Text",
+            "name": "custom_span_text",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Small text above the main title",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_platforms_carousel_data_source",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Pain Relievers & Gain Creators",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_custom_section_title",
+            "label": "Section Title",
+            "name": "custom_section_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Main heading for the platforms section",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_platforms_carousel_data_source",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Platforms to Build on",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_custom_section_description",
+            "label": "Section Description",
+            "name": "custom_section_description",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "Optional description below the section title",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_platforms_carousel_data_source",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "rows": 3,
+            "placeholder": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_platform_display_info",
+            "label": "Platform Display Information",
+            "name": "",
+            "aria-label": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "<strong>Note:</strong> This block automatically queries all published Platform posts. Platform data is managed in the <a href=\"\/wp-admin\/edit.php?post_type=platform\" target=\"_blank\">Platforms section<\/a>.<br><br><strong>Responsive Behavior:<\/strong><ul><li><strong>Desktop:<\/strong> Static 3-column grid (if 3 or fewer platforms) or carousel (if more than 3)<\/li><li><strong>Tablet:<\/strong> 2-column carousel<\/li><li><strong>Mobile:<\/strong> 1-column carousel<\/li><\/ul><strong>Platform Fields Used:<\/strong><ul><li>Platform Title<\/li><li>Platform Short Name (4 characters for circle badge)<\/li><li>Platform Description<\/li><li>Platform Button Text (default: \"Activate your agility\")<\/li><\/ul>",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/carousel-platforms"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "Display platform posts in responsive grid or carousel. Automatically queries all published platforms.",
+    "show_in_rest": 0
+}
+
+

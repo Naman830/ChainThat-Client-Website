@@ -1,0 +1,223 @@
+{
+    "key": "group_block_content_features",
+    "title": "Features Cards Block Settings",
+    "fields": [
+        {
+            "key": "field_features_data_source",
+            "label": "Data Source",
+            "name": "data_source",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "Choose where to get the data from.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "page_fields": "Use Page Fields (Default)",
+                "custom": "Custom Configuration"
+            },
+            "default_value": "page_fields",
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_custom_section_title",
+            "label": "Section Title",
+            "name": "custom_section_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Main heading for the features section",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_features_data_source",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Our Features",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_custom_section_description",
+            "label": "Section Description",
+            "name": "custom_section_description",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "Optional description below the section title",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_features_data_source",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "rows": 3,
+            "placeholder": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_custom_feature_items",
+            "label": "Feature Items",
+            "name": "custom_feature_items",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "Add features or values with icon, title, and description.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_features_data_source",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "pagination": 0,
+            "min": 1,
+            "max": 0,
+            "collapsed": "field_feature_item_title",
+            "button_label": "Add Feature",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_feature_item_icon",
+                    "label": "Icon",
+                    "name": "feature_icon",
+                    "aria-label": "",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "30",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "url",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "svg,png,jpg",
+                    "preview_size": "thumbnail"
+                },
+                {
+                    "key": "field_feature_item_title",
+                    "label": "Title",
+                    "name": "feature_title",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "70",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "Feature title",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_feature_item_description",
+                    "label": "Description",
+                    "name": "feature_description",
+                    "aria-label": "",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "rows": 4,
+                    "placeholder": "Feature description",
+                    "new_lines": ""
+                }
+            ]
+        },
+        {
+            "key": "field_features_display_info",
+            "label": "Display Information",
+            "name": "",
+            "aria-label": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "<strong>Note:<\/strong> This block displays feature\/value cards in a responsive grid layout.<br><br><strong>Responsive Grid:<\/strong><ul><li>2 items: 2 columns on desktop<\/li><li>3 items: 3 columns on desktop<\/li><li>4 items: 4 columns on desktop<\/li><li>5+ items: Flexible 3-4 column layout<\/li><li>All collapse to 2 columns on tablet, 1 on mobile<\/li><\/ul><strong>Used For:<\/strong><ul><li>Company values (Careers page)<\/li><li>Platform features<\/li><li>Product highlights<\/li><li>Service offerings<\/li><\/ul><strong>Features:<\/strong> Icon + Title + Description format with WOW animations",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/content-features"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "Display feature or value cards in responsive grid",
+    "show_in_rest": 0
+}
+
+

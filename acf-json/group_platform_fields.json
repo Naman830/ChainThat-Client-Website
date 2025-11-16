@@ -1,0 +1,1502 @@
+{
+    "key": "group_platform_fields",
+    "title": "Platform Fields",
+    "fields": [
+        {
+            "key": "field_platform_section_controls",
+            "label": "Section Controls",
+            "name": "platform_section_controls",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "Show or hide sections on the platform page",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_platform_hero_section_toggle",
+                    "label": "Hero Section",
+                    "name": "hero_section_toggle",
+                    "aria-label": "",
+                    "type": "select",
+                    "instructions": "Show or hide the hero section",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "25",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "show": "Show",
+                        "hide": "Hide"
+                    },
+                    "default_value": "show",
+                    "return_format": "value",
+                    "multiple": 0,
+                    "allow_null": 0,
+                    "ui": 1,
+                    "ajax": 0,
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_platform_description_section_toggle",
+                    "label": "Description Section",
+                    "name": "description_section_toggle",
+                    "aria-label": "",
+                    "type": "select",
+                    "instructions": "Show or hide the top description section",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "25",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "show": "Show",
+                        "hide": "Hide"
+                    },
+                    "default_value": "show",
+                    "return_format": "value",
+                    "multiple": 0,
+                    "allow_null": 0,
+                    "ui": 1,
+                    "ajax": 0,
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_platform_video_section_toggle",
+                    "label": "Video Section",
+                    "name": "video_section_toggle",
+                    "aria-label": "",
+                    "type": "select",
+                    "instructions": "Show or hide the video player section",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "25",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "show": "Show",
+                        "hide": "Hide"
+                    },
+                    "default_value": "show",
+                    "return_format": "value",
+                    "multiple": 0,
+                    "allow_null": 0,
+                    "ui": 1,
+                    "ajax": 0,
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_platform_statistics_section_toggle",
+                    "label": "Statistics Section",
+                    "name": "statistics_section_toggle",
+                    "aria-label": "",
+                    "type": "select",
+                    "instructions": "Show or hide the statistics section",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "25",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "show": "Show",
+                        "hide": "Hide"
+                    },
+                    "default_value": "show",
+                    "return_format": "value",
+                    "multiple": 0,
+                    "allow_null": 0,
+                    "ui": 1,
+                    "ajax": 0,
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_platform_benefits_section_toggle",
+                    "label": "Benefits Section",
+                    "name": "benefits_section_toggle",
+                    "aria-label": "",
+                    "type": "select",
+                    "instructions": "Show or hide the benefits cards section",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "25",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "show": "Show",
+                        "hide": "Hide"
+                    },
+                    "default_value": "show",
+                    "return_format": "value",
+                    "multiple": 0,
+                    "allow_null": 0,
+                    "ui": 1,
+                    "ajax": 0,
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_platform_features_section_toggle",
+                    "label": "Features Section",
+                    "name": "features_section_toggle",
+                    "aria-label": "",
+                    "type": "select",
+                    "instructions": "Show or hide the features section",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "25",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "show": "Show",
+                        "hide": "Hide"
+                    },
+                    "default_value": "show",
+                    "return_format": "value",
+                    "multiple": 0,
+                    "allow_null": 0,
+                    "ui": 1,
+                    "ajax": 0,
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_platform_timeline_section_toggle",
+                    "label": "Timeline\/Architecture Section",
+                    "name": "timeline_section_toggle",
+                    "aria-label": "",
+                    "type": "select",
+                    "instructions": "Show or hide the timeline section",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "25",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "show": "Show",
+                        "hide": "Hide"
+                    },
+                    "default_value": "show",
+                    "return_format": "value",
+                    "multiple": 0,
+                    "allow_null": 0,
+                    "ui": 1,
+                    "ajax": 0,
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_platform_industry_section_toggle",
+                    "label": "Industry Section",
+                    "name": "industry_section_toggle",
+                    "aria-label": "",
+                    "type": "select",
+                    "instructions": "Show or hide the industry section",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "25",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "show": "Show",
+                        "hide": "Hide"
+                    },
+                    "default_value": "show",
+                    "return_format": "value",
+                    "multiple": 0,
+                    "allow_null": 0,
+                    "ui": 1,
+                    "ajax": 0,
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_platform_working_section_toggle",
+                    "label": "Testimonials Section",
+                    "name": "working_section_toggle",
+                    "aria-label": "",
+                    "type": "select",
+                    "instructions": "Show or hide the testimonials section",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "25",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "show": "Show",
+                        "hide": "Hide"
+                    },
+                    "default_value": "show",
+                    "return_format": "value",
+                    "multiple": 0,
+                    "allow_null": 0,
+                    "ui": 1,
+                    "ajax": 0,
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_platform_bottom_cta_section_toggle",
+                    "label": "Bottom CTA Section",
+                    "name": "bottom_cta_section_toggle",
+                    "aria-label": "",
+                    "type": "select",
+                    "instructions": "Show or hide the bottom CTA buttons section",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "25",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "show": "Show",
+                        "hide": "Hide"
+                    },
+                    "default_value": "show",
+                    "return_format": "value",
+                    "multiple": 0,
+                    "allow_null": 0,
+                    "ui": 1,
+                    "ajax": 0,
+                    "placeholder": ""
+                }
+            ]
+        },
+        {
+            "key": "field_platform_background_type",
+            "label": "Hero Background Type",
+            "name": "platform_background_type",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "Choose whether to use a video or image as the hero background",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "image": "Image",
+                "video": "Video"
+            },
+            "default_value": "image",
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 1,
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_platform_background_image",
+            "label": "Hero Background Image",
+            "name": "platform_background_image",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "Background image for the hero section (also used as fallback for video on mobile)",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_platform_background_video",
+            "label": "Hero Background Video",
+            "name": "platform_background_video",
+            "aria-label": "",
+            "type": "file",
+            "instructions": "Upload MP4 video for hero background (recommended: 1920x1080, under 5MB for best performance)",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_platform_background_type",
+                        "operator": "==",
+                        "value": "video"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "library": "all",
+            "min_size": "",
+            "max_size": 10,
+            "mime_types": "mp4,webm"
+        },
+        {
+            "key": "field_platform_description",
+            "label": "Platform Description",
+            "name": "platform_description",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "Description of the platform (used as excerpt)",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "Enter platform description",
+            "maxlength": "",
+            "rows": 5,
+            "new_lines": ""
+        },
+        {
+            "key": "field_platform_button_text",
+            "label": "Button Text",
+            "name": "platform_button_text",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Text for the platform button (link will automatically use the platform's permalink)",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Activate your agility",
+            "placeholder": "Enter button text",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_platform_short_name",
+            "label": "Platform Short Name",
+            "name": "platform_short_name",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Short name\/acronym for the platform (e.g., BPA, BMNP)",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "e.g., BPA",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_video_section_tag",
+            "label": "Go Beyond Section Tag",
+            "name": "video_section_tag",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Tag text above the video title",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "A True Partner",
+            "maxlength": "",
+            "placeholder": "Enter tag text",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_video_section_title",
+            "label": "Go Beyond Section Title",
+            "name": "video_section_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Title for the video section",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "We Go Beyond",
+            "maxlength": "",
+            "placeholder": "Enter video section title",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_video_section_description",
+            "label": "Go Beyond Section Description",
+            "name": "video_section_description",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "Description for the video section",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Our very first platform – BPA – is more than your average policy administration platform. By deploying BPA, insurers and MGAs gain simplicity and efficiency, as well as the ability to quickly and smoothly launch new products and adapt to new requirements as their businesses grow.",
+            "maxlength": "",
+            "rows": 4,
+            "placeholder": "Enter video section description",
+            "new_lines": ""
+        },
+        {
+            "key": "field_video_title",
+            "label": "Video Title",
+            "name": "video_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Title of the video",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "ChainThat Leadership Bytes ft Jai Prakash",
+            "placeholder": "Enter video title",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_video_description",
+            "label": "Video Description",
+            "name": "video_description",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "Description of the video",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "In this #LeadershipBytes episode, Jai Prakash Jhankal (AVP – Program Manager) shares how the team turned pressure into performance — delivering a 99.7% migration in just 3 days.",
+            "placeholder": "Enter video description",
+            "maxlength": "",
+            "rows": 3,
+            "new_lines": ""
+        },
+        {
+            "key": "field_video_desktop_cover",
+            "label": "Video Desktop Cover Image",
+            "name": "video_desktop_cover",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "Desktop cover image for the video",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_video_mobile_cover",
+            "label": "Video Mobile Cover Image",
+            "name": "video_mobile_cover",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "Mobile cover image for the video",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_video_url",
+            "label": "Video URL",
+            "name": "video_url",
+            "aria-label": "",
+            "type": "url",
+            "instructions": "YouTube or Vimeo video URL",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "https:\/\/www.youtube.com\/embed\/WtQau-Orl5s",
+            "placeholder": "Enter video URL"
+        },
+        {
+            "key": "field_video_button_text",
+            "label": "Video Button Text",
+            "name": "video_button_text",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Text for the video button",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Book a demo",
+            "placeholder": "Enter button text",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_benefits_tag",
+            "label": "Benefits Tag",
+            "name": "benefits_tag",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Small tag text above the benefits heading (e.g., 'Your Key Benefits')",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Your Key Benefits",
+            "placeholder": "Enter benefits tag",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_benefits_heading",
+            "label": "Benefits Heading",
+            "name": "benefits_heading",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Main heading for the benefits section",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Master Insurance Agility",
+            "placeholder": "Enter benefits heading",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_benefit_items",
+            "label": "Benefit Items",
+            "name": "benefit_items",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "Add benefit cards. The layout will automatically adjust to accommodate any number of cards.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "field_benefit_title",
+            "min": 0,
+            "max": 0,
+            "layout": "block",
+            "button_label": "Add Benefit Item",
+            "rows_per_page": 20,
+            "acfe_repeater_stylised_button": 0,
+            "sub_fields": [
+                {
+                    "key": "field_benefit_icon",
+                    "label": "Icon",
+                    "name": "icon",
+                    "aria-label": "",
+                    "type": "image",
+                    "instructions": "Upload an icon image for this benefit (SVG or PNG recommended)",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "20",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "url",
+                    "preview_size": "thumbnail",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "parent_repeater": "field_benefit_items"
+                },
+                {
+                    "key": "field_benefit_title",
+                    "label": "Title",
+                    "name": "title",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "Benefit card title",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "30",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "Enter benefit title",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "parent_repeater": "field_benefit_items"
+                },
+                {
+                    "key": "field_benefit_description",
+                    "label": "Description",
+                    "name": "description",
+                    "aria-label": "",
+                    "type": "textarea",
+                    "instructions": "Benefit card description",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "Enter benefit description",
+                    "maxlength": "",
+                    "rows": 3,
+                    "new_lines": "",
+                    "parent_repeater": "field_benefit_items"
+                }
+            ]
+        },
+        {
+            "key": "field_statistics_title",
+            "label": "Statistics Title",
+            "name": "statistics_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Title for the statistics section",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "We Go Beyond",
+            "placeholder": "Enter statistics title",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_statistics_items",
+            "label": "Statistics Items",
+            "name": "statistics_items",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "Add statistics items",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "pagination": 0,
+            "min": 0,
+            "max": 0,
+            "collapsed": "field_statistic_number",
+            "button_label": "Add Statistic",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_statistic_number",
+                    "label": "Statistic Number",
+                    "name": "statistic_number",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "Number or text for the statistic",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "30",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "e.g., 30+",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "parent_repeater": "field_statistics_items"
+                },
+                {
+                    "key": "field_statistic_description",
+                    "label": "Statistic Description",
+                    "name": "statistic_description",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "Description of the statistic",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "70",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "e.g., Out-of-the-box connectors",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "parent_repeater": "field_statistics_items"
+                }
+            ]
+        },
+        {
+            "key": "field_capabilities_title",
+            "label": "Capabilities Title",
+            "name": "capabilities_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Title for the capabilities section",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Functional Capabilities",
+            "placeholder": "Enter capabilities title",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_capabilities_subtitle",
+            "label": "Capabilities Subtitle",
+            "name": "capabilities_subtitle",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Subtitle for the capabilities section",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "What Beyond Policy Administration delivers – in detail.",
+            "placeholder": "Enter capabilities subtitle",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_capabilities_tabs",
+            "label": "Capabilities Tabs",
+            "name": "capabilities_tabs",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "Add capability tabs",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "pagination": 0,
+            "min": 0,
+            "max": 0,
+            "collapsed": "field_tab_name",
+            "button_label": "Add Tab",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_tab_name",
+                    "label": "Tab Name",
+                    "name": "tab_name",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "Name of the capability tab",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "30",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "e.g., Product Configuration",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "parent_repeater": "field_capabilities_tabs"
+                },
+                {
+                    "key": "field_tab_image",
+                    "label": "Tab Background Image",
+                    "name": "tab_image",
+                    "aria-label": "",
+                    "type": "image",
+                    "instructions": "Full width background image for this tab (Desktop)",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "35",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "url",
+                    "preview_size": "medium",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "parent_repeater": "field_capabilities_tabs"
+                },
+                {
+                    "key": "field_tab_mobile_image",
+                    "label": "Tab Mobile Image",
+                    "name": "tab_mobile_image",
+                    "aria-label": "",
+                    "type": "image",
+                    "instructions": "Background image for mobile view",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "35",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "url",
+                    "preview_size": "thumbnail",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "parent_repeater": "field_capabilities_tabs"
+                },
+                {
+                    "key": "field_tab_items",
+                    "label": "Tab Items",
+                    "name": "tab_items",
+                    "aria-label": "",
+                    "type": "repeater",
+                    "instructions": "Items for this tab",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "70",
+                        "class": "",
+                        "id": ""
+                    },
+                    "layout": "table",
+                    "min": 0,
+                    "max": 0,
+                    "collapsed": "field_item_title",
+                    "button_label": "Add Item",
+                    "rows_per_page": 20,
+                    "sub_fields": [
+                        {
+                            "key": "field_item_icon",
+                            "label": "Item Icon",
+                            "name": "item_icon",
+                            "aria-label": "",
+                            "type": "image",
+                            "instructions": "Icon for the capability item",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "25",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "url",
+                            "preview_size": "thumbnail",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": "",
+                            "parent_repeater": "field_tab_items"
+                        },
+                        {
+                            "key": "field_item_title",
+                            "label": "Item Title",
+                            "name": "item_title",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "Title of the capability item",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "35",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "Enter item title",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": "",
+                            "parent_repeater": "field_tab_items"
+                        },
+                        {
+                            "key": "field_item_description",
+                            "label": "Item Description",
+                            "name": "item_description",
+                            "aria-label": "",
+                            "type": "textarea",
+                            "instructions": "Description of the capability item",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "40",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "Enter item description",
+                            "maxlength": "",
+                            "rows": 3,
+                            "new_lines": "",
+                            "parent_repeater": "field_tab_items"
+                        }
+                    ],
+                    "parent_repeater": "field_capabilities_tabs"
+                }
+            ]
+        },
+        {
+            "key": "field_architecture_tag",
+            "label": "Architecture Tag",
+            "name": "architecture_tag",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Tag text above the architecture title",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "Enter tag text",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_architecture_title",
+            "label": "Architecture Title",
+            "name": "architecture_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Title for the architecture section",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Product Architecture",
+            "placeholder": "Enter architecture title",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_architecture_description",
+            "label": "Architecture Description",
+            "name": "architecture_description",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "Description for the architecture section",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "ChainThat's Beyond Policy Administration Platform technology architecture leverages cloud-native container technology and a SaaS model with robust security, API-driven integration, and flexible access to ensure scalability, seamless integration, and comprehensive business insights.",
+            "placeholder": "Enter architecture description",
+            "maxlength": "",
+            "rows": 4,
+            "new_lines": ""
+        },
+        {
+            "key": "field_architecture_image",
+            "label": "Architecture Image",
+            "name": "architecture_image",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "Image for the architecture section",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_architecture_features",
+            "label": "Architecture Features",
+            "name": "architecture_features",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "Add architecture features",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "layout": "row",
+            "pagination": 0,
+            "min": 0,
+            "max": 0,
+            "collapsed": "field_feature_title",
+            "button_label": "Add Feature",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_feature_title",
+                    "label": "Feature Title",
+                    "name": "feature_title",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "Title of the architecture feature",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "40",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "Enter feature title",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "parent_repeater": "field_architecture_features"
+                },
+                {
+                    "key": "field_feature_description",
+                    "label": "Feature Description",
+                    "name": "feature_description",
+                    "aria-label": "",
+                    "type": "textarea",
+                    "instructions": "Description of the architecture feature",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "60",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "Enter feature description",
+                    "maxlength": "",
+                    "rows": 2,
+                    "new_lines": "",
+                    "parent_repeater": "field_architecture_features"
+                }
+            ]
+        },
+        {
+            "key": "field_industry_title",
+            "label": "Industry Title",
+            "name": "industry_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Title for the industry support section",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Supporting the Insurance Industry",
+            "placeholder": "Enter industry title",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_industry_subtitle",
+            "label": "Industry Subtitle",
+            "name": "industry_subtitle",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Subtitle for the industry support section",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "MGAs \/ Carriers \/ Mutuals",
+            "placeholder": "Enter industry subtitle",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_industry_button_text",
+            "label": "Industry Button Text",
+            "name": "industry_button_text",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Text for the industry button",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Book a demo",
+            "placeholder": "Enter button text",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_industry_button_link",
+            "label": "Industry Button Link",
+            "name": "industry_button_link",
+            "aria-label": "",
+            "type": "link",
+            "instructions": "Select a page, post, or enter external URL for the industry button",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array"
+        },
+        {
+            "key": "field_testimonials_title",
+            "label": "Testimonials Title",
+            "name": "testimonials_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Title for the testimonials section",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Working with ChainThat",
+            "placeholder": "Enter testimonials title",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_testimonials_subtitle",
+            "label": "Testimonials Subtitle",
+            "name": "testimonials_subtitle",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "Subtitle for the testimonials section",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "We have a clear purpose at ChainThat to develop technology platforms that activate agility in insurance organisations, enabling them to realise their full business potential. Our dedicated team work hard to help our clients drive their competitive advantage and gain market share.",
+            "placeholder": "Enter testimonials subtitle",
+            "maxlength": "",
+            "rows": 4,
+            "new_lines": ""
+        },
+        {
+            "key": "field_testimonials_items",
+            "label": "Select Case Studies / News / Solutions",
+            "name": "testimonials_items",
+            "aria-label": "",
+            "type": "relationship",
+            "instructions": "Select case studies, news articles, or solutions to display as testimonials (will alternate image\/content layout)",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "case-study",
+                "news-and-insight",
+                "solution"
+            ],
+            "taxonomy": [],
+            "filters": [
+                "search",
+                "post_type"
+            ],
+            "return_format": "object",
+            "min": 0,
+            "max": 0,
+            "elements": ""
+        },
+        {
+            "key": "field_bottom_cta_title",
+            "label": "Bottom CTA Title",
+            "name": "bottom_cta_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Title for the bottom CTA section",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Working with ChainThat",
+            "placeholder": "Enter bottom CTA title",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_bottom_cta_description",
+            "label": "Bottom CTA Description",
+            "name": "bottom_cta_description",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "Description for the bottom CTA section",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "We have a clear purpose at ChainThat to develop technology platforms that activate agility in insurance organisations, enabling them to realise their full business potential. Our dedicated team work hard to help our clients drive their competitive advantage and gain market share.",
+            "placeholder": "Enter bottom CTA description",
+            "maxlength": "",
+            "rows": 4,
+            "new_lines": ""
+        },
+        {
+            "key": "field_bottom_buttons",
+            "label": "Bottom Buttons",
+            "name": "bottom_buttons",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "Bottom section buttons",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_bottom_button1_text",
+                    "label": "Bottom Button 1 Text",
+                    "name": "bottom_button1_text",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "Text for the first bottom button",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "Book a demo",
+                    "placeholder": "Enter button text",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_bottom_button1_link",
+                    "label": "Bottom Button 1 Link",
+                    "name": "bottom_button1_link",
+                    "aria-label": "",
+                    "type": "link",
+                    "instructions": "Select a page, post, or enter external URL for the first bottom button",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array"
+                },
+                {
+                    "key": "field_bottom_button2_text",
+                    "label": "Bottom Button 2 Text",
+                    "name": "bottom_button2_text",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "Text for the second bottom button",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "VIEW OTHER PLATFORMS",
+                    "placeholder": "Enter button text",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_bottom_button2_link",
+                    "label": "Bottom Button 2 Link",
+                    "name": "bottom_button2_link",
+                    "aria-label": "",
+                    "type": "link",
+                    "instructions": "Select a page, post, or enter external URL for the second bottom button",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array"
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "platform"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "ACF fields for platform custom post type",
+    "show_in_rest": 0,
+    "modified": 1762062055
+}

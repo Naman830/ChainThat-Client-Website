@@ -1,0 +1,257 @@
+{
+    "key": "group_block_content_benefits",
+    "title": "Benefits Grid Block Settings",
+    "fields": [
+        {
+            "key": "field_benefits_data_source",
+            "label": "Data Source",
+            "name": "data_source",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "Choose where to get the data from.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "page_fields": "Use Page Fields (Default)",
+                "custom": "Custom Configuration"
+            },
+            "default_value": "page_fields",
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_custom_section_tag",
+            "label": "Section Tag",
+            "name": "custom_section_tag",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Small text above the section heading",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_benefits_data_source",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Benefits",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_custom_section_heading",
+            "label": "Section Heading",
+            "name": "custom_section_heading",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Main heading for the benefits section",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_benefits_data_source",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Key Benefits",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_custom_layout",
+            "label": "Layout",
+            "name": "custom_layout",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "Choose how to display the benefits",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_benefits_data_source",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "carousel": "Carousel",
+                "grid": "Grid"
+            },
+            "default_value": "carousel",
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_custom_benefit_items",
+            "label": "Benefit Items",
+            "name": "custom_benefit_items",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "Add benefits with icon, title, and description. Descriptions longer than 25 words will show 'read more' button.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_benefits_data_source",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "pagination": 0,
+            "min": 1,
+            "max": 0,
+            "collapsed": "field_benefit_item_title",
+            "button_label": "Add Benefit",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_benefit_item_icon",
+                    "label": "Icon",
+                    "name": "benefit_icon",
+                    "aria-label": "",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "30",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "url",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "svg,png,jpg",
+                    "preview_size": "thumbnail"
+                },
+                {
+                    "key": "field_benefit_item_title",
+                    "label": "Title",
+                    "name": "benefit_title",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "70",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "Benefit title",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_benefit_item_description",
+                    "label": "Description",
+                    "name": "benefit_description",
+                    "aria-label": "",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "rows": 4,
+                    "placeholder": "Benefit description",
+                    "new_lines": ""
+                }
+            ]
+        },
+        {
+            "key": "field_benefits_display_info",
+            "label": "Display Information",
+            "name": "",
+            "aria-label": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "<strong>Layout Options:<\/strong><ul><li><strong>Carousel:<\/strong> Displays benefits in a scrollable carousel (responsive: 3 desktop, 2 tablet, 1 mobile)<\/li><li><strong>Grid:<\/strong> Displays benefits in a responsive grid layout<\/li><\/ul><strong>Features:<\/strong><ul><li>Auto 'read more\/less' for descriptions over 25 words<\/li><li>Icon + Title + Description format<\/li><li>WOW animations on grid layout<\/li><li>Fully responsive across all devices<\/li><\/ul><strong>Used In:<\/strong> Platform pages, Solution pages, Feature showcases",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/content-benefits"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "Display benefits with icons in grid or carousel layout",
+    "show_in_rest": 0
+}
+
+

@@ -1,0 +1,502 @@
+{
+    "key": "group_news_archive_fields",
+    "title": "News Archive Template",
+    "fields": [
+        {
+            "key": "field_news_archive_title",
+            "label": "Archive Page Title",
+            "name": "news_archive_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Title for the news archive page",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "News & Insights",
+            "placeholder": "Enter archive title",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_news_archive_subtitle",
+            "label": "Archive Page Subtitle",
+            "name": "news_archive_subtitle",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "Subtitle or description for the archive page",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "Enter archive subtitle",
+            "maxlength": "",
+            "rows": 3,
+            "new_lines": "",
+            "acfe_textarea_code": 0
+        },
+        {
+            "key": "field_news_featured_posts",
+            "label": "Featured Posts",
+            "name": "news_featured_posts",
+            "aria-label": "",
+            "type": "relationship",
+            "instructions": "Select posts to feature in the news section",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "news-and-insight"
+            ],
+            "taxonomy": "",
+            "filters": [
+                "search",
+                "post_type",
+                "taxonomy"
+            ],
+            "elements": [
+                "featured_image"
+            ],
+            "min": "",
+            "max": 6,
+            "return_format": "object"
+        },
+        {
+            "key": "field_news_featured_posts_count",
+            "label": "Featured Posts Count",
+            "name": "news_featured_posts_count",
+            "aria-label": "",
+            "type": "number",
+            "instructions": "Number of posts to show in the featured section",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 3,
+            "placeholder": 3,
+            "min": 1,
+            "max": 6,
+            "step": 1,
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_news_featured_button_text",
+            "label": "Featured Posts Button Text",
+            "name": "news_featured_button_text",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Text for the featured posts button",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Book a demo",
+            "placeholder": "Enter button text",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_news_featured_fallback_images",
+            "label": "Featured Posts Fallback Images",
+            "name": "news_featured_fallback_images",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "Fallback images for featured posts when no featured image",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "field_fallback_image",
+            "min": 0,
+            "max": 6,
+            "layout": "table",
+            "button_label": "Add Fallback Image",
+            "rows_per_page": 20,
+            "acfe_repeater_stylised_button": 0,
+            "sub_fields": [
+                {
+                    "key": "field_fallback_image",
+                    "label": "Fallback Image",
+                    "name": "fallback_image",
+                    "aria-label": "",
+                    "type": "image",
+                    "instructions": "Fallback image for featured posts",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "100",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "url",
+                    "preview_size": "medium",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "parent_repeater": "field_news_featured_fallback_images"
+                }
+            ]
+        },
+        {
+            "key": "field_news_tab_categories",
+            "label": "Tab Categories",
+            "name": "news_tab_categories",
+            "aria-label": "",
+            "type": "taxonomy",
+            "instructions": "Select categories to show as tabs",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "taxonomy": "news_category",
+            "field_type": "multi_select",
+            "allow_null": 0,
+            "add_term": 0,
+            "save_terms": 0,
+            "load_terms": 0,
+            "return_format": "object"
+        },
+        {
+            "key": "field_news_tab_button_text",
+            "label": "Tab Posts Button Text",
+            "name": "news_tab_button_text",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Text for the tab posts button",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "read more",
+            "placeholder": "Enter button text",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_news_tab_fallback_image",
+            "label": "Tab Posts Fallback Image",
+            "name": "news_tab_fallback_image",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "Fallback image for tab posts when no featured image",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_news_posts_per_page",
+            "label": "Posts Per Page",
+            "name": "news_posts_per_page",
+            "aria-label": "",
+            "type": "number",
+            "instructions": "Number of posts to show per page in tabs",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33.3",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 12,
+            "placeholder": 12,
+            "min": 6,
+            "max": 50,
+            "step": 1,
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_news_show_faq_section",
+            "label": "Show FAQ Section",
+            "name": "news_show_faq_section",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "Show the FAQ section on the archive page",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33.3",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_news_faq_title",
+            "label": "FAQ Section Title",
+            "name": "news_faq_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Title for the FAQ section",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_news_show_faq_section",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Frequently Asked Questions",
+            "placeholder": "Enter FAQ title",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_news_faq_items",
+            "label": "FAQ Items",
+            "name": "news_faq_items",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "Add FAQ items for the archive page",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_news_show_faq_section",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "field_faq_question",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "Add FAQ Item",
+            "rows_per_page": 20,
+            "acfe_repeater_stylised_button": 0,
+            "sub_fields": [
+                {
+                    "key": "field_faq_question",
+                    "label": "Question",
+                    "name": "faq_question",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "FAQ question",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "40",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "Enter question",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "parent_repeater": "field_news_faq_items"
+                },
+                {
+                    "key": "field_faq_answer",
+                    "label": "Answer",
+                    "name": "faq_answer",
+                    "aria-label": "",
+                    "type": "textarea",
+                    "instructions": "FAQ answer",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "60",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "Enter answer",
+                    "maxlength": "",
+                    "rows": 3,
+                    "new_lines": "",
+                    "parent_repeater": "field_news_faq_items",
+                    "acfe_textarea_code": 0
+                }
+            ]
+        },
+        {
+            "key": "field_news_cta_title",
+            "label": "CTA Section Title",
+            "name": "news_cta_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Title for the call-to-action section",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Let's Talk",
+            "placeholder": "Enter CTA title",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_news_cta_demo_text",
+            "label": "Demo Button Text",
+            "name": "news_cta_demo_text",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Text for the demo button",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Book a demo",
+            "placeholder": "Enter button text",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_news_cta_demo_link",
+            "label": "Demo Button Link",
+            "name": "news_cta_demo_link",
+            "aria-label": "",
+            "type": "url",
+            "instructions": "Link for the demo button",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#",
+            "placeholder": "Enter button URL"
+        },
+        {
+            "key": "field_news_cta_contact_text",
+            "label": "Contact Link Text",
+            "name": "news_cta_contact_text",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Text for the contact link",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Get in touch",
+            "placeholder": "Enter link text",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_news_cta_contact_link",
+            "label": "Contact Link URL",
+            "name": "news_cta_contact_link",
+            "aria-label": "",
+            "type": "url",
+            "instructions": "URL for the contact link",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#",
+            "placeholder": "Enter contact URL"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "news-archive-settings"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "Fields for managing the news and insights archive page content",
+    "show_in_rest": 1,
+    "acfe_display_title": "",
+    "acfe_autosync": [
+        "json"
+    ],
+    "acfe_permissions": "",
+    "acfe_form": 1,
+    "acfe_meta": "",
+    "acfe_note": "",
+    "modified": 1758637478
+}

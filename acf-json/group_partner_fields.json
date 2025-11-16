@@ -1,0 +1,159 @@
+{
+    "key": "group_partner_fields",
+    "title": "Partner Fields",
+    "fields": [
+        {
+            "key": "field_partner_logo",
+            "label": "Partner Logo",
+            "name": "partner_logo",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "Logo image for the partner",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_partner_alt_text",
+            "label": "Logo Alt Text",
+            "name": "partner_alt_text",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Alt text for the partner logo (for accessibility)",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "Enter alt text for logo",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_partner_website",
+            "label": "Partner Website",
+            "name": "partner_website",
+            "aria-label": "",
+            "type": "url",
+            "instructions": "Website URL for the partner",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "https://example.com"
+        },
+        {
+            "key": "field_partner_description",
+            "label": "Partner Description",
+            "name": "partner_description",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "Brief description of the partner",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "Enter partner description",
+            "maxlength": "",
+            "rows": 3,
+            "new_lines": "",
+            "acfe_textarea_code": 0
+        },
+        {
+            "key": "field_partner_featured",
+            "label": "Featured Partner",
+            "name": "partner_featured",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "Mark this partner as featured (will appear first)",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "Featured",
+            "ui_off_text": "Regular"
+        },
+        {
+            "key": "field_partner_order",
+            "label": "Display Order",
+            "name": "partner_order",
+            "aria-label": "",
+            "type": "number",
+            "instructions": "Order in which this partner appears (lower numbers appear first)",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 10,
+            "placeholder": 10,
+            "min": 1,
+            "max": 100,
+            "step": 1,
+            "prepend": "",
+            "append": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "partners"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "ACF fields for partner custom post type",
+    "show_in_rest": 1,
+    "acfe_display_title": "",
+    "acfe_autosync": [
+        "json"
+    ],
+    "acfe_permissions": "",
+    "acfe_form": 1,
+    "acfe_meta": "",
+    "acfe_note": "",
+    "modified": 1758638000
+}
+

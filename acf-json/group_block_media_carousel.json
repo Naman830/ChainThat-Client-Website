@@ -1,0 +1,264 @@
+{
+    "key": "group_block_media_carousel",
+    "title": "Image Carousel Block Settings",
+    "fields": [
+        {
+            "key": "field_carousel_data_source",
+            "label": "Data Source",
+            "name": "data_source",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "Choose where to get the data from.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "page_fields": "Use Page Fields (Default)",
+                "custom": "Custom Configuration"
+            },
+            "default_value": "page_fields",
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_custom_carousel_type",
+            "label": "Carousel Type",
+            "name": "custom_carousel_type",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "Choose carousel display mode",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_carousel_data_source",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "standard": "Standard Carousel",
+                "continuous-scroll": "Continuous Scroll"
+            },
+            "default_value": "standard",
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_custom_autoplay",
+            "label": "Autoplay",
+            "name": "custom_autoplay",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "Automatically advance slides",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_carousel_data_source",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "ui": 1
+        },
+        {
+            "key": "field_custom_autoplay_speed",
+            "label": "Autoplay Speed (ms)",
+            "name": "custom_autoplay_speed",
+            "aria-label": "",
+            "type": "number",
+            "instructions": "Time between slides in milliseconds",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_carousel_data_source",
+                        "operator": "==",
+                        "value": "custom"
+                    },
+                    {
+                        "field": "field_custom_autoplay",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "34",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 4000,
+            "min": 1000,
+            "max": 10000,
+            "step": 500,
+            "placeholder": "",
+            "prepend": "",
+            "append": "ms"
+        },
+        {
+            "key": "field_custom_carousel_images",
+            "label": "Carousel Images",
+            "name": "custom_carousel_images",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "Add images to display in the carousel",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_carousel_data_source",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "table",
+            "pagination": 0,
+            "min": 1,
+            "max": 0,
+            "collapsed": "",
+            "button_label": "Add Image",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_carousel_image",
+                    "label": "Image",
+                    "name": "image",
+                    "aria-label": "",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "url",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "preview_size": "medium"
+                },
+                {
+                    "key": "field_carousel_image_alt",
+                    "label": "Alt Text",
+                    "name": "alt",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_carousel_image_caption",
+                    "label": "Caption",
+                    "name": "caption",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": ""
+                }
+            ]
+        },
+        {
+            "key": "field_carousel_display_info",
+            "label": "Display Information",
+            "name": "",
+            "aria-label": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "<strong>Carousel Types:<\/strong><ul><li><strong>Standard:<\/strong> Traditional carousel with navigation arrows and dots. Shows 1-3 images at a time based on screen size.<\/li><li><strong>Continuous Scroll:<\/strong> Infinite horizontal scrolling animation. Perfect for logos or partner galleries.<\/li><\/ul><strong>Responsive Behavior (Standard):<\/strong><ul><li><strong>Desktop:<\/strong> 3 images visible<\/li><li><strong>Tablet:<\/strong> 2 images visible<\/li><li><strong>Mobile:<\/strong> 1 image visible<\/li><\/ul><strong>Features:<\/strong><ul><li>Optional image captions<\/li><li>Autoplay with hover pause<\/li><li>Customizable speed<\/li><li>Touch\/swipe support<\/li><li>Lazy loading ready<\/li><\/ul><strong>Best Practices:<\/strong><ul><li>Use consistent image dimensions<\/li><li>Optimize images for web (max 2MB)<\/li><li>Recommended: 1200x800px for standard carousel<\/li><li>Add alt text for accessibility<\/li><\/ul>",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/media-carousel"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "Display images in standard carousel or continuous scroll mode",
+    "show_in_rest": 0
+}
+
+

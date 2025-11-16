@@ -1,0 +1,314 @@
+{
+    "key": "group_block_content_case_studies",
+    "title": "Case Studies Block Settings",
+    "fields": [
+        {
+            "key": "field_case_studies_data_source",
+            "label": "Data Source",
+            "name": "data_source",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "Choose where to get the data from.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "page_fields": "Use Page Fields (Default)",
+                "custom": "Custom Configuration"
+            },
+            "default_value": "page_fields",
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_custom_section_title",
+            "label": "Section Title",
+            "name": "custom_section_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Main heading for the case studies section",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_case_studies_data_source",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Working with ChainThat",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_custom_section_description",
+            "label": "Section Description",
+            "name": "custom_section_description",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "Optional description below the section title",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_case_studies_data_source",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "rows": 3,
+            "placeholder": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_custom_display_mode",
+            "label": "Display Mode",
+            "name": "custom_display_mode",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "Choose how to select case studies to display",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_case_studies_data_source",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "manual": "Manual Selection",
+                "auto": "Automatic (Latest Solutions)"
+            },
+            "default_value": "manual",
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_custom_max_items",
+            "label": "Maximum Items",
+            "name": "custom_max_items",
+            "aria-label": "",
+            "type": "number",
+            "instructions": "Maximum number of case studies to display (for automatic mode)",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_case_studies_data_source",
+                        "operator": "==",
+                        "value": "custom"
+                    },
+                    {
+                        "field": "field_custom_display_mode",
+                        "operator": "==",
+                        "value": "auto"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 3,
+            "min": 1,
+            "max": 10,
+            "step": 1,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_custom_case_studies_items",
+            "label": "Case Studies",
+            "name": "custom_case_studies_items",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "Add case studies with image, title, and description. Items alternate between left and right image placement automatically.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_case_studies_data_source",
+                        "operator": "==",
+                        "value": "custom"
+                    },
+                    {
+                        "field": "field_custom_display_mode",
+                        "operator": "==",
+                        "value": "manual"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "pagination": 0,
+            "min": 1,
+            "max": 0,
+            "collapsed": "field_case_study_title",
+            "button_label": "Add Case Study",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_case_study_image",
+                    "label": "Image",
+                    "name": "case_image",
+                    "aria-label": "",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "30",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "url",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "preview_size": "medium"
+                },
+                {
+                    "key": "field_case_study_title",
+                    "label": "Title",
+                    "name": "case_title",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "70",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "Case study title",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_case_study_description",
+                    "label": "Description",
+                    "name": "case_description",
+                    "aria-label": "",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "70",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "rows": 4,
+                    "placeholder": "Case study description",
+                    "new_lines": ""
+                },
+                {
+                    "key": "field_case_study_link",
+                    "label": "Link",
+                    "name": "case_link",
+                    "aria-label": "",
+                    "type": "url",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "30",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "https://"
+                }
+            ]
+        },
+        {
+            "key": "field_case_studies_display_info",
+            "label": "Display Information",
+            "name": "",
+            "aria-label": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "<strong>Layout:<\/strong> Alternating image\/text layout on desktop (even items: image left, odd items: image right). Mobile: stacked cards.<br><br><strong>Display Modes:<\/strong><ul><li><strong>Manual:<\/strong> Manually add case studies with custom content<\/li><li><strong>Automatic:<\/strong> Automatically pull from Solution posts<\/li><\/ul><strong>Best Practices:<\/strong><ul><li>3-5 case studies work best for visual balance<\/li><li>Use high-quality images (min 800x600px)<\/li><li>Keep descriptions concise (2-3 sentences)<\/li><li>Link to full case study or solution page<\/li><\/ul>",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/content-case-studies"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "Display case studies with alternating image\/text layout",
+    "show_in_rest": 0
+}
+
+

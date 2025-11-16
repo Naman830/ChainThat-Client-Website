@@ -1,0 +1,252 @@
+{
+    "key": "group_block_content_statistics",
+    "title": "Statistics Display Block Settings",
+    "fields": [
+        {
+            "key": "field_statistics_data_source",
+            "label": "Data Source",
+            "name": "data_source",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "Choose where to get the data from.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "page_fields": "Use Page Fields (Default)",
+                "custom": "Custom Configuration"
+            },
+            "default_value": "page_fields",
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_custom_use_platform_images",
+            "label": "Use Platform Images for Background",
+            "name": "custom_use_platform_images",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "Automatically use Platform post featured images as background carousel",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_statistics_data_source",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "ui": 1
+        },
+        {
+            "key": "field_custom_background_images",
+            "label": "Background Images",
+            "name": "custom_background_images",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "Images for background carousel (only used if 'Use Platform Images' is disabled)",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_statistics_data_source",
+                        "operator": "==",
+                        "value": "custom"
+                    },
+                    {
+                        "field": "field_custom_use_platform_images",
+                        "operator": "!=",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "table",
+            "pagination": 0,
+            "min": 1,
+            "max": 0,
+            "collapsed": "",
+            "button_label": "Add Background Image",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_bg_image",
+                    "label": "Image",
+                    "name": "image",
+                    "aria-label": "",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "url",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "preview_size": "medium"
+                },
+                {
+                    "key": "field_bg_image_alt",
+                    "label": "Alt Text",
+                    "name": "alt",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": ""
+                }
+            ]
+        },
+        {
+            "key": "field_custom_statistics",
+            "label": "Statistics",
+            "name": "custom_statistics",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "Add statistical values and descriptions. Statistics are displayed in two columns automatically.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_statistics_data_source",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "pagination": 0,
+            "min": 1,
+            "max": 8,
+            "collapsed": "field_stat_value",
+            "button_label": "Add Statistic",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_stat_value",
+                    "label": "Value",
+                    "name": "stat_value",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "The statistical number\/value (e.g., '200+', '1.4M+', '10Bn+')",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "30",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "200+",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_stat_label",
+                    "label": "Label",
+                    "name": "stat_label",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "Description of the statistic",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "70",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "Enterprises use our API",
+                    "prepend": "",
+                    "append": ""
+                }
+            ]
+        },
+        {
+            "key": "field_statistics_display_info",
+            "label": "Display Information",
+            "name": "",
+            "aria-label": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "<strong>Note:<\/strong> This block displays statistics with a synchronized background image carousel.<br><br><strong>Background Images:<\/strong><ul><li><strong>Auto (Platform Images):<\/strong> Automatically uses featured images from all published Platform posts<\/li><li><strong>Manual:<\/strong> Upload your own background images<\/li><\/ul><strong>Layout:<\/strong> Statistics are automatically split into two columns for balanced display.<br><br><strong>Recommended:<\/strong> 4-8 statistics for optimal visual balance.",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/content-statistics"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "Display statistics with synchronized background image carousel",
+    "show_in_rest": 0
+}
+
+

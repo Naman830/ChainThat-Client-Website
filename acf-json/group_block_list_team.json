@@ -1,0 +1,267 @@
+{
+    "key": "group_block_list_team",
+    "title": "Team Grid Block Settings",
+    "fields": [
+        {
+            "key": "field_team_data_source",
+            "label": "Data Source",
+            "name": "data_source",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "Choose where to get the data from.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "page_fields": "Use Page Fields (Default)",
+                "custom": "Custom Configuration"
+            },
+            "default_value": "page_fields",
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_custom_section_title",
+            "label": "Section Title",
+            "name": "custom_section_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Heading for the team section",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_team_data_source",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Leadership",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_custom_section_description",
+            "label": "Section Description",
+            "name": "custom_section_description",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "Optional description below the section title",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_team_data_source",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "rows": 3,
+            "placeholder": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_custom_display_mode",
+            "label": "Display Mode",
+            "name": "custom_display_mode",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "Choose how to select team members to display",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_team_data_source",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "all": "All Team Members",
+                "featured": "Featured Members Only"
+            },
+            "default_value": "all",
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_custom_columns",
+            "label": "Columns",
+            "name": "custom_columns",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "Number of columns on desktop",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_team_data_source",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "2": "2 Columns",
+                "3": "3 Columns",
+                "4": "4 Columns"
+            },
+            "default_value": "3",
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_custom_show_linkedin",
+            "label": "Show LinkedIn Links",
+            "name": "custom_show_linkedin",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "Display LinkedIn profile links",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_team_data_source",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "34",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "ui": 1
+        },
+        {
+            "key": "field_custom_featured_members",
+            "label": "Featured Members",
+            "name": "custom_featured_members",
+            "aria-label": "",
+            "type": "relationship",
+            "instructions": "Select specific team members to display",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_team_data_source",
+                        "operator": "==",
+                        "value": "custom"
+                    },
+                    {
+                        "field": "field_custom_display_mode",
+                        "operator": "==",
+                        "value": "featured"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "team"
+            ],
+            "post_status": [
+                "publish"
+            ],
+            "taxonomy": "",
+            "filters": [
+                "search"
+            ],
+            "return_format": "object",
+            "min": 1,
+            "max": 0,
+            "elements": "",
+            "bidirectional": 0,
+            "bidirectional_target": []
+        },
+        {
+            "key": "field_team_display_info",
+            "label": "Display Information",
+            "name": "",
+            "aria-label": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "<strong>Note:<\/strong> Team members are managed in the <a href=\"\/wp-admin\/edit.php?post_type=team\" target=\"_blank\">Team section<\/a>.<br><br><strong>Display Modes:<\/strong><ul><li><strong>All Team Members:<\/strong> Automatically displays all published team posts (ordered by menu_order)<\/li><li><strong>Featured Members:<\/strong> Manually select specific team members to display<\/li><\/ul><strong>Responsive Behavior:<\/strong><ul><li><strong>Desktop:<\/strong> 2-4 columns (configurable)<\/li><li><strong>Tablet:<\/strong> 2 columns<\/li><li><strong>Mobile:<\/strong> 1 column<\/li><\/ul><strong>Team Member Information Displayed:<\/strong><ul><li>Photo (featured image)<\/li><li>Name (post title)<\/li><li>Position\/Title<\/li><li>Bio (short description)<\/li><li>LinkedIn profile link (optional)<\/li><\/ul><strong>Card Features:<\/strong><ul><li>Hover effects (lift and shadow)<\/li><li>Rounded corners<\/li><li>Consistent height cards<\/li><li>Social media icon button<\/li><\/ul>",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/list-team"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "Display team members in responsive grid with LinkedIn links",
+    "show_in_rest": 0
+}
+
+
