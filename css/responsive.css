@@ -154,23 +154,14 @@
 	padding: 40px;
 }
 
-.service-btn a {
-	display: block;
-}
+
 
 .service-btn {
 	margin-top: 42px;
 }
 
-.service-title h2 {
-	font-size: 3.125rem; /* 50px */
-	line-height: 50px;
-}
 
-.service-title p {
-	font-size: 1rem; /* 16px */
-	line-height: 24px;
-}
+
 
 .service-item h4 {
 	font-size: 1.5625rem; /* 25px */
@@ -400,18 +391,11 @@
 	padding: 40px;
 }
 
-.service-btn a {
-	display: block;
-}
-
 .service-btn {
 	margin-top: 42px;
 }
 
-.service-title h2 {
-	font-size: 3.125rem; /* 50px */
-	line-height: 50px;
-}
+
 
 .service-title {
 	text-align: left !important;
@@ -1391,18 +1375,11 @@
 	padding: 40px;
 }
 
-.service-btn a {
-	display: block;
-}
 
 .service-btn {
 	margin-top: 42px;
 }
 
-.service-title h2 {
-	font-size: 3.125rem; /* 50px */
-	line-height: 50px;
-}
 
 .service-title {
 	text-align: left !important;
