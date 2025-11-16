@@ -7,18 +7,96 @@
     padding: 0;
 }
 
-/* ============================================
-   GLOBAL SCALING
-   Reduce overall site scale by 30% for better fit on smaller screens
-   ============================================ */
+/* ================================
+   GLOBAL SECTION LAYOUT STRUCTURE
+   ================================ */
+
+/* Base Reset */
+section {
+  width: 100% !important;
+  display: block !important;
+  position: relative !important;
+}
+
+/* ================================
+   CONTAINER (Fixed-width layout)
+   ================================ */
+.container {
+  width: 100% !important;
+  max-width: 1200px !important;          
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+  box-sizing: border-box !important;
+}
+
+/* Responsive container breakpoints */
+@media (max-width: 1200px) {
+  .container {
+    max-width: 1140px !important;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 960px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 720px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    max-width: 100% !important;
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+  }
+}
+
+
+/* ================================
+   CONTAINER-FLUID (Full-width)
+   ================================ */
+.container-fluid {
+  width: 100% !important;
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  box-sizing: border-box !important;
+}
+
+@media (max-width: 576px) {
+  .container-fluid {
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+  }
+}
+
+/* ============================================== */
+/* HEADER */
+/* ============================================= */
 
 
 
 
-/* ============================================
-   ACCESSIBILITY STYLES
-   Skip link and screen reader utilities
-   ============================================ */
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Skip to main content link */
 .skip-link {
@@ -132,7 +210,6 @@ a.button:hover,
 }
 
 /* Ensure content is above background */
-.about-area .container,
 .about-area .about-main,
 .about-area .about-mobil,
 .about-area .about-cnt {
@@ -199,7 +276,7 @@ a.button:hover,
 }
 
 /* Ensure content is above background and overlay */
-.adminis-area .container,
+
 .adminis-area .adminis-main,
 .adminis-area .adminis-img-wrap {
     position: relative;
@@ -460,58 +537,18 @@ h6 {
 }
 
 
-/*===this-is-code-start===*/
-/* ============================================
-   CONSOLIDATED CONTAINER SYSTEM
-   All container width, padding, and margin declarations
-   Responsive max-widths for optimal viewing
-   ============================================ */
 
-/* Base Container Styles - 5% padding on all screens */
-.container {
-  width: 100%;
-  margin: 0 auto;
-  padding-left: 5%;
-  padding-right: 5%;
-  max-width: 100%;
-  box-sizing: border-box;
-}
 
-.container-fluid {
-  width: 100%;
-  padding-left: 5%;
-  padding-right: 5%;
-  box-sizing: border-box;
-}
 
-/* Header Container - matches main container */
-.header-area .container {
-  width: 100%;
-  margin: 0 auto;
-  padding-left: 5%;
-  padding-right: 5%;
-  max-width: 100%;
-  box-sizing: border-box;
-}
 
-/* All area containers inherit base container styles */
-section .container,
-div[class*="-area"] .container {
-  width: 100%;
-  margin: 0 auto;
-  padding-left: 5%;
-  padding-right: 5%;
-  max-width: 100%;
-  box-sizing: border-box;
-}
 
-/* ============================================
-   COMPREHENSIVE STYLE GUIDE & DESIGN TOKENS
-   Base: 1rem = 0.625em (html font-size: 62.5%)
-   Font sizes: Use rem
-   Spacing (padding/margin/gaps): Use em
-   Sizes (width/height): Use em (except container max-widths)
-   ============================================ */
+
+
+
+
+
+
+
 :root {
   font-size: 62.5%; /* Base: 1rem = 10px */
 
@@ -844,139 +881,7 @@ div[class*="-area"] .container {
    ============================================ */
 
 /* Extra Small Mobile (max-width: 29.9375em) */
-@media (max-width: 29.9375em) {
-  .container,
-  .container-fluid,
-  .header-area .container,
-  section .container,
-  div[class*="-area"] .container {
-    padding-left: 5%;
-    padding-right: 5%;
-    max-width: 100%;
-  }
-}
 
-/* Small Mobile (480px to 767px) */
-@media (min-width: 30em) and (max-width: 47.9375em) {
-  .container,
-  .container-fluid,
-  .header-area .container,
-  section .container,
-  div[class*="-area"] .container {
-    padding-left: 5%;
-    padding-right: 5%;
-    max-width: 100%;
-  }
-}
-
-/* Tablet Portrait (768px to 991px) */
-@media (min-width: 48em) and (max-width: 61.9375em) {
-  .container,
-  .container-fluid,
-  .header-area .container,
-  section .container,
-  div[class*="-area"] .container {
-    padding-left: 5%;
-    padding-right: 5%;
-    max-width: 56em; /* 768px + 10% padding = ~896px usable */
-  }
-}
-
-/* Tablet Landscape (992px to 1199px) */
-@media (min-width: 62em) and (max-width: 74.9375em) {
-  .container,
-  .container-fluid,
-  .header-area .container,
-  section .container,
-  div[class*="-area"] .container {
-    padding-left: 5%;
-    padding-right: 5%;
-    max-width: 72em; /* 992px + 10% padding = ~1152px usable */
-  }
-}
-
-/* Small Desktop (1200px to 1439px) */
-@media (min-width: 75em) and (max-width: 89.9375em) {
-  .container,
-  .container-fluid,
-  .header-area .container,
-  section .container,
-  div[class*="-area"] .container {
-    padding-left: 5%;
-    padding-right: 5%;
-    max-width: 83.375em; /* 1200px content area */
-  }
-}
-
-/* Medium Desktop (1440px to 1599px) */
-@media (min-width: 90em) and (max-width: 99.9375em) {
-  .container,
-  .container-fluid,
-  .header-area .container,
-  section .container,
-  div[class*="-area"] .container {
-    padding-left: 5%;
-    padding-right: 5%;
-    max-width: 96em; /* 1440px content area */
-  }
-}
-
-/* Large Desktop (1600px to 1919px) */
-@media (min-width: 100em) and (max-width: 119.9375em) {
-  .container,
-  .container-fluid,
-  .header-area .container,
-  section .container,
-  div[class*="-area"] .container {
-    padding-left: 5%;
-    padding-right: 5%;
-    max-width: 100em; /* Optimized for 1600px screens */
-  }
-}
-
-/* Full HD Desktop (1920px to 2559px) - EXACT 1728px as requested */
-@media (min-width: 120em) and (max-width: 159.9375em) {
-  .container,
-  .container-fluid,
-  .header-area .container,
-  section .container,
-  div[class*="-area"] .container {
-    padding-left: 5%;
-    padding-right: 5%;
-    max-width: 108em; /* EXACT requirement for 1920px */
-  }
-}
-
-/* 2K Desktop (2560px to 3199px) */
-@media (min-width: 160em) and (max-width: 199.9375em) {
-  .container,
-  .container-fluid,
-  .header-area .container,
-  section .container,
-  div[class*="-area"] .container {
-    padding-left: 5%;
-    padding-right: 5%;
-    max-width: 144em; /* 2560px - 10% = ~2304px content */
-  }
-}
-
-/* 4K+ Ultra Wide (3200px and above) */
-@media (min-width: 200em) {
-  .container,
-  .container-fluid,
-  .header-area .container,
-  section .container,
-  div[class*="-area"] .container {
-    padding-left: 5%;
-    padding-right: 5%;
-    max-width: 180em; /* 3200px - 10% = ~2880px content */
-  }
-}
-
-/* ========================================
-   Bootstrap Grid Enhancement
-   Center align columns in incomplete rows
-   ======================================== */
 
 /* Base row styles */
 .row {
@@ -1299,48 +1204,9 @@ div[class*="-area"] .container {
     }
 }
 
-/* Ensure full-width sections also respect max-width */
-section,
-div[class*="-area"] {
-  max-width: 100%;
-  overflow-x: hidden;
-}
-
-/* Center sections that have background images/colors - use 5% padding */
-section > *:not(.container):not(video):not(.adminis-background-video):not(.adminis-background-image):not(.about-background-video):not(.about-background-image):not(.solution-hero-background-video):not(.solution-hero-background-image),
-div[class*="-area"] > *:not(.container):not(video):not([class*="-background-"]) {
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 5%;
-  padding-right: 5%;
-  box-sizing: border-box;
-}
-
-/* Responsive max-widths for full-width section content */
-@media (min-width: 120em) and (max-width: 159.9375em) {
-  section > *:not(.container):not(video):not(.adminis-background-video):not(.adminis-background-image):not(.about-background-video):not(.about-background-image):not(.solution-hero-background-video):not(.solution-hero-background-image),
-  div[class*="-area"] > *:not(.container):not(video):not([class*="-background-"]) {
-    max-width: 108em;
-  }
-}
-
-@media (min-width: 160em) and (max-width: 199.9375em) {
-  section > *:not(.container):not(video):not(.adminis-background-video):not(.adminis-background-image):not(.about-background-video):not(.about-background-image):not(.solution-hero-background-video):not(.solution-hero-background-image),
-  div[class*="-area"] > *:not(.container):not(video):not([class*="-background-"]) {
-    max-width: 144em;
-  }
-}
-
-@media (min-width: 200em) {
-  section > *:not(.container):not(video):not(.adminis-background-video):not(.adminis-background-image):not(.about-background-video):not(.about-background-image):not(.solution-hero-background-video):not(.solution-hero-background-image),
-  div[class*="-area"] > *:not(.container):not(video):not([class*="-background-"]) {
-    max-width: 180em;
-  }
-}
-
 /*==container-setup==*/
 .header-area {
-  padding: 26px 60px;
+  padding: 26px 60px!important;
   position: relative;
   z-index: 2;
   background: rgba(255, 255, 255, 0.90);
@@ -1780,10 +1646,7 @@ div[class*="-area"] > *:not(.container):not(video):not([class*="-background-"]) 
     max-width: 11.25em;
   }
   
-  .header-area {
-    padding: 1.25em 0;
-  }
-  
+ 
   /* Adjust submenu positioning for tablet */
   .submenu {
     position: fixed;
@@ -1807,9 +1670,7 @@ div[class*="-area"] > *:not(.container):not(video):not([class*="-background-"]) 
     max-width: 11.25em;
   }
   
-  .header-area {
-    padding: 1.25em 0;
-  }
+
 }
 /* Tablet (768px and below) */
 @media (max-width: 48em) {
@@ -1822,10 +1683,7 @@ div[class*="-area"] > *:not(.container):not(video):not([class*="-background-"]) 
     max-width: 9.375em;
   }
   
-  .header-area {
-    padding: 0.9375em 0;
-  }
-  
+
   .sidebar-menu {
     max-width: 20em;
   }
@@ -1859,9 +1717,7 @@ div[class*="-area"] > *:not(.container):not(video):not([class*="-background-"]) 
     max-width: 7.5em;
   }
   
-  .header-area {
-    padding: 0.75em 0;
-  }
+
   
   .sidebar-menu {
     max-width: 17.5em;
@@ -1891,10 +1747,7 @@ div[class*="-area"] > *:not(.container):not(video):not([class*="-background-"]) 
   .logo-item img {
     max-width: 6.25em;
   }
-  
-  .header-area {
-    padding: 0.625em 0;
-  }
+
   
   .sidebar-menu {
     max-width: 16.25em;
@@ -1968,12 +1821,14 @@ div[class*="-area"] > *:not(.container):not(video):not([class*="-background-"]) 
   height: 100%;
   top: 0;
   right: 0;
+  padding-right: 0px!important;
 }
 
 .swoos-item img {
-  width: 55%;
-  display: block;
-  margin-left: auto
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    max-width: 700px;
 }
 
 .hero-item h2 {
@@ -1988,7 +1843,7 @@ div[class*="-area"] > *:not(.container):not(video):not([class*="-background-"]) 
 
 .hero-item p {
   color: var(--color-black);
-  margin-top: 20px;
+  margin-top: 20px!important;
 }
 
 .hero-item a {
@@ -4497,9 +4352,7 @@ div[class*="-area"] > *:not(.container):not(video):not([class*="-background-"]) 
   justify-content: center;
 }
 
-.header-area1 {
-  background: none;
-}
+
 
 .adminis-img-wrap {
   position: relative;
@@ -9945,11 +9798,7 @@ a:hover{
         overflow-x: hidden;
     }
     
-    .container {
-        max-width: 60em;
-        padding-left: 1.25em;
-        padding-right: 1.25em;
-    }
+
     
     * {
         box-sizing: border-box;
@@ -10045,11 +9894,7 @@ a:hover{
     section {
         overflow: hidden;
     }
-    
-    .container-fluid {
-        padding-left: 1.25em;
-        padding-right: 1.25em;
-    }
+   
     
     h1 {
         font-size: 3.5rem !important;
@@ -11689,10 +11534,7 @@ a:hover{
 /* Tablet Portrait (768px - 991px) */
 @media screen and (min-width: 48em) and (max-width: 61.9375em) {
     /* Container adjustments */
-    .container {
-        max-width: 45em;
-        padding: 0 1.25em;
-    }
+   
     
     /* Hero sections */
     .about-area,
@@ -11843,10 +11685,7 @@ a:hover{
 /* Tablet Landscape (992px - 1024px) */
 @media screen and (min-width: 62em) and (max-width: 64em) {
     /* Container adjustments */
-    .container {
-        max-width: 60em;
-        padding: 0 1.25em;
-    }
+  
     
     /* Slight typography adjustments */
     .about-title h2,
@@ -11958,9 +11797,7 @@ a:hover{
 
 /* iPad Pro Portrait (1024px x 1366px) */
 @media screen and (min-width: 64em) and (max-width: 74.9375em) {
-    .container {
-        max-width: 61.875em;
-    }
+   
     
     /* Optimize for larger tablets */
     .jobs-featured-main {
@@ -13551,8 +13388,9 @@ button.service-toggle-btn {
   .policy-title p,
   .service-title p,
   .working-with-chainthat-title p {
-    width: 60%;
+    width: 100%;
     margin: 0 auto;
+    max-width: 1200px;
   }
 }
 

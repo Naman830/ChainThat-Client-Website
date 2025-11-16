@@ -33,7 +33,7 @@
 
 <!-- HEADER -->
 <header class="header-area header-area1">
-    <!-- <div class="container"> -->
+    <div class="container">
         <div class="header-main">
             <?php
             // Get logos from ACF Theme Options with fallbacks
@@ -105,7 +105,6 @@
                 </div>
             </div>  
         </div>
-    <!-- </div> -->
 </header>
 
 <!-- Overlay -->
@@ -132,6 +131,7 @@
             'walker' => new ChainThat_Mobile_Walker_Nav_Menu(),
         ));
         ?>
+    </div>
     </div>
 </nav>
 
