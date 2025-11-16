@@ -45,7 +45,7 @@
             ?>
             <div class="logo-item wow fadeInLeft">
                 <a href="<?php echo esc_url( home_url( '/' ) ); ?>" aria-label="ChainThat home"><img class="d-none d-lg-block" src="<?php echo esc_url($main_logo); ?>" alt="ChainThat logo"/></a>
-                <a href="<?php echo esc_url( home_url( '/' ) ); ?>" aria-label="ChainThat home"><img class="d-block d-lg-none" src="<?php echo esc_url($mobile_logo); ?>" alt="ChainThat logo"></a>
+                <a href="<?php echo esc_url( home_url( '/' ) ); ?>" aria-label="ChainThat home"><img class="d-block d-lg-none" src="<?php echo esc_url($main_logo); ?>" alt="ChainThat logo"></a>
             </div>
             <nav class="main-nav wow fadeInUp">
                 <?php
@@ -113,7 +113,7 @@
 <nav id="sidebar-menu" class="sidebar-menu" aria-label="Mobile navigation">
     <div class="menu-header">
         <div class="mobil-brand">
-            <a href="<?php echo esc_url( home_url( '/' ) ); ?>" aria-label="ChainThat home"><img src="<?php echo esc_url($mobile_logo); ?>" alt="ChainThat logo"></a>
+            <a href="<?php echo esc_url( home_url( '/' ) ); ?>" aria-label="ChainThat home"><img src="<?php echo esc_url($footer_logo); ?>" alt="ChainThat logo"></a>
         </div>
         <div class="close-btn">
             <button class="close-icon" aria-label="Close navigation menu">
