@@ -23,7 +23,7 @@ get_header(); ?>
 
 <!-- hero-mobil -->
 <?php if (is_front_section_enabled('hero')): ?>
-<div class="hero-mobil d-block d-lg-none wow fadeInLeft">
+<div class="hero-mobil d-lg-none wow fadeInLeft">
     <?php 
     $hero_section = get_field('hero_section');
     $hero_mobile_image = $hero_section['hero_mobile_image'] ?? '';
